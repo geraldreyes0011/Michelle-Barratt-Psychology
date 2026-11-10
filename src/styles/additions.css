@@ -1,0 +1,23 @@
+/* Styles not present in the reference site's compiled CSS (src/styles/reference.css).
+   Kept to the minimum needed for the requested updates; values reuse the reference tokens. */
+
+/* Seven-category Therapy Services mega-menu: five balanced columns, slightly wider than the
+   reference five-category panel (1020px) so long labels do not crowd. */
+.mega-panel { width: min(1100px, calc(100vw - 3rem)); }
+
+/* Wellbeing Therapy subgroup label spans both link columns in the services directory. */
+.grid-row-full { grid-column: 1 / -1; }
+
+/* Placeholder height while a page's data loads, so the footer does not jump up. */
+.page-loading { min-height: 60vh; }
+
+/* Category anchors on /therapy-services clear the sticky header. */
+article[id] { scroll-margin-top: 8.5rem; }
+
+/* Supplied practice photos beside section text (home lilac, therapy-services blush): stacked
+   below the text on mobile, fixed right column from lg. Portrait images keep their ratio. */
+.section-photo { max-width: 24rem; }
+@media (width>=1024px) {
+  .section-photo-grid { grid-template-columns: minmax(0, 1fr) 340px; }
+  .section-photo { max-width: none; }
+}

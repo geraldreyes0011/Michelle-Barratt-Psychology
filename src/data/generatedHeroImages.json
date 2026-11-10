@@ -1,0 +1,38 @@
+{
+  "/therapy-services/adhd-therapy-children": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg",
+    "alt": "ADHD therapy for children"
+  },
+  "/therapy-services/child-self-esteem": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg",
+    "alt": "Building a child's self-esteem"
+  },
+  "/therapy-services/bullying": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg",
+    "alt": "Support for children experiencing bullying"
+  },
+  "/therapy-services/child-adolescent-trauma": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/trauma.jpg",
+    "alt": "Child and adolescent trauma therapy"
+  },
+  "/therapy-services/oppositional-defiant-disorder": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/01/angry-kid.jpg",
+    "alt": "Oppositional defiant disorder support"
+  },
+  "/therapy-services/cbt": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
+    "alt": "Cognitive behavioural therapy"
+  },
+  "/therapy-services/dbt": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
+    "alt": "Dialectical behaviour therapy"
+  },
+  "/therapy-services/emdr": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
+    "alt": "EMDR therapy"
+  },
+  "/therapy-services/ndis": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg",
+    "alt": "NDIS psychology support"
+  }
+}

@@ -1,0 +1,1372 @@
+{
+  "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/4a27751a0_MBP-Online-Therapy-HD.webp": {
+    "status": "ok",
+    "local": "/images/b44/4a27751a0_MBP-Online-Therapy-HD.webp",
+    "fetched": "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/4a27751a0_MBP-Online-Therapy-HD.webp",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1200,
+      768
+    ],
+    "to": [
+      2400,
+      1536
+    ]
+  },
+  "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/681f3324f_family-therapy-HD.webp": {
+    "status": "ok",
+    "local": "/images/b44/681f3324f_family-therapy-HD.webp",
+    "fetched": "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/681f3324f_family-therapy-HD.webp",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1024,
+      631
+    ],
+    "to": [
+      2048,
+      1262
+    ]
+  },
+  "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/bbc6fc1a7_stress-management-HD.webp": {
+    "status": "ok",
+    "local": "/images/b44/bbc6fc1a7_stress-management-HD.webp",
+    "fetched": "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/bbc6fc1a7_stress-management-HD.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1800,
+      1200
+    ],
+    "to": [
+      1800,
+      1200
+    ]
+  },
+  "https://media.base44.com/images/public/6ae8c35e42a5884720ac133d/6e58da14f_generated_image.png": {
+    "status": "ok",
+    "local": "/images/b44/6e58da14f_generated_image.webp",
+    "fetched": "https://media.base44.com/images/public/6ae8c35e42a5884720ac133d/6e58da14f_generated_image.png",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1024,
+      1024
+    ],
+    "to": [
+      2048,
+      2048
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2019/08/logo.png": {
+    "status": "ok",
+    "local": "/images/wp/2019/08/logo.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2019/08/logo.png",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      150,
+      150
+    ],
+    "to": [
+      300,
+      300
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/07/ahpra-removebg-preview.png": {
+    "status": "ok",
+    "local": "/images/wp/2020/07/ahpra-removebg-preview.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/07/ahpra-removebg-preview.png",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      200,
+      175
+    ],
+    "to": [
+      400,
+      350
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/07/APS_logo.png": {
+    "status": "ok",
+    "local": "/images/wp/2020/07/APS_logo.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/07/APS_logo.png",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      301,
+      163
+    ],
+    "to": [
+      602,
+      326
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2020/09/Interventions-1.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/conflict-mangement-2.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2020/10/conflict-mangement-2.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/conflict-mangement-2.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      800,
+      533
+    ],
+    "to": [
+      1600,
+      1066
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/diabetes.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2020/10/diabetes.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/diabetes.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/divorce-1.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2020/10/divorce-1.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/divorce-1.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      799,
+      533
+    ],
+    "to": [
+      1598,
+      1066
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/family-therapy-5.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2020/10/family-therapy-5.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/family-therapy-5.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      800,
+      533
+    ],
+    "to": [
+      1600,
+      1066
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/parenting-skills-1.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2020/10/parenting-skills-1.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/parenting-skills-1.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      801,
+      533
+    ],
+    "to": [
+      1602,
+      1066
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/trauma.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2020/10/trauma.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/trauma.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1281
+    ],
+    "to": [
+      1920,
+      1281
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/01/angry-kid.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2021/01/angry-kid.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/01/angry-kid.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      900
+    ],
+    "to": [
+      1920,
+      900
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/03/mental-illness-1525896895.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2021/03/mental-illness-1525896895.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/03/mental-illness-1525896895.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      2121,
+      1414
+    ],
+    "to": [
+      2121,
+      1414
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/04/bussiness-people-working-team-office.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2022/04/bussiness-people-working-team-office.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/04/bussiness-people-working-team-office.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/05/domestic_violence-1210x700-1.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2022/05/domestic_violence-1210x700-1.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/05/domestic_violence-1210x700-1.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1210,
+      700
+    ],
+    "to": [
+      2400,
+      1388
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/07/Burnout.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2022/07/Burnout.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/07/Burnout.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      5652,
+      3768
+    ],
+    "to": [
+      5652,
+      3768
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adolescent-dpression-and-anxiety.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2022/11/adolescent-dpression-and-anxiety.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adolescent-dpression-and-anxiety.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adult-therapy.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2022/11/adult-therapy.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adult-therapy.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1162
+    ],
+    "to": [
+      1920,
+      1162
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/couples-therapy.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2022/11/couples-therapy.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/couples-therapy.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-gustavo-fring-5622219.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2023/02/pexels-gustavo-fring-5622219.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-gustavo-fring-5622219.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      5760,
+      3840
+    ],
+    "to": [
+      5760,
+      3840
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-helena-lopes-708392.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2023/02/pexels-helena-lopes-708392.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-helena-lopes-708392.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      5090,
+      3393
+    ],
+    "to": [
+      5090,
+      3393
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-kindel-media-8550841.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2023/02/pexels-kindel-media-8550841.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-kindel-media-8550841.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      5184,
+      3888
+    ],
+    "to": [
+      5184,
+      3888
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-liza-summer-6382642.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2023/02/pexels-liza-summer-6382642.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-liza-summer-6382642.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      6000,
+      4000
+    ],
+    "to": [
+      6000,
+      4000
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-pixabay-415571-scaled-e1676492482426.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2023/02/pexels-pixabay-415571-scaled-e1676492482426.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-pixabay-415571-scaled-e1676492482426.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      2186,
+      1440
+    ],
+    "to": [
+      2186,
+      1440
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-rodnae-productions-6517116.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2023/02/pexels-rodnae-productions-6517116.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-rodnae-productions-6517116.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      6334,
+      4223
+    ],
+    "to": [
+      6334,
+      4223
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2023/03/pexels-andrea-piacquadio-3807738-min.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      5760,
+      3840
+    ],
+    "to": [
+      5760,
+      3840
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/04/Michelle-Barratt-Psychology-Team-Photo-min.png": {
+    "status": "ok",
+    "local": "/images/wp/2023/04/Michelle-Barratt-Psychology-Team-Photo-min.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/04/Michelle-Barratt-Psychology-Team-Photo-min.png",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1223
+    ],
+    "to": [
+      1920,
+      1223
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/barrat.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/05/barrat.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/barrat.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      500,
+      501
+    ],
+    "to": [
+      1000,
+      1002
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/DSC02464.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/05/DSC02464.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/DSC02464.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      500,
+      500
+    ],
+    "to": [
+      1000,
+      1000
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/Jennifer2.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/05/Jennifer2.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/Jennifer2.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      500,
+      500
+    ],
+    "to": [
+      1000,
+      1000
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/09/pamela.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/09/pamela.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/09/pamela.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1000,
+      1000
+    ],
+    "to": [
+      2000,
+      2000
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/curated-lifestyle-wUys-HwvCWk-unsplash-1.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/11/curated-lifestyle-wUys-HwvCWk-unsplash-1.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/curated-lifestyle-wUys-HwvCWk-unsplash-1.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1281
+    ],
+    "to": [
+      1920,
+      1281
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-5Ppyww1NFgo-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/11/getty-images-5Ppyww1NFgo-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-5Ppyww1NFgo-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1282
+    ],
+    "to": [
+      1920,
+      1282
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-9ro-xtoqygg-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/11/getty-images-9ro-xtoqygg-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-9ro-xtoqygg-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-FT1rzr0K1R4-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/11/getty-images-FT1rzr0K1R4-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-FT1rzr0K1R4-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1281
+    ],
+    "to": [
+      1920,
+      1281
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/12/care-learning-9954699_1280.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1280,
+      853
+    ],
+    "to": [
+      2400,
+      1599
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/getty-images-HjsKw973XG0-unsplash-2.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/12/getty-images-HjsKw973XG0-unsplash-2.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/getty-images-HjsKw973XG0-unsplash-2.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/kateryna-hliznitsova-ycIdYuLIPR4-unsplash-1.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/12/kateryna-hliznitsova-ycIdYuLIPR4-unsplash-1.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/kateryna-hliznitsova-ycIdYuLIPR4-unsplash-1.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1282
+    ],
+    "to": [
+      1920,
+      1282
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/pexels-tima-miroshnichenko-5336930.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/12/pexels-tima-miroshnichenko-5336930.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/pexels-tima-miroshnichenko-5336930.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/teenage-counselling-service.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2025/12/teenage-counselling-service.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/teenage-counselling-service.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1500,
+      841
+    ],
+    "to": [
+      1500,
+      841
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/1244.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/01/1244.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/1244.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1500,
+      993
+    ],
+    "to": [
+      1500,
+      993
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/andrej-lisakov-XWqvdxnhhTE-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/01/andrej-lisakov-XWqvdxnhhTE-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/andrej-lisakov-XWqvdxnhhTE-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/bipolar-disorder-treatment.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/01/bipolar-disorder-treatment.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/bipolar-disorder-treatment.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1500,
+      1000
+    ],
+    "to": [
+      1500,
+      1000
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/getty-images-69LeqK0j1UY-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/01/getty-images-69LeqK0j1UY-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/getty-images-69LeqK0j1UY-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/getty-images-6ckWCKZNFTo-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/01/getty-images-6ckWCKZNFTo-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/getty-images-6ckWCKZNFTo-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1281
+    ],
+    "to": [
+      1920,
+      1281
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/22810.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/02/22810.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/22810.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1500,
+      1001
+    ],
+    "to": [
+      1500,
+      1001
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/getty-images-NCXprZ_kcWQ-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/02/getty-images-NCXprZ_kcWQ-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/getty-images-NCXprZ_kcWQ-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1291
+    ],
+    "to": [
+      1920,
+      1291
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/kristo-markou-045rJLeNysg-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/02/kristo-markou-045rJLeNysg-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/kristo-markou-045rJLeNysg-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/ninthgrid-PMF56fUd1LM-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/02/ninthgrid-PMF56fUd1LM-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/ninthgrid-PMF56fUd1LM-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/curated-lifestyle-wUys-HwvCWk-unsplash-1.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/03/curated-lifestyle-wUys-HwvCWk-unsplash-1.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/curated-lifestyle-wUys-HwvCWk-unsplash-1.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1281
+    ],
+    "to": [
+      1920,
+      1281
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/dwayne-joe-Dpu7Le1kT3U-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/03/dwayne-joe-Dpu7Le1kT3U-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/dwayne-joe-Dpu7Le1kT3U-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/getty-images-9ro-xtoqygg-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/03/getty-images-9ro-xtoqygg-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/getty-images-9ro-xtoqygg-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/vitaly-gariev-U8A4mHyO5HM-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/03/vitaly-gariev-U8A4mHyO5HM-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/vitaly-gariev-U8A4mHyO5HM-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1080
+    ],
+    "to": [
+      1920,
+      1080
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/birlesim-ozel-egitim-rehabilitasyon-merkezi-sjSOXEV_kmY-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/04/birlesim-ozel-egitim-rehabilitasyon-merkezi-sjSOXEV_kmY-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/birlesim-ozel-egitim-rehabilitasyon-merkezi-sjSOXEV_kmY-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/kateryna-hliznitsova-Z8JfO29qBYE-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/04/kateryna-hliznitsova-Z8JfO29qBYE-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/kateryna-hliznitsova-Z8JfO29qBYE-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1302
+    ],
+    "to": [
+      1920,
+      1302
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/ninthgrid-jvGOK_BO2S4-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/04/ninthgrid-jvGOK_BO2S4-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/ninthgrid-jvGOK_BO2S4-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/Rach.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/04/Rach.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/Rach.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      341,
+      512
+    ],
+    "to": [
+      682,
+      1024
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/vitaly-gariev-lVEteug2d30-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/04/vitaly-gariev-lVEteug2d30-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/vitaly-gariev-lVEteug2d30-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1080
+    ],
+    "to": [
+      1920,
+      1080
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/38882.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/05/38882.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/38882.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      600,
+      900
+    ],
+    "to": [
+      1200,
+      1800
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/85658.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/05/85658.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/85658.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1500,
+      1000
+    ],
+    "to": [
+      1500,
+      1000
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/bpd-therapy-nMKIafJb.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/05/bpd-therapy-nMKIafJb.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/bpd-therapy-nMKIafJb.webp",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1280,
+      960
+    ],
+    "to": [
+      2400,
+      1800
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/eating-disorder.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/05/eating-disorder.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/eating-disorder.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1500,
+      1001
+    ],
+    "to": [
+      1500,
+      1001
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/getty-images-KUYyJYtvy3s-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/05/getty-images-KUYyJYtvy3s-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/getty-images-KUYyJYtvy3s-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/getty-images-qqr_ai28f1Q-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/05/getty-images-qqr_ai28f1Q-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/getty-images-qqr_ai28f1Q-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1278
+    ],
+    "to": [
+      1920,
+      1278
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/MB-Online.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/05/MB-Online.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/MB-Online.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1200,
+      768
+    ],
+    "to": [
+      2400,
+      1536
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/nappy-lNG3LCtYiJQ-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/05/nappy-lNG3LCtYiJQ-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/nappy-lNG3LCtYiJQ-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/getty-images-5Ppyww1NFgo-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/06/getty-images-5Ppyww1NFgo-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/getty-images-5Ppyww1NFgo-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1282
+    ],
+    "to": [
+      1920,
+      1282
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/getty-images-M3fkj_5o0eg-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/06/getty-images-M3fkj_5o0eg-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/getty-images-M3fkj_5o0eg-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/kateryna-hliznitsova-SO70tQmfKks-unsplash-2.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/06/kateryna-hliznitsova-SO70tQmfKks-unsplash-2.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/kateryna-hliznitsova-SO70tQmfKks-unsplash-2.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1282
+    ],
+    "to": [
+      1920,
+      1282
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/Meaningful-Brisbane-Psychology-hero-sunflower-scaled.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/06/Meaningful-Brisbane-Psychology-hero-sunflower-scaled.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/Meaningful-Brisbane-Psychology-hero-sunflower-scaled.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      948
+    ],
+    "to": [
+      1920,
+      948
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/meaningful-brisbane-psychology-sunflowers-cra.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/06/meaningful-brisbane-psychology-sunflowers-cra.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/meaningful-brisbane-psychology-sunflowers-cra.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      1067,
+      800
+    ],
+    "to": [
+      2134,
+      1600
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/pexels-gustavo-fring-7447074.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/06/pexels-gustavo-fring-7447074.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/pexels-gustavo-fring-7447074.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/pexels-karola-g-6255607.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/06/pexels-karola-g-6255607.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/pexels-karola-g-6255607.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/curated-lifestyle-cuGX7yND9L0-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/07/curated-lifestyle-cuGX7yND9L0-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/curated-lifestyle-cuGX7yND9L0-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1318
+    ],
+    "to": [
+      1920,
+      1318
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/getty-images-daYn_XXCOFE-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/07/getty-images-daYn_XXCOFE-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/getty-images-daYn_XXCOFE-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/getty-images-mDmMlu8DL9E-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/07/getty-images-mDmMlu8DL9E-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/getty-images-mDmMlu8DL9E-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/grant-harvey-psychologist.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/07/grant-harvey-psychologist.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/grant-harvey-psychologist.jpg",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      500,
+      500
+    ],
+    "to": [
+      1000,
+      1000
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/Kimberly-King-Counselling.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/07/Kimberly-King-Counselling.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/Kimberly-King-Counselling.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1396,
+      1492
+    ],
+    "to": [
+      1396,
+      1492
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/vitaly-gariev-SktdARcCuys-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/07/vitaly-gariev-SktdARcCuys-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/vitaly-gariev-SktdARcCuys-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1080
+    ],
+    "to": [
+      1920,
+      1080
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/vitaly-gariev-udv5YRcNz7M-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/07/vitaly-gariev-udv5YRcNz7M-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/vitaly-gariev-udv5YRcNz7M-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1080
+    ],
+    "to": [
+      1920,
+      1080
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/2149277569.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/08/2149277569.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/2149277569.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1500,
+      1000
+    ],
+    "to": [
+      1500,
+      1000
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/early-clues-of-eating-disorders-in-brisbane-parents-overlook-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/08/early-clues-of-eating-disorders-in-brisbane-parents-overlook-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/early-clues-of-eating-disorders-in-brisbane-parents-overlook-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/Eddie-Mktawa-1-e1788162070284.png": {
+    "status": "ok",
+    "local": "/images/wp/2026/08/Eddie-Mktawa-1-e1788162070284.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/Eddie-Mktawa-1-e1788162070284.png",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      544,
+      544
+    ],
+    "to": [
+      1088,
+      1088
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/getty-images-HjsKw973XG0-unsplash.jpg": {
+    "status": "ok",
+    "local": "/images/wp/2026/08/getty-images-HjsKw973XG0-unsplash.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/getty-images-HjsKw973XG0-unsplash.jpg",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1920,
+      1280
+    ],
+    "to": [
+      1920,
+      1280
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/misunderstood-signals-in-couples-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/08/misunderstood-signals-in-couples-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/misunderstood-signals-in-couples-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/early-relationship-counselling-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/09/early-relationship-counselling-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/early-relationship-counselling-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/managing-trauma-triggers-during-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/09/managing-trauma-triggers-during-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/managing-trauma-triggers-during-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/what-trauma-counselling-in-brisbane-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/09/what-trauma-counselling-in-brisbane-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/what-trauma-counselling-in-brisbane-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/when-mental-health-counselling-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/09/when-mental-health-counselling-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/when-mental-health-counselling-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/beyond-the-wedding-when-marriage-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/10/beyond-the-wedding-when-marriage-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/beyond-the-wedding-when-marriage-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/online-therapy-in-brisbane-when-you-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/10/online-therapy-in-brisbane-when-you-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/online-therapy-in-brisbane-when-you-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/recognising-ptsd-counselling-needs-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/10/recognising-ptsd-counselling-needs-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/recognising-ptsd-counselling-needs-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/recognising-trauma-counselling-needs-featured.webp": {
+    "status": "ok",
+    "local": "/images/wp/2026/10/recognising-trauma-counselling-needs-featured.webp",
+    "fetched": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/recognising-trauma-counselling-needs-featured.webp",
+    "method": "sharpen+re-encode (already high resolution)",
+    "from": [
+      1672,
+      941
+    ],
+    "to": [
+      1672,
+      941
+    ]
+  },
+  "C:\\Users\\ADMIN\\Work\\Verdant\\MBP\\_build\\supplied-images\\img-1.jpeg": {
+    "status": "ok",
+    "local": "/images/supplied/mbp-reception.webp",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      738,
+      1283
+    ],
+    "to": [
+      1381,
+      2401
+    ]
+  },
+  "C:\\Users\\ADMIN\\Work\\Verdant\\MBP\\_build\\supplied-images\\img-2.jpeg": {
+    "status": "ok",
+    "local": "/images/supplied/mbp-therapy-room.webp",
+    "method": "Real-ESRGAN x4plus, resampled to ~2x",
+    "from": [
+      738,
+      1298
+    ],
+    "to": [
+      1365,
+      2401
+    ]
+  }
+}

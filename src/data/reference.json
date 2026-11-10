@@ -1,0 +1,976 @@
+{
+  "legacyTherapyMenu": [
+    {
+      "title": "Services & Interventions",
+      "links": [
+        [
+          "All Therapy Services",
+          "/therapy-services"
+        ],
+        [
+          "Interventions for Therapy",
+          "/therapy-services/interventions"
+        ],
+        [
+          "Online Therapy",
+          "/online-therapy"
+        ]
+      ]
+    },
+    {
+      "title": "Children & Adolescents",
+      "links": [
+        [
+          "Adolescent Anxiety & Depression",
+          "/therapy-services/adolescent-anxiety-depression"
+        ],
+        [
+          "Child & Adolescent Therapy",
+          "/therapy-services/child-adolescent-therapy"
+        ],
+        [
+          "Child Anxiety",
+          "/therapy-services/child-anxiety"
+        ]
+      ]
+    },
+    {
+      "title": "Individuals & Adult Therapy",
+      "links": [
+        [
+          "Christian Therapy",
+          "/therapy-services/christian-counselling"
+        ],
+        [
+          "Adult Anxiety & Depression",
+          "/therapy-services/adult-therapy"
+        ],
+        [
+          "Stress Management",
+          "/therapy-services/managing-stress"
+        ],
+        [
+          "Emotional Regulation",
+          "/therapy-services/emotional-regulation"
+        ],
+        [
+          "Trauma",
+          "/therapy-services/trauma"
+        ],
+        [
+          "Burnout",
+          "/therapy-services/burnout"
+        ]
+      ]
+    },
+    {
+      "title": "Relationships & Family",
+      "links": [
+        [
+          "Couples Therapy",
+          "/therapy-services/couples"
+        ],
+        [
+          "Family Therapy",
+          "/therapy-services/family-therapy"
+        ],
+        [
+          "Separation & Divorce",
+          "/therapy-services/divorce-separation"
+        ],
+        [
+          "Conflict Management",
+          "/therapy-services/conflict-management"
+        ],
+        [
+          "Domestic Violence Support",
+          "/therapy-services/domestic-violence"
+        ],
+        [
+          "Parenting Skills Therapy",
+          "/therapy-services/parenting-skills-therapy"
+        ]
+      ]
+    },
+    {
+      "title": "Specialised Therapy",
+      "links": [
+        [
+          "Borderline Personality Disorder",
+          "/therapy-services/borderline-personality-disorder"
+        ],
+        [
+          "Bipolar Disorder",
+          "/therapy-services/bipolar-disorder"
+        ],
+        [
+          "Personality Disorders",
+          "/therapy-services/personality-disorders"
+        ],
+        [
+          "Narcissistic Personality Disorder",
+          "/therapy-services/narcissistic-personality-disorder"
+        ],
+        [
+          "Diabetes Mental Health Support",
+          "/therapy-services/diabetes"
+        ],
+        [
+          "Psychodynamic Therapy",
+          "/therapy-services/psychodynamic-therapy"
+        ],
+        [
+          "Eating Disorders",
+          "/therapy-services/eating-disorders"
+        ]
+      ]
+    }
+  ],
+  "topLinks": [
+    [
+      "Practitioners",
+      "/practitioners"
+    ],
+    [
+      "Locations",
+      "/locations"
+    ],
+    [
+      "Online Therapy",
+      "/online-therapy"
+    ],
+    [
+      "Topics",
+      "/topics"
+    ],
+    [
+      "Blogs",
+      "/blog"
+    ],
+    [
+      "Contact",
+      "/contact"
+    ]
+  ],
+  "helpfulInfoGroups": [
+    {
+      "title": "Policies",
+      "blurb": "How the practice runs, what you agree to, and how your information is protected.",
+      "links": [
+        [
+          "Cancellation Policy",
+          "/helpful-info/cancellation-policy"
+        ],
+        [
+          "Terms & Conditions",
+          "/helpful-info/terms-and-conditions"
+        ],
+        [
+          "AI Note-Taking",
+          "/helpful-info/ai-note-taking"
+        ],
+        [
+          "Privacy & Confidentiality",
+          "/helpful-info/privacy-and-confidentiality"
+        ],
+        [
+          "Sustainability",
+          "/helpful-info/sustainability"
+        ]
+      ]
+    },
+    {
+      "title": "Client Resources",
+      "blurb": "Practical answers before your first appointment and support if things feel urgent.",
+      "links": [
+        [
+          "FAQs",
+          "/faq"
+        ],
+        [
+          "Referrals",
+          "/helpful-info/referrals"
+        ],
+        [
+          "Crisis Support",
+          "/helpful-info/crisis-support"
+        ],
+        [
+          "Assessment & Report Writing",
+          "/helpful-info/assessment-report-writing"
+        ]
+      ]
+    },
+    {
+      "title": "Mental Health Information",
+      "blurb": "Plain-language reading on wellbeing, resilience and caring for your mental health.",
+      "links": [
+        [
+          "What Is Mental Health?",
+          "/helpful-info/what-is-mental-health"
+        ],
+        [
+          "Caring For Your Mental Health",
+          "/helpful-info/caring-for-your-mental-health"
+        ],
+        [
+          "Resilience",
+          "/helpful-info/resilience"
+        ],
+        [
+          "Health & Wellbeing",
+          "/helpful-info/health-and-wellbeing"
+        ],
+        [
+          "Interventions for Therapy",
+          "/therapy-services/interventions"
+        ]
+      ]
+    }
+  ],
+  "helpfulInfoPages": {
+    "cancellation-policy": {
+      "title": "Cancellation Policy",
+      "eyebrow": "Policies",
+      "intro": "We ask for as much notice as possible when an appointment needs to change. Our policy keeps appointment times available for clients who are waiting for support, and keeps fees fair and predictable for everyone.",
+      "sections": [
+        {
+          "heading": "Weekends and public holidays",
+          "paragraphs": [
+            "The practice is not open on Saturdays or Sundays, so weekend days are not counted as part of the 24 or 48 hour notice periods. Please keep this in mind when you are booking or changing an appointment.",
+            "For example, an appointment scheduled on a Monday needs to be changed by the preceding Wednesday for 48 hours notice, or Thursday for 24 hours notice."
+          ]
+        },
+        {
+          "heading": "Cancellation and non-attendance fees",
+          "list": [
+            "Cancelled within 48 hours of the appointment, for any reason — a 50% cancellation fee applies.",
+            "Cancelled within 24 hours of an appointment, for any reason — a 100% cancellation fee applies.",
+            "Did not arrive (DNA) for an appointment, in person or online — the full appointment fee applies.",
+            "Two or more consecutive appointments booked (for example a two hour appointment) and cancelled within 24 hours — each appointment is charged at 100%."
+          ]
+        },
+        {
+          "heading": "If you cannot attend in person",
+          "paragraphs": [
+            "If you cannot attend your appointment face to face but are available by telephone or video, contact the practice in good time so your psychologist can send you the appropriate link and a cancellation fee can be avoided.",
+            "Telephone and video appointments are paid 24 hours in advance, or before the consultation begins where an emergency arises. Appointments that have not been paid for cannot proceed, and non-attendance is recorded as a DNA.",
+            "Cancellations of telephone and video appointments follow the same policy as in-person appointments."
+          ]
+        },
+        {
+          "heading": "How cancellation fees are processed",
+          "list": [
+            "Fees for cancellations made within 24 to 48 hours, and for non-attendance, fall due immediately — your stored card is processed at the time of the cancellation or missed appointment.",
+            "If a card or bank payment fails, you have three full business days from the date of the appointment to settle the amount (by 5pm on the third business day).",
+            "If the amount remains unpaid after three business days, further appointments will be released and you will need to contact us to book again.",
+            "If two appointments are cancelled or missed in succession, your next appointment is required to be paid 48 hours in advance."
+          ]
+        },
+        {
+          "heading": "Why we hold this policy",
+          "paragraphs": [
+            "A late cancellation affects four people: you, because your treatment progress is delayed; your psychologist, who has prepared for your session; our administration team, who rework the diary and follow up on fees; and another client who is waiting for that appointment time.",
+            "If your fees are settled by another person or party and there is a dispute about payment, you remain responsible for settling the account."
+          ]
+        }
+      ]
+    },
+    "terms-and-conditions": {
+      "title": "Terms & Conditions",
+      "eyebrow": "Policies",
+      "intro": "These terms set out what you can expect from us, what we ask of you, and how your care is delivered at Michelle Barratt Psychology. They should be read together with our privacy and cancellation policies.",
+      "sections": [
+        {
+          "heading": "Consent for psychological services",
+          "paragraphs": [
+            "Your psychologist is an independently contracted practitioner who provides services through the practice. By booking, you consent to receive psychological services from that practitioner and to the terms described here.",
+            "Consent is informed: your psychologist will explain the purpose, benefits and alternatives of any proposed assessment or treatment, and you may ask questions at any stage."
+          ]
+        },
+        {
+          "heading": "The therapeutic relationship and ethical boundaries",
+          "paragraphs": [
+            "Your psychologist works within their professional scope of practice, their code of ethics and the standards set by their registering body. The relationship is a professional one: sessions focus on your therapeutic goals, and practitioners do not enter into personal, financial or social relationships with clients."
+          ]
+        },
+        {
+          "heading": "Evidence-based, individualised care",
+          "list": [
+            "Services are based on evidence, psychological formulation and your individual needs and goals.",
+            "Your psychologist will work within the boundaries of their competence and refer on where another practitioner or service is more appropriate.",
+            "Treatment plans are reviewed with you as therapy progresses, and you are welcome to discuss any part of the plan."
+          ]
+        },
+        {
+          "heading": "Informed consent, capacity and withdrawal",
+          "paragraphs": [
+            "You may withdraw consent for any part of a service at any time, and you may end therapy whenever you choose. If a young person is being seen, consent and involvement of parents or guardians is discussed and agreed according to the young person's age and capacity."
+          ]
+        },
+        {
+          "heading": "Confidentiality and its limits",
+          "paragraphs": [
+            "What you discuss in sessions is confidential, with defined exceptions that your psychologist will explain to you. These include where there is a serious risk to your safety or the safety of another person, where a child is at risk of harm, where records are subpoenaed by a court, and where you give written consent for information to be shared with a referrer or another professional.",
+            "Our full privacy and confidentiality policy sets out how information is collected, stored and disclosed."
+          ]
+        },
+        {
+          "heading": "Fees and payment",
+          "list": [
+            "The practice is a private billing practice and does not bulk bill. Payment is required on the day of your appointment and before a session begins.",
+            "Payment can be made by card through the secure payment link on your invoice (a processing fee applies), using a securely stored card on file, by bank transfer or PayID, or in cash with the exact amount.",
+            "If you are eligible for a Medicare rebate, we can process it to your bank account once the appointment has been paid for in full.",
+            "Fees, rebates and any third-party funding arrangements are confirmed with you before your first appointment."
+          ]
+        },
+        {
+          "heading": "Cancellations and online sessions",
+          "paragraphs": [
+            "Cancellation fees, non-attendance fees and the requirements for telephone and video appointments are set out in our cancellation policy. Please read it before booking so there are no surprises."
+          ]
+        }
+      ]
+    },
+    "ai-note-taking": {
+      "title": "AI Note-Taking",
+      "eyebrow": "Policies",
+      "intro": "Some of our psychologists use secure AI tools to help capture session notes. This page explains what that means, how your information is protected, and how you stay in control of the decision.",
+      "sections": [
+        {
+          "heading": "What is psychologist AI note-taking?",
+          "paragraphs": [
+            "AI note-taking supports the clinical note-taking process by accurately and efficiently capturing the details of your discussion and the outcomes of your appointment. It allows your psychologist to stay present in the session rather than writing throughout, while the clinical record still reflects what was discussed and agreed.",
+            "AI tools draft, your psychologist reviews. Every note remains your psychologist's professional record and responsibility."
+          ]
+        },
+        {
+          "heading": "Is your consent required?",
+          "paragraphs": [
+            "Yes. Your psychologist will ask for your written consent before an AI note-taking tool is used in your sessions, explain which platform is involved and what it does, and give you an explanation sheet and consent form.",
+            "You can decline, or withdraw consent at any time, without it affecting your access to care. If you decline, your psychologist will simply take notes as they always have."
+          ]
+        },
+        {
+          "heading": "How your information is protected",
+          "paragraphs": [
+            "The platforms we use advise that they comply with the Australian Privacy Principles and with AHPRA and HIPAA standards, and that they adhere to industry encryption and security protocols.",
+            "No AI tool replaces professional judgement. If your psychologist would like to use a platform other than those listed here, they will discuss it with you first and provide the relevant explanation sheet and consent form."
+          ]
+        },
+        {
+          "heading": "Platforms currently used",
+          "list": [
+            "Heidi — consent form and explanation sheet provided by your practitioner.",
+            "NovoNote — consent form and explanation sheet provided by your practitioner."
+          ]
+        },
+        {
+          "heading": "Questions about AI in your sessions",
+          "paragraphs": [
+            "Please raise any questions or concerns with your psychologist before your appointment, or contact our administration team and we will arrange for your practitioner to talk it through with you."
+          ]
+        }
+      ]
+    },
+    "privacy-and-confidentiality": {
+      "title": "Privacy & Confidentiality",
+      "eyebrow": "Policies",
+      "intro": "Your privacy is central to good psychological care. This page explains what information we collect, how it is stored and when it may be shared, in line with the Australian Privacy Principles.",
+      "sections": [
+        {
+          "heading": "What we collect",
+          "list": [
+            "Contact details such as your address, phone number and email address.",
+            "Referral letters and information from other health professionals.",
+            "Session notes, psychological test results and reports.",
+            "Correspondence such as emails, letters and faxes.",
+            "Administrative records including appointments, invoices and payments."
+          ]
+        },
+        {
+          "heading": "When information is collected",
+          "list": [
+            "When you book an appointment and complete our intake form.",
+            "When you speak with your psychologist or our administration team, verbally or in writing.",
+            "When a referrer, funder or other professional provides information with your consent."
+          ]
+        },
+        {
+          "heading": "Storage, security and disposal",
+          "paragraphs": [
+            "Records are kept in secure, access-controlled electronic systems. Paper records are stored securely where they are still used, and access is limited to the people who need it to provide your care or manage your account.",
+            "Adult client files are held for seven years from the date of the last entry. Records for minors are kept until the age of 25. After the required period, records are disposed of securely and confidentially."
+          ]
+        },
+        {
+          "heading": "Disclosure and the limits of confidentiality",
+          "paragraphs": [
+            "Information is not shared without your consent, except in the limited circumstances required or permitted by law. With your written consent we may, for example, provide a report or correspondence to your GP, a lawyer or a third-party funder, or discuss your care with another person such as a parent, employer or referrer.",
+            "Confidentiality may be overridden where there is a serious risk to your safety or another person's safety, where a child is at risk of harm, where disclosure is required by law or a court order, or in a medical emergency."
+          ]
+        },
+        {
+          "heading": "Accessing and correcting your information",
+          "paragraphs": [
+            "You may request access to the information we hold about you, or ask for it to be corrected, by contacting the practice in writing. In some circumstances access may be limited where providing it could cause harm to you or another person; if that happens we will explain why."
+          ]
+        },
+        {
+          "heading": "Privacy questions",
+          "paragraphs": [
+            "If you have a question about how your information is handled, please contact our administration team before your appointment so it can be answered clearly."
+          ]
+        }
+      ]
+    },
+    "sustainability": {
+      "title": "Sustainability",
+      "eyebrow": "Policies",
+      "intro": "Michelle Barratt Psychology is committed to operating in an environmentally sustainable way. Since first opening our doors we have made deliberate decisions to reduce our footprint across our clinics.",
+      "sections": [
+        {
+          "heading": "Initiatives in place",
+          "list": [
+            "Paperless operations — files, invoices, receipts and assessment materials are kept digitally wherever possible, to minimise paper use and support secure electronic record-keeping.",
+            "Energy conservation — energy-efficient appliances and lighting, with lights and devices switched off in rooms that are not in use.",
+            "Individually controlled air-conditioning — each room is controlled separately so empty rooms are not cooled, and climate functions are used when every room is in use.",
+            "Renewable power — we purchase green energy packs so that an equivalent amount of renewable energy is fed back into the grid for the power we use.",
+            "Reusable drinking glasses — plastic and paper cups were replaced with glasses in our rooms in 2019, and we encourage reusable water bottles in the practice.",
+            "Recycling and waste management — designated recycling bins for paper, plastic and other recyclable materials, with responsible disposal of anything hazardous.",
+            "Sustainable procurement — office supplies are chosen for recycled content, minimal packaging or environmental certification.",
+            "Sustainable commuting — staff are encouraged to carpool, use public transport or ride to work.",
+            "Education and awareness — sustainability is discussed with our team and has been shared with clients through workshops and practice communications."
+          ]
+        },
+        {
+          "heading": "Print and reception",
+          "paragraphs": [
+            "We have reduced magazine purchasing from weekly to quarterly and circulate each magazine between our offices, so every issue is read for at least six months before being recycled."
+          ]
+        },
+        {
+          "heading": "Our ongoing commitment",
+          "paragraphs": [
+            "These initiatives are reviewed as the practice grows. Reducing our ecological footprint is an ongoing process, and we welcome suggestions from clients and practitioners about how we can do better."
+          ]
+        }
+      ]
+    },
+    "referrals": {
+      "title": "Referrals",
+      "eyebrow": "Client Resources",
+      "intro": "Understanding referral pathways and funding options makes it easier to access the right support. Our administration team can guide you through Medicare, WorkCover, NDIS and DVA options and match you with an appropriate practitioner.",
+      "sections": [
+        {
+          "heading": "Before you begin",
+          "paragraphs": [
+            "We are a private billing practice and do not bulk bill. Payment is required on the day of your appointment. If you have an eligible Medicare referral, we can process your rebate to your bank account after your session.",
+            "Fees, rebates and any out-of-pocket amounts are confirmed with you before your first appointment so you know exactly what to expect."
+          ]
+        },
+        {
+          "heading": "Mental Health Care Plan (Medicare)",
+          "paragraphs": [
+            "A Mental Health Care Plan is prepared by your GP and provides a referral for a set number of subsidised psychology sessions. Bring your referral and plan to your first appointment.",
+            "After each paid session we process the eligible Medicare rebate to your nominated bank account, usually within a few business days."
+          ]
+        },
+        {
+          "heading": "WorkCover Queensland",
+          "list": [
+            "Consult your doctor for a WorkCover Medical Certificate and lodge your claim directly with WorkCover Queensland.",
+            "Once approved, WorkCover funds your psychological consultations to support rehabilitation and return to work.",
+            "Approved claims are typically billed directly to WorkCover with no out-of-pocket cost; our team can confirm whether your provider matches our billing arrangements.",
+            "Before your first appointment we need your approved claim number, your case manager's details and a copy of your current medical certificate."
+          ]
+        },
+        {
+          "heading": "NDIS and DVA",
+          "paragraphs": [
+            "We support National Disability Insurance Scheme participants where the practitioner is appropriately registered and the plan is self-managed, plan-managed or NDIA-managed in a way we can invoice. Please speak with our team about your plan type before booking.",
+            "Department of Veterans' Affairs clients are welcome, with referrals and prior approval arranged through DVA. Our team can explain what paperwork is required."
+          ]
+        },
+        {
+          "heading": "Private and self-funded",
+          "paragraphs": [
+            "You do not need a referral to see a psychologist privately. Many clients book directly, and some choose to use private health insurance extras cover, which is claimed through your fund using your receipt."
+          ]
+        },
+        {
+          "heading": "Not sure which applies to you?",
+          "paragraphs": [
+            "Contact our administration team with a short outline of your situation and we will explain the pathway, the likely cost and the next step — including helping you choose the practitioner best suited to your needs."
+          ]
+        }
+      ]
+    },
+    "crisis-support": {
+      "title": "Crisis Support",
+      "eyebrow": "Client Resources",
+      "intro": "If you are in immediate danger or need urgent help, call 000 or contact a crisis service straight away. This page explains what a crisis can look like and where to get immediate support.",
+      "sections": [
+        {
+          "heading": "A crisis is personal",
+          "paragraphs": [
+            "A crisis is your personal reaction to an experience or struggle, and it can look and feel completely different from how you might expect someone else to respond. There is no right way to feel.",
+            "If a crisis is not supported, it can contribute to mental health difficulties that affect relationships, work performance and social life. Reaching out early makes a difference."
+          ]
+        },
+        {
+          "heading": "What a crisis can include",
+          "list": [
+            "Relationship breakdown or difficulty of any kind — divorce, separation, distance for work, differing children's needs, extended family conflict.",
+            "Sudden or expected loss — of a loved one, a job, a home or a relationship.",
+            "Physical health issues such as a new diagnosis, cancer or recovery from an accident.",
+            "Violence or trauma — domestic, emotional, physical, sexual or verbal abuse.",
+            "Pressure from work or study that has become unmanageable.",
+            "The onset of a mental health issue, or a rapid change in how you are functioning."
+          ]
+        },
+        {
+          "heading": "Is Michelle Barratt Psychology a crisis service?",
+          "paragraphs": [
+            "No. We are not a crisis response or emergency service, and we encourage you to contact the appropriate crisis support service immediately if you are going through a crisis or believe your life, or someone else's life, is at risk.",
+            "Once you are safe, we can offer ongoing psychological therapy with a practitioner suited to your needs. Please email or call the practice to arrange an appointment."
+          ]
+        },
+        {
+          "heading": "Crisis and support lines",
+          "list": [
+            "Emergency — 000",
+            "Lifeline — 13 11 14 (24 hours, 7 days)",
+            "Kids Helpline — 1800 55 1800 (young people aged 5 to 25)",
+            "Beyond Blue — 1300 22 4636",
+            "13YARN — 13 92 76 (Aboriginal and Torres Strait Islander crisis support)",
+            "MensLine Australia — 1300 78 99 78",
+            "Suicide Call Back Service — 1300 659 467",
+            "DVConnect Womensline — 1800 811 811 · Mensline — 1800 600 636"
+          ]
+        },
+        {
+          "heading": "After the immediate crisis",
+          "paragraphs": [
+            "When the urgent moment has passed, ongoing therapy can help you make sense of what happened, rebuild stability and develop strategies for the future. Contact us and we will help you find the right practitioner."
+          ]
+        }
+      ]
+    },
+    "assessment-report-writing": {
+      "title": "Assessment & Report Writing",
+      "eyebrow": "Client Resources",
+      "intro": "Psychological assessment provides a deeper understanding of cognitive, emotional, behavioural and learning needs. Our psychologists offer comprehensive assessment and clear, practical written reports for clients, families, schools and referrers.",
+      "sections": [
+        {
+          "heading": "What we assess",
+          "list": [
+            "ADHD assessment for children, adolescents and adults, including recommendations for support.",
+            "Autism spectrum assessment, considering social communication, sensory and behavioural profiles.",
+            "Cognitive and learning assessments, including intellectual ability and specific learning difficulties.",
+            "Emotional and behavioural assessment to clarify diagnosis and guide treatment planning.",
+            "Reports for schools, paediatricians, GPs, lawyers and third-party funders where consent is provided."
+          ]
+        },
+        {
+          "heading": "Why assessment helps",
+          "list": [
+            "Identifies the underlying causes of symptoms or behaviours rather than guessing at them.",
+            "Informs diagnosis, treatment planning and reasonable adjustments at school or work.",
+            "Builds self-understanding and confidence for the person being assessed and their family.",
+            "Supports applications for funding and support where eligibility depends on evidence."
+          ]
+        },
+        {
+          "heading": "The assessment process",
+          "list": [
+            "Initial consultation — we discuss your concerns, goals and what you hope to learn.",
+            "Assessment sessions — standardised tests and clinical interviews are administered.",
+            "Scoring and interpretation — results are analysed alongside developmental and background information.",
+            "Feedback and written report — findings, diagnosis where relevant, and practical recommendations are explained to you in plain language."
+          ]
+        },
+        {
+          "heading": "Timeframes and fees",
+          "paragraphs": [
+            "Assessment costs depend on the question being asked and the tools required, and are quoted in writing before you begin. Reports are typically available two to three weeks after the final assessment session."
+          ]
+        },
+        {
+          "heading": "Getting started",
+          "paragraphs": [
+            "Contact our administration team to discuss whether an assessment is the right step, which practitioner is best suited, and what the process will involve for you or your child."
+          ]
+        }
+      ]
+    },
+    "what-is-mental-health": {
+      "title": "What Is Mental Health?",
+      "eyebrow": "Mental Health Information",
+      "intro": "Understanding mental health is the first step towards improving wellbeing, building resilience and recognising when support may be needed.",
+      "sections": [
+        {
+          "heading": "Mental health is more than the absence of illness",
+          "paragraphs": [
+            "Mental health influences how we think, feel, behave and interact with the world around us. It affects our ability to manage emotions, cope with stress, build relationships, make decisions and navigate everyday challenges.",
+            "Someone can be mentally healthy and still experience difficult periods, and someone can live well with a diagnosed mental health condition. Mental health sits on a continuum that moves throughout our lives."
+          ]
+        },
+        {
+          "heading": "What shapes mental health",
+          "list": [
+            "Biology, including temperament, family history and physical health.",
+            "Life experiences such as loss, trauma, change and ongoing stress.",
+            "Relationships with family, friends, partners and community.",
+            "Work, study, financial pressure and housing stability.",
+            "Sleep, movement, nutrition and substance use.",
+            "Sense of purpose, belonging and connection."
+          ]
+        },
+        {
+          "heading": "When to seek support",
+          "list": [
+            "Symptoms that persist for more than a few weeks, or that are getting worse.",
+            "Changes in sleep, appetite, energy or motivation that affect daily life.",
+            "Withdrawing from people or activities you usually enjoy.",
+            "Difficulty functioning at work, school or in relationships.",
+            "Using alcohol, drugs or other behaviours to cope.",
+            "A sense of being stuck, flat or overwhelmed that does not shift."
+          ]
+        },
+        {
+          "heading": "How psychological support helps",
+          "paragraphs": [
+            "Evidence-based therapy helps you understand what is maintaining your difficulties and build practical skills to change it. It is not simply talking — it is structured work towards goals you set with your psychologist.",
+            "Common approaches include cognitive behaviour therapy (CBT), dialectical behaviour therapy (DBT), acceptance and commitment therapy (ACT) and psychodynamic therapy, chosen to suit your presentation and preferences."
+          ]
+        },
+        {
+          "heading": "Where to start",
+          "paragraphs": [
+            "If you are not sure whether therapy is the right step, contact our team. We can talk through what you are noticing and help you decide what kind of support would be most useful."
+          ]
+        }
+      ]
+    },
+    "caring-for-your-mental-health": {
+      "title": "Caring For Your Mental Health",
+      "eyebrow": "Mental Health Information",
+      "intro": "Good mental health supports emotional wellbeing, resilience, healthy relationships and the ability to move through life's challenges. Caring for it is an ongoing practice, not a one-off fix.",
+      "sections": [
+        {
+          "heading": "Proactive care matters",
+          "paragraphs": [
+            "Caring for your mental health before problems escalate builds skills and resilience you can draw on when life becomes harder. Small, consistent habits often make a bigger difference than dramatic changes."
+          ]
+        },
+        {
+          "heading": "Everyday foundations",
+          "list": [
+            "Sleep — a consistent routine and enough rest, since sleep strongly affects mood and coping.",
+            "Movement — regular activity that you enjoy, not punishment.",
+            "Connection — time with people who leave you feeling supported rather than drained.",
+            "Boundaries — saying no, protecting your time and noticing what depletes you.",
+            "Purpose — work, study, creativity, faith, volunteering or community that matters to you.",
+            "Help-seeking — talking to a GP, psychologist or trusted person early rather than waiting."
+          ]
+        },
+        {
+          "heading": "Signs it is time to reach out",
+          "list": [
+            "Feeling low, anxious or irritable most days for several weeks.",
+            "Sleep or appetite changes that persist.",
+            "Struggling to concentrate or keep up with responsibilities.",
+            "Avoiding people, places or tasks that used to feel manageable.",
+            "Physical symptoms such as tension, headaches or fatigue without a clear cause."
+          ]
+        },
+        {
+          "heading": "What therapy offers",
+          "paragraphs": [
+            "Therapy provides a confidential space to understand your patterns, learn skills and make changes that last. Your psychologist works with you on goals that matter to your life — not a generic plan.",
+            "If you would like help choosing a practitioner, our administration team can match you based on what you are hoping to work on."
+          ]
+        },
+        {
+          "heading": "Getting started",
+          "paragraphs": [
+            "You can contact us directly, or speak with your GP about a Mental Health Care Plan if you would like to access Medicare rebates."
+          ]
+        }
+      ]
+    },
+    "resilience": {
+      "title": "Resilience",
+      "eyebrow": "Mental Health Information",
+      "intro": "Resilience therapy helps you develop the skills, confidence and emotional strength to navigate life's challenges more effectively — without pretending that difficulty does not hurt.",
+      "sections": [
+        {
+          "heading": "Resilience is a set of skills",
+          "paragraphs": [
+            "Resilience is not a personality trait you either have or lack. It is built from skills and supports: how you interpret setbacks, regulate emotion, ask for help, and recover after stress.",
+            "Because these are learnable, resilience can be strengthened at any age or stage."
+          ]
+        },
+        {
+          "heading": "What builds resilience",
+          "list": [
+            "Emotional regulation — noticing and managing strong feelings without being ruled by them.",
+            "Realistic thinking — catching unhelpful patterns and testing them against evidence.",
+            "Supportive relationships — knowing who you can turn to and letting yourself lean on them.",
+            "Flexible coping — having more than one way to respond when plans change.",
+            "Values and purpose — a sense of what matters, which steadies decisions under pressure.",
+            "Recovery habits — sleep, movement, rest and time away from stress."
+          ]
+        },
+        {
+          "heading": "Therapy for resilience",
+          "paragraphs": [
+            "Resilience work draws on approaches such as cognitive behaviour therapy, acceptance and commitment therapy and skills-based work. Your psychologist helps you apply these to the situations you are actually facing, rather than in the abstract.",
+            "Therapy is available in person at our Brisbane clinics or online Australia-wide, so support stays consistent wherever you are."
+          ]
+        },
+        {
+          "heading": "Getting started",
+          "paragraphs": [
+            "Contact our team to discuss what you would like to build, and we will match you with a practitioner experienced in resilience and wellbeing work."
+          ]
+        }
+      ]
+    },
+    "health-and-wellbeing": {
+      "title": "Health & Wellbeing",
+      "eyebrow": "Mental Health Information",
+      "intro": "Health and wellbeing support focuses on helping you create sustainable change that improves both physical and mental health — because the two are closely linked.",
+      "sections": [
+        {
+          "heading": "The mind and body connection",
+          "paragraphs": [
+            "Sleep, pain, fatigue, illness and mental health affect one another. Supporting one area almost always improves another, which is why psychological support for health concerns looks at the whole picture rather than a single symptom."
+          ]
+        },
+        {
+          "heading": "Areas we support",
+          "list": [
+            "Stress management and burnout.",
+            "Adjustment to chronic illness, injury or a new diagnosis.",
+            "Sleep difficulties and fatigue.",
+            "Health behaviour change, including activity, eating patterns and alcohol use.",
+            "Pain and persistent physical symptoms.",
+            "Body image, self-esteem and confidence.",
+            "Improving relationships with family and community, which also support health."
+          ]
+        },
+        {
+          "heading": "What support looks like",
+          "paragraphs": [
+            "Your psychologist works with you to understand what is maintaining the difficulty, then builds a plan you can realistically follow. Goals are small enough to be achievable and reviewed as you go.",
+            "Therapy is available in person at our Brisbane locations or online Australia-wide, so support stays consistent wherever you are."
+          ]
+        },
+        {
+          "heading": "Getting started",
+          "paragraphs": [
+            "If you are unsure where to begin, contact our administration team. We can help you work out whether psychological support is the right fit and which practitioner suits your needs."
+          ]
+        }
+      ]
+    }
+  },
+  "homeServiceMeta": {
+    "Services & Interventions": {
+      "text": "An overview of our therapy services, the interventions we offer and online appointments.",
+      "img": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
+      "alt": "Therapy interventions and services at Michelle Barratt Psychology"
+    },
+    "Children & Adolescents": {
+      "text": "Support for younger clients, from childhood anxiety through to adolescent mental health.",
+      "img": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg",
+      "alt": "Child and adolescent therapy support"
+    },
+    "Individuals & Adult Therapy": {
+      "text": "Therapy for adults, including trauma, stress, burnout and emotional regulation.",
+      "img": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adult-therapy.jpg",
+      "alt": "Adult therapy session"
+    },
+    "Relationships & Family": {
+      "text": "Support for couples and families, including parenting, separation and conflict.",
+      "img": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/family-therapy-5.jpg",
+      "alt": "Family therapy session"
+    },
+    "Specialised Therapy": {
+      "text": "Focused work with complex presentations, including personality and mood disorders.",
+      "img": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/03/mental-illness-1525896895.jpg",
+      "alt": "Specialised psychological therapy support"
+    }
+  },
+  "therapyHeroImages": {
+    "/therapy-services/adolescent-anxiety-depression": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adolescent-dpression-and-anxiety.jpg",
+      "alt": "Adolescent anxiety and depression therapy"
+    },
+    "/therapy-services/adult-therapy": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adult-therapy.jpg",
+      "alt": "Adult therapy for anxiety and depression"
+    },
+    "/therapy-services/bipolar-disorder": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-liza-summer-6382642.jpg",
+      "alt": "Support for bipolar disorder"
+    },
+    "/therapy-services/borderline-personality-disorder": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/conflict-mangement-2.jpg",
+      "alt": "Borderline personality disorder therapy"
+    },
+    "/therapy-services/burnout": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/07/Burnout.jpg",
+      "alt": "Burnout counselling and recovery"
+    },
+    "/therapy-services/child-adolescent-therapy": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg",
+      "alt": "Child and adolescent therapy"
+    },
+    "/therapy-services/child-anxiety": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-kindel-media-8550841.jpg",
+      "alt": "Child anxiety therapy"
+    },
+    "/therapy-services/christian-counselling": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-pixabay-415571-scaled-e1676492482426.jpg",
+      "alt": "Christian counselling"
+    },
+    "/therapy-services/conflict-management": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/conflict-mangement-2.jpg",
+      "alt": "Conflict management counselling"
+    },
+    "/therapy-services/couples": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/couples-therapy.jpg",
+      "alt": "Couples therapy"
+    },
+    "/therapy-services/diabetes": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/diabetes.jpg",
+      "alt": "Diabetes mental health support"
+    },
+    "/therapy-services/divorce-separation": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/divorce-1.jpg",
+      "alt": "Separation and divorce support"
+    },
+    "/therapy-services/domestic-violence": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/05/domestic_violence-1210x700-1.jpg",
+      "alt": "Domestic violence support"
+    },
+    "/therapy-services/eating-disorders": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-gustavo-fring-5622219.jpg",
+      "alt": "Eating disorder treatment"
+    },
+    "/therapy-services/emotional-regulation": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-helena-lopes-708392.jpg",
+      "alt": "Emotional regulation therapy"
+    },
+    "/therapy-services/family-therapy": {
+      "src": "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/681f3324f_family-therapy-HD.webp",
+      "alt": "A family running together through a sunlit field"
+    },
+    "/therapy-services/interventions": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
+      "alt": "Interventions for therapy"
+    },
+    "/therapy-services/managing-stress": {
+      "src": "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/bbc6fc1a7_stress-management-HD.webp",
+      "alt": "A person feeling overwhelmed at a desk"
+    },
+    "/therapy-services/narcissistic-personality-disorder": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-rodnae-productions-6517116.jpg",
+      "alt": "Narcissistic personality disorder therapy"
+    },
+    "/therapy-services/parenting-skills-therapy": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/parenting-skills-1.jpg",
+      "alt": "Parenting skills therapy"
+    },
+    "/therapy-services/personality-disorders": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/03/mental-illness-1525896895.jpg",
+      "alt": "Personality disorder support"
+    },
+    "/therapy-services/psychodynamic-therapy": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/online-therapy-in-brisbane-when-you-featured.webp",
+      "alt": "Psychodynamic therapy"
+    },
+    "/therapy-services/trauma": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/trauma.jpg",
+      "alt": "Trauma therapy"
+    }
+  },
+  "pageHeroImages": {
+    "/contact": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/bpd-therapy-nMKIafJb.webp",
+      "alt": "A calm therapy room with warm natural light"
+    },
+    "/faq": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/04/bussiness-people-working-team-office.jpg",
+      "alt": "Our team working together in the practice"
+    },
+    "/topics": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/when-mental-health-counselling-featured.webp",
+      "alt": "Reading about mental health support"
+    },
+    "/blog": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-helena-lopes-708392.jpg",
+      "alt": "A quiet moment of reflection"
+    },
+    "/locations": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/meaningful-brisbane-psychology-sunflowers-cra.jpg",
+      "alt": "Sunflowers in warm afternoon light"
+    },
+    "/helpful-info": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/Meaningful-Brisbane-Psychology-hero-sunflower-scaled.webp",
+      "alt": "Sunflower field in warm light"
+    },
+    "/helpful-info/cancellation-policy": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-kindel-media-8550841.jpg",
+      "alt": "A calm consulting space"
+    },
+    "/helpful-info/terms-and-conditions": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-liza-summer-6382642.jpg",
+      "alt": "A quiet room in natural light"
+    },
+    "/helpful-info/ai-note-taking": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-rodnae-productions-6517116.jpg",
+      "alt": "A practitioner working at a desk"
+    },
+    "/helpful-info/privacy-and-confidentiality": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-pixabay-415571-scaled-e1676492482426.jpg",
+      "alt": "A calm interior with soft light"
+    },
+    "/helpful-info/sustainability": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/meaningful-brisbane-psychology-sunflowers-cra.jpg",
+      "alt": "Sunflowers in a field"
+    },
+    "/helpful-info/referrals": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/04/bussiness-people-working-team-office.jpg",
+      "alt": "A team working together"
+    },
+    "/helpful-info/crisis-support": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/trauma.jpg",
+      "alt": "A reassuring, supportive space"
+    },
+    "/helpful-info/assessment-report-writing": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/04/bussiness-people-working-team-office.jpg",
+      "alt": "Professionals working together"
+    },
+    "/helpful-info/what-is-mental-health": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/03/mental-illness-1525896895.jpg",
+      "alt": "Supportive mental health care"
+    },
+    "/helpful-info/caring-for-your-mental-health": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/bpd-therapy-nMKIafJb.webp",
+      "alt": "A calm, welcoming therapy room"
+    },
+    "/helpful-info/resilience": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/Meaningful-Brisbane-Psychology-hero-sunflower-scaled.webp",
+      "alt": "Sunflowers standing tall in the sun"
+    },
+    "/helpful-info/health-and-wellbeing": {
+      "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-helena-lopes-708392.jpg",
+      "alt": "Rest and reflection in natural light"
+    }
+  },
+  "footerHtml": "<div class=\"bg-blush border-y border-lilac\"><div class=\"mx-auto max-w-7xl px-5 py-5 grid gap-4 sm:grid-cols-3\"><div class=\"flex items-center gap-3\"><span class=\"h-9 w-9 shrink-0 rounded-full bg-rose/10 flex items-center justify-center\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-clock h-[18px] w-[18px] text-rose\" aria-hidden=\"true\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><polyline points=\"12 6 12 12 16 14\"></polyline></svg></span><div class=\"min-w-0\"><p class=\"text-[13px] font-semibold text-plum leading-tight\">Reception Hours</p><p class=\"text-[13px] text-ink/75 leading-snug\">Mon–Fri · 9am – 5pm</p></div></div><div class=\"flex items-center gap-3\"><span class=\"h-9 w-9 shrink-0 rounded-full bg-rose/10 flex items-center justify-center\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-mail h-[18px] w-[18px] text-rose\" aria-hidden=\"true\"><rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\"></rect><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"></path></svg></span><div class=\"min-w-0\"><p class=\"text-[13px] font-semibold text-plum leading-tight\">E-mail</p><a href=\"mailto:admin@michellebarrattpsychology.com.au\" class=\"block text-[13px] text-ink/75 hover:text-plum break-all\">admin@michellebarrattpsychology.com.au</a></div></div><div class=\"flex items-center gap-3\"><span class=\"h-9 w-9 shrink-0 rounded-full bg-rose/10 flex items-center justify-center\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-award h-[18px] w-[18px] text-rose\" aria-hidden=\"true\"><path d=\"m15.477 12.89 1.515 8.526a.5.5 0 0 1-.81.47l-3.58-2.687a1 1 0 0 0-1.197 0l-3.586 2.686a.5.5 0 0 1-.81-.469l1.514-8.526\"></path><circle cx=\"12\" cy=\"8\" r=\"6\"></circle></svg></span><div class=\"min-w-0\"><p class=\"text-[13px] font-semibold text-plum leading-tight\">Registered</p><p class=\"text-[13px] text-ink/75 leading-snug\">AHPRA Psychology Board of Australia</p></div></div></div></div><div class=\"mx-auto max-w-7xl px-5 py-12 grid gap-10 lg:grid-cols-12 lg:gap-12\"><div class=\"lg:col-span-5\"><div><div class=\"flex items-center gap-3 mb-4\"><span class=\"bg-white rounded-full p-1 shrink-0\"><img src=\"https://michellebarrattpsychology.com.au/wp-content/uploads/2019/08/logo.png\" alt=\"Michelle Barratt Psychology logo\" width=\"76\" height=\"76\" class=\"h-[76px] w-[76px] object-contain\"/></span><div><p class=\"font-heading text-[22px] leading-tight text-white\">Michelle Barratt Psychology</p><p class=\"mt-1 text-[10px] font-semibold uppercase tracking-[0.22em] text-white/65\">Administration Services</p></div></div><p class=\"text-white/85 text-[15px] leading-relaxed\">Brisbane Clinical Psychologists supporting children, adolescents, individuals, couples and families — in person and Australia-wide via Online Therapy.</p><div class=\"mt-5 rounded border border-white/25 p-4\"><div class=\"flex items-center gap-2 mb-3\"><a href=\"https://www.facebook.com/michellebarrattpsychology\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Facebook\" class=\"h-8 w-8 rounded-full bg-rose flex items-center justify-center text-white hover:bg-white hover:text-plum transition-colors\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-facebook h-4 w-4\" aria-hidden=\"true\"><path d=\"M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z\"></path></svg></a><a href=\"https://www.instagram.com/michellebarrattpsychology\" target=\"_blank\" rel=\"noopener noreferrer\" aria-label=\"Instagram\" class=\"h-8 w-8 rounded-full bg-rose flex items-center justify-center text-white hover:bg-white hover:text-plum transition-colors\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-instagram h-4 w-4\" aria-hidden=\"true\"><rect width=\"20\" height=\"20\" x=\"2\" y=\"2\" rx=\"5\" ry=\"5\"></rect><path d=\"M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z\"></path><line x1=\"17.5\" x2=\"17.51\" y1=\"6.5\" y2=\"6.5\"></line></svg></a></div><p class=\"text-[13px] font-semibold text-white\">In immediate danger?</p><p class=\"mt-1 text-[13px] text-white/75 leading-relaxed\">If you are experiencing severe distress or thoughts of self-harm, contact emergency services or a crisis line immediately.</p><p class=\"mt-2 text-[13px] text-white\">Lifeline <a href=\"tel:131114\" class=\"underline underline-offset-4 hover:text-white\">13 11 14</a></p></div></div></div><div class=\"lg:col-span-7\"><div class=\"grid gap-8 sm:grid-cols-3\"><div><h2 class=\"font-heading text-lg text-white mb-3\">Therapy For</h2><ul class=\"space-y-2\"><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/therapy-services/child-adolescent-therapy\">Children</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/therapy-services/adolescent-anxiety-depression\">Adolescents</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/therapy-services/adult-therapy\">Adults</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/therapy-services/family-therapy\">Families</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/therapy-services/couples\">Couples Counselling</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/therapy-services/christian-counselling\">Christian Counselling</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/therapy-services/trauma\">Trauma</a></li></ul></div><div><h2 class=\"font-heading text-lg text-white mb-3\">Explore</h2><ul class=\"space-y-2\"><li><a href=\"https://michellebarrattpsychology.com.au/about-us/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\">About Us</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/practitioners\">Practitioners</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/therapy-services\">Services</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/faq\">FAQs</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/blog\">Blogs</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px]\" href=\"/contact\">Contact</a></li></ul></div><div><h2 class=\"font-heading text-lg text-white mb-3\">Get in Touch</h2><ul class=\"space-y-2.5\"><li><a href=\"tel:0731850040\" class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px] flex items-start gap-2.5\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-map-pin h-4 w-4 text-rose shrink-0 mt-0.5\" aria-hidden=\"true\"><path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"></path><circle cx=\"12\" cy=\"10\" r=\"3\"></circle></svg>Toowong · 07 3185 0040</a></li><li><a href=\"tel:0731850040\" class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px] flex items-start gap-2.5\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-map-pin h-4 w-4 text-rose shrink-0 mt-0.5\" aria-hidden=\"true\"><path d=\"M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0\"></path><circle cx=\"12\" cy=\"10\" r=\"3\"></circle></svg>Manly-West · 07 3185 0040</a></li><li><a href=\"mailto:admin@michellebarrattpsychology.com.au\" class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px] flex items-start gap-2.5\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-mail h-4 w-4 text-rose shrink-0 mt-0.5\" aria-hidden=\"true\"><rect width=\"20\" height=\"16\" x=\"2\" y=\"4\" rx=\"2\"></rect><path d=\"m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7\"></path></svg>E-Mail Us</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px] flex items-start gap-2.5\" href=\"/practitioners\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-calendar-check h-4 w-4 text-rose shrink-0 mt-0.5\" aria-hidden=\"true\"><path d=\"M8 2v4\"></path><path d=\"M16 2v4\"></path><rect width=\"18\" height=\"18\" x=\"3\" y=\"4\" rx=\"2\"></rect><path d=\"M3 10h18\"></path><path d=\"m9 16 2 2 4-4\"></path></svg>Book Online</a></li><li><a class=\"text-white/85 hover:text-white hover:underline underline-offset-4 text-[15px] flex items-start gap-2.5\" href=\"/online-therapy\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"24\" height=\"24\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" class=\"lucide lucide-video h-4 w-4 text-rose shrink-0 mt-0.5\" aria-hidden=\"true\"><path d=\"m16 13 5.223 3.482a.5.5 0 0 0 .777-.416V7.87a.5.5 0 0 0-.752-.432L16 10.5\"></path><rect x=\"2\" y=\"6\" width=\"14\" height=\"12\" rx=\"2\"></rect></svg>Online Therapy</a></li></ul></div></div></div></div><div class=\"mx-auto max-w-7xl px-5\"><div class=\"border-t border-white/15 pt-6 flex flex-col gap-4 md:flex-row md:items-center md:justify-between\"><div class=\"flex flex-col gap-3 sm:flex-row sm:items-center\"><p class=\"text-[13px] text-white/70 leading-relaxed max-w-md\">Accreditations: Michelle Barratt is a Fellow Clinical Colleague at the Australian Psychological Society</p><div class=\"flex items-center gap-2\"><span class=\"bg-white rounded p-1.5\"><img src=\"https://michellebarrattpsychology.com.au/wp-content/uploads/2020/07/APS_logo.png\" alt=\"Australian Psychological Society\" class=\"h-8 w-auto object-contain\"/></span><span class=\"bg-white rounded p-1.5\"><img src=\"https://michellebarrattpsychology.com.au/wp-content/uploads/2020/07/ahpra-removebg-preview.png\" alt=\"Australian Health Practitioner Regulation Agency\" class=\"h-8 w-auto object-contain\"/></span></div></div><p class=\"text-[13px] text-white/70\">Visit our<!-- --> <a href=\"https://michellebarrattpsychology.com.au/careers/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blush underline underline-offset-4 hover:text-white\">Careers</a> <!-- -->and<!-- --> <a href=\"https://michellebarrattpsychology.com.au/media-1/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-blush underline underline-offset-4 hover:text-white\">Media</a> <!-- -->Pages</p></div></div><div class=\"border-t border-white/15 mt-8 bg-ink\"><div class=\"mx-auto max-w-7xl px-5 py-5 text-[13px] flex flex-col gap-2 md:flex-row md:items-center md:justify-between\"><p class=\"text-white/70\">© 2026 Michelle Barratt Psychology – MBP  |  Brisbane | Toowong | Manly West | Online Therapy</p><ul class=\"flex flex-wrap items-center gap-x-4 gap-y-1\"><li><a href=\"https://michellebarrattpsychology.com.au/privacy-and-confidentiality/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-white/75 hover:text-white hover:underline underline-offset-4\">Privacy &amp; Confidentiality</a></li><li><a href=\"https://michellebarrattpsychology.com.au/cancellation-policy/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-white/75 hover:text-white hover:underline underline-offset-4\">Cancellation Policy</a></li><li><a href=\"https://michellebarrattpsychology.com.au/terms-and-conditions/\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-white/75 hover:text-white hover:underline underline-offset-4\">Terms &amp; Conditions</a></li></ul></div></div>"
+}

@@ -1,0 +1,847 @@
+[
+  {
+    "url": "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/4a27751a0_MBP-Online-Therapy-HD.webp",
+    "pages": [
+      "home"
+    ]
+  },
+  {
+    "url": "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/681f3324f_family-therapy-HD.webp",
+    "pages": [
+      "reference-data"
+    ]
+  },
+  {
+    "url": "https://base44.app/api/apps/6ae8c35e42a5884720ac133d/files/mp/public/6ae8c35e42a5884720ac133d/bbc6fc1a7_stress-management-HD.webp",
+    "pages": [
+      "reference-data"
+    ]
+  },
+  {
+    "url": "https://media.base44.com/images/public/6ae8c35e42a5884720ac133d/6e58da14f_generated_image.png",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2019/08/logo.png",
+    "pages": [
+      "reference-data",
+      "site"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/07/ahpra-removebg-preview.png",
+    "pages": [
+      "reference-data"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/07/APS_logo.png",
+    "pages": [
+      "reference-data"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__interventions",
+      "topic-heroes"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/conflict-mangement-2.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__borderline-personality-disorder",
+      "therapy-services__conflict-management"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/diabetes.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__diabetes"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/divorce-1.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__divorce-separation"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/family-therapy-5.jpg",
+    "pages": [
+      "reference-data"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/parenting-skills-1.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__parenting-skills-therapy"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/trauma.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__trauma",
+      "topic-heroes"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/01/angry-kid.jpg",
+    "pages": [
+      "topic-heroes"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/03/mental-illness-1525896895.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__personality-disorders"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/04/bussiness-people-working-team-office.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/05/domestic_violence-1210x700-1.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__domestic-violence"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/07/Burnout.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__burnout"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adolescent-dpression-and-anxiety.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__adolescent-anxiety-depression"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adult-therapy.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__adult-therapy"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/couples-therapy.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__couples"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-gustavo-fring-5622219.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__eating-disorders"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-helena-lopes-708392.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__emotional-regulation"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-kindel-media-8550841.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__child-anxiety"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-liza-summer-6382642.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__bipolar-disorder"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-pixabay-415571-scaled-e1676492482426.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__christian-counselling"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/02/pexels-rodnae-productions-6517116.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__narcissistic-personality-disorder"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg",
+    "pages": [
+      "reference-data",
+      "therapy-services__child-adolescent-therapy",
+      "topic-heroes"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/04/Michelle-Barratt-Psychology-Team-Photo-min.png",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/barrat.jpg",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/DSC02464.jpg",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/05/Jennifer2.jpg",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/09/pamela.jpg",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/curated-lifestyle-wUys-HwvCWk-unsplash-1.jpg",
+    "pages": [
+      "blog",
+      "blog__how-trauma-counselling-supports-teen-healing"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-5Ppyww1NFgo-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__how-couples-counselling-changes"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-9ro-xtoqygg-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__spring-anxiety-counselling-in-brisbane"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/11/getty-images-FT1rzr0K1R4-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__what-to-expect-from-child-psychologist"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg",
+    "pages": [
+      "blog",
+      "blog__starting-online-therapy-sessions-from-home",
+      "topic-heroes"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/getty-images-HjsKw973XG0-unsplash-2.jpg",
+    "pages": [
+      "blog",
+      "blog__marriage-counsellor-in-brisbane-after-separation"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/kateryna-hliznitsova-ycIdYuLIPR4-unsplash-1.jpg",
+    "pages": [
+      "blog",
+      "blog__ready-for-adult-therapy-services-in-january"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/pexels-tima-miroshnichenko-5336930.jpg",
+    "pages": [
+      "blog",
+      "blog__family-therapy-in-brisbane-over-christmas"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/teenage-counselling-service.jpg",
+    "pages": [
+      "blog",
+      "blog__is-online-therapy-right-for-teens-in-summer"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/1244.jpg",
+    "pages": [
+      "blog",
+      "blog__why-teen-anxiety-feels-worse-in-january"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/andrej-lisakov-XWqvdxnhhTE-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__how-depression-counselling-helps-during-wet-season"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/bipolar-disorder-treatment.jpg",
+    "pages": [
+      "blog",
+      "blog__bipolar-disorder-treatment-options-in-brisbane"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/getty-images-69LeqK0j1UY-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__christian-counseling-help-navigate-spiritual-lows"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/01/getty-images-6ckWCKZNFTo-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__what-relationship-counselling-brisbane-looks-like"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/22810.jpg",
+    "pages": [
+      "blog",
+      "blog__recognising-when-your-child-needs-a-therapy-specialist"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/getty-images-NCXprZ_kcWQ-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__typical-family-therapy-session-in-brisbane"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/kristo-markou-045rJLeNysg-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__eating-disorder-treatment-changes-kids-are-home"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/02/ninthgrid-PMF56fUd1LM-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__when-online-couples-therapy-fits"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/curated-lifestyle-wUys-HwvCWk-unsplash-1.jpg",
+    "pages": [
+      "blog",
+      "blog__managing-teen-anxiety-around-term-two-exams"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/dwayne-joe-Dpu7Le1kT3U-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__recognising-hidden-anxiety-in-brisbane-kids-at-term-ones-end"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/getty-images-9ro-xtoqygg-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__recognising-trauma-triggers-and-when-to-seek-counselling-in-brisbane"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/03/vitaly-gariev-U8A4mHyO5HM-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__trauma-therapy-teens-brisbane-first-three-sessions"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/birlesim-ozel-egitim-rehabilitasyon-merkezi-sjSOXEV_kmY-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__child-psychologist-in-brisbane-referrals-rebates-questions"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/kateryna-hliznitsova-Z8JfO29qBYE-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__recognizing-burnout-vs-anxiety-and-when-therapy-helps"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/ninthgrid-jvGOK_BO2S4-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__online-couples-therapy-for-brisbane-couples-tech"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/Rach.jpg",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/04/vitaly-gariev-lVEteug2d30-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__adult-therapy-services-can-reset-year"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/38882.jpg",
+    "pages": [
+      "online-therapy",
+      "therapy-services__adolescent-anxiety-depression",
+      "therapy-services__adult-therapy",
+      "therapy-services__bipolar-disorder",
+      "therapy-services__borderline-personality-disorder",
+      "therapy-services__burnout",
+      "therapy-services__child-adolescent-therapy",
+      "therapy-services__child-anxiety",
+      "therapy-services__christian-counselling",
+      "therapy-services__conflict-management",
+      "therapy-services__couples",
+      "therapy-services__diabetes",
+      "therapy-services__divorce-separation",
+      "therapy-services__domestic-violence",
+      "therapy-services__eating-disorders",
+      "therapy-services__emotional-regulation",
+      "therapy-services__family-therapy",
+      "therapy-services__interventions",
+      "therapy-services__managing-stress",
+      "therapy-services__narcissistic-personality-disorder",
+      "therapy-services__oppositional-defiant-disorder",
+      "therapy-services__parenting-skills-therapy",
+      "therapy-services__personality-disorders",
+      "therapy-services__trauma"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/85658.jpg",
+    "pages": [
+      "blog",
+      "blog__christian-therapy-services-for-brisbane-couples"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/bpd-therapy-nMKIafJb.webp",
+    "pages": [
+      "home",
+      "online-therapy",
+      "reference-data",
+      "therapy-services__oppositional-defiant-disorder"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/eating-disorder.jpg",
+    "pages": [
+      "blog",
+      "blog__helping-your-partner-during-eating-disorder"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/getty-images-KUYyJYtvy3s-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__eating-disorder-treatment-in-social-media-age"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/getty-images-qqr_ai28f1Q-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__healthy-boundaries-in-christian-online-therapy"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/MB-Online.jpg",
+    "pages": [
+      "online-therapy"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/nappy-lNG3LCtYiJQ-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__what-anxiety-therapy-looks-like-men"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/getty-images-5Ppyww1NFgo-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__marriage-counselling-in-brisbane-after-infidelity"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/getty-images-M3fkj_5o0eg-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__navigating-online-therapy"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/kateryna-hliznitsova-SO70tQmfKks-unsplash-2.jpg",
+    "pages": [
+      "blog",
+      "blog__psychodynamic-therapy-in-brisbane-making-sense"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/Meaningful-Brisbane-Psychology-hero-sunflower-scaled.webp",
+    "pages": [
+      "home",
+      "reference-data"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/meaningful-brisbane-psychology-sunflowers-cra.jpg",
+    "pages": [
+      "home",
+      "reference-data"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/pexels-gustavo-fring-7447074.jpg",
+    "pages": [
+      "blog",
+      "blog__rebuilding-intimacy-after-trauma"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/06/pexels-karola-g-6255607.jpg",
+    "pages": [
+      "blog",
+      "blog__maintaining-progress-between-trauma-therapy-counselling"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/curated-lifestyle-cuGX7yND9L0-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__finding-a-christian-path-to-calm"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/getty-images-daYn_XXCOFE-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__telehealth-counselling-when-youre-between-brisbane-homes"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/getty-images-mDmMlu8DL9E-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__choosing-between-family-therapy-couples-counselling"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/grant-harvey-psychologist.jpg",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/Kimberly-King-Counselling.webp",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/vitaly-gariev-SktdARcCuys-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__navigating-mental-health-counselling-after-a-diagnosis"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/07/vitaly-gariev-udv5YRcNz7M-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__navigating-trauma-counselling"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/2149277569.jpg",
+    "pages": [
+      "blog",
+      "blog__decoding-online-psychologists-in-brisbane"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/early-clues-of-eating-disorders-in-brisbane-parents-overlook-featured.webp",
+    "pages": [
+      "blog",
+      "blog__early-clues-of-eating-disorders-in-brisbane-parents-overlook"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/Eddie-Mktawa-1-e1788162070284.png",
+    "pages": [
+      "practitioners"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/getty-images-HjsKw973XG0-unsplash.jpg",
+    "pages": [
+      "blog",
+      "blog__hidden-impacts-of-trauma-on-brisbane-couples-and-relationships"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/08/misunderstood-signals-in-couples-featured.webp",
+    "pages": [
+      "blog",
+      "blog__misunderstood-signals-in-couples"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/early-relationship-counselling-featured.webp",
+    "pages": [
+      "blog",
+      "blog__early-relationship-counselling"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/managing-trauma-triggers-during-featured.webp",
+    "pages": [
+      "blog",
+      "blog__managing-trauma-triggers-during"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/what-trauma-counselling-in-brisbane-featured.webp",
+    "pages": [
+      "blog",
+      "blog__what-trauma-counselling-in-brisbane"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/09/when-mental-health-counselling-featured.webp",
+    "pages": [
+      "blog",
+      "blog__when-mental-health-counselling",
+      "reference-data"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/beyond-the-wedding-when-marriage-featured.webp",
+    "pages": [
+      "blog",
+      "blog__beyond-the-wedding-when-marriage",
+      "blog__online-therapy-in-brisbane-when-you",
+      "blog__recognising-ptsd-counselling-needs",
+      "blog__recognising-trauma-counselling-needs"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/online-therapy-in-brisbane-when-you-featured.webp",
+    "pages": [
+      "blog",
+      "blog__adult-therapy-services-can-reset-year",
+      "blog__beyond-the-wedding-when-marriage",
+      "blog__bipolar-disorder-treatment-options-in-brisbane",
+      "blog__child-psychologist-in-brisbane-referrals-rebates-questions",
+      "blog__choosing-between-family-therapy-couples-counselling",
+      "blog__christian-counseling-help-navigate-spiritual-lows",
+      "blog__christian-therapy-services-for-brisbane-couples",
+      "blog__decoding-online-psychologists-in-brisbane",
+      "blog__early-clues-of-eating-disorders-in-brisbane-parents-overlook",
+      "blog__early-relationship-counselling",
+      "blog__eating-disorder-treatment-changes-kids-are-home",
+      "blog__eating-disorder-treatment-in-social-media-age",
+      "blog__family-therapy-in-brisbane-over-christmas",
+      "blog__finding-a-christian-path-to-calm",
+      "blog__healthy-boundaries-in-christian-online-therapy",
+      "blog__helping-your-partner-during-eating-disorder",
+      "blog__hidden-impacts-of-trauma-on-brisbane-couples-and-relationships",
+      "blog__how-couples-counselling-changes",
+      "blog__how-depression-counselling-helps-during-wet-season",
+      "blog__how-trauma-counselling-supports-teen-healing",
+      "blog__is-online-therapy-right-for-teens-in-summer",
+      "blog__maintaining-progress-between-trauma-therapy-counselling",
+      "blog__managing-teen-anxiety-around-term-two-exams",
+      "blog__managing-trauma-triggers-during",
+      "blog__marriage-counselling-in-brisbane-after-infidelity",
+      "blog__marriage-counsellor-in-brisbane-after-separation",
+      "blog__misunderstood-signals-in-couples",
+      "blog__navigating-mental-health-counselling-after-a-diagnosis",
+      "blog__navigating-online-therapy",
+      "blog__navigating-trauma-counselling",
+      "blog__online-couples-therapy-for-brisbane-couples-tech",
+      "blog__online-therapy-in-brisbane-when-you",
+      "blog__psychodynamic-therapy-in-brisbane-making-sense",
+      "blog__ready-for-adult-therapy-services-in-january",
+      "blog__rebuilding-intimacy-after-trauma",
+      "blog__recognising-hidden-anxiety-in-brisbane-kids-at-term-ones-end",
+      "blog__recognising-ptsd-counselling-needs",
+      "blog__recognising-trauma-counselling-needs",
+      "blog__recognising-trauma-triggers-and-when-to-seek-counselling-in-brisbane",
+      "blog__recognising-when-your-child-needs-a-therapy-specialist",
+      "blog__recognizing-burnout-vs-anxiety-and-when-therapy-helps",
+      "blog__spring-anxiety-counselling-in-brisbane",
+      "blog__starting-online-therapy-sessions-from-home",
+      "blog__telehealth-counselling-when-youre-between-brisbane-homes",
+      "blog__trauma-therapy-teens-brisbane-first-three-sessions",
+      "blog__typical-family-therapy-session-in-brisbane",
+      "blog__what-anxiety-therapy-looks-like-men",
+      "blog__what-relationship-counselling-brisbane-looks-like",
+      "blog__what-to-expect-from-child-psychologist",
+      "blog__what-trauma-counselling-in-brisbane",
+      "blog__when-mental-health-counselling",
+      "blog__when-online-couples-therapy-fits",
+      "blog__why-teen-anxiety-feels-worse-in-january",
+      "reference-data",
+      "therapy-services__psychodynamic-therapy"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/recognising-ptsd-counselling-needs-featured.webp",
+    "pages": [
+      "blog",
+      "blog__adult-therapy-services-can-reset-year",
+      "blog__beyond-the-wedding-when-marriage",
+      "blog__bipolar-disorder-treatment-options-in-brisbane",
+      "blog__child-psychologist-in-brisbane-referrals-rebates-questions",
+      "blog__choosing-between-family-therapy-couples-counselling",
+      "blog__christian-counseling-help-navigate-spiritual-lows",
+      "blog__christian-therapy-services-for-brisbane-couples",
+      "blog__decoding-online-psychologists-in-brisbane",
+      "blog__early-clues-of-eating-disorders-in-brisbane-parents-overlook",
+      "blog__early-relationship-counselling",
+      "blog__eating-disorder-treatment-changes-kids-are-home",
+      "blog__eating-disorder-treatment-in-social-media-age",
+      "blog__family-therapy-in-brisbane-over-christmas",
+      "blog__finding-a-christian-path-to-calm",
+      "blog__healthy-boundaries-in-christian-online-therapy",
+      "blog__helping-your-partner-during-eating-disorder",
+      "blog__hidden-impacts-of-trauma-on-brisbane-couples-and-relationships",
+      "blog__how-couples-counselling-changes",
+      "blog__how-depression-counselling-helps-during-wet-season",
+      "blog__how-trauma-counselling-supports-teen-healing",
+      "blog__is-online-therapy-right-for-teens-in-summer",
+      "blog__maintaining-progress-between-trauma-therapy-counselling",
+      "blog__managing-teen-anxiety-around-term-two-exams",
+      "blog__managing-trauma-triggers-during",
+      "blog__marriage-counselling-in-brisbane-after-infidelity",
+      "blog__marriage-counsellor-in-brisbane-after-separation",
+      "blog__misunderstood-signals-in-couples",
+      "blog__navigating-mental-health-counselling-after-a-diagnosis",
+      "blog__navigating-online-therapy",
+      "blog__navigating-trauma-counselling",
+      "blog__online-couples-therapy-for-brisbane-couples-tech",
+      "blog__online-therapy-in-brisbane-when-you",
+      "blog__psychodynamic-therapy-in-brisbane-making-sense",
+      "blog__ready-for-adult-therapy-services-in-january",
+      "blog__rebuilding-intimacy-after-trauma",
+      "blog__recognising-hidden-anxiety-in-brisbane-kids-at-term-ones-end",
+      "blog__recognising-ptsd-counselling-needs",
+      "blog__recognising-trauma-counselling-needs",
+      "blog__recognising-trauma-triggers-and-when-to-seek-counselling-in-brisbane",
+      "blog__recognising-when-your-child-needs-a-therapy-specialist",
+      "blog__recognizing-burnout-vs-anxiety-and-when-therapy-helps",
+      "blog__spring-anxiety-counselling-in-brisbane",
+      "blog__starting-online-therapy-sessions-from-home",
+      "blog__telehealth-counselling-when-youre-between-brisbane-homes",
+      "blog__trauma-therapy-teens-brisbane-first-three-sessions",
+      "blog__typical-family-therapy-session-in-brisbane",
+      "blog__what-anxiety-therapy-looks-like-men",
+      "blog__what-relationship-counselling-brisbane-looks-like",
+      "blog__what-to-expect-from-child-psychologist",
+      "blog__what-trauma-counselling-in-brisbane",
+      "blog__when-mental-health-counselling",
+      "blog__when-online-couples-therapy-fits",
+      "blog__why-teen-anxiety-feels-worse-in-january"
+    ]
+  },
+  {
+    "url": "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/10/recognising-trauma-counselling-needs-featured.webp",
+    "pages": [
+      "blog",
+      "blog__adult-therapy-services-can-reset-year",
+      "blog__beyond-the-wedding-when-marriage",
+      "blog__bipolar-disorder-treatment-options-in-brisbane",
+      "blog__child-psychologist-in-brisbane-referrals-rebates-questions",
+      "blog__choosing-between-family-therapy-couples-counselling",
+      "blog__christian-counseling-help-navigate-spiritual-lows",
+      "blog__christian-therapy-services-for-brisbane-couples",
+      "blog__decoding-online-psychologists-in-brisbane",
+      "blog__early-clues-of-eating-disorders-in-brisbane-parents-overlook",
+      "blog__early-relationship-counselling",
+      "blog__eating-disorder-treatment-changes-kids-are-home",
+      "blog__eating-disorder-treatment-in-social-media-age",
+      "blog__family-therapy-in-brisbane-over-christmas",
+      "blog__finding-a-christian-path-to-calm",
+      "blog__healthy-boundaries-in-christian-online-therapy",
+      "blog__helping-your-partner-during-eating-disorder",
+      "blog__hidden-impacts-of-trauma-on-brisbane-couples-and-relationships",
+      "blog__how-couples-counselling-changes",
+      "blog__how-depression-counselling-helps-during-wet-season",
+      "blog__how-trauma-counselling-supports-teen-healing",
+      "blog__is-online-therapy-right-for-teens-in-summer",
+      "blog__maintaining-progress-between-trauma-therapy-counselling",
+      "blog__managing-teen-anxiety-around-term-two-exams",
+      "blog__managing-trauma-triggers-during",
+      "blog__marriage-counselling-in-brisbane-after-infidelity",
+      "blog__marriage-counsellor-in-brisbane-after-separation",
+      "blog__misunderstood-signals-in-couples",
+      "blog__navigating-mental-health-counselling-after-a-diagnosis",
+      "blog__navigating-online-therapy",
+      "blog__navigating-trauma-counselling",
+      "blog__online-couples-therapy-for-brisbane-couples-tech",
+      "blog__online-therapy-in-brisbane-when-you",
+      "blog__psychodynamic-therapy-in-brisbane-making-sense",
+      "blog__ready-for-adult-therapy-services-in-january",
+      "blog__rebuilding-intimacy-after-trauma",
+      "blog__recognising-hidden-anxiety-in-brisbane-kids-at-term-ones-end",
+      "blog__recognising-ptsd-counselling-needs",
+      "blog__recognising-trauma-counselling-needs",
+      "blog__recognising-trauma-triggers-and-when-to-seek-counselling-in-brisbane",
+      "blog__recognising-when-your-child-needs-a-therapy-specialist",
+      "blog__recognizing-burnout-vs-anxiety-and-when-therapy-helps",
+      "blog__spring-anxiety-counselling-in-brisbane",
+      "blog__starting-online-therapy-sessions-from-home",
+      "blog__telehealth-counselling-when-youre-between-brisbane-homes",
+      "blog__trauma-therapy-teens-brisbane-first-three-sessions",
+      "blog__typical-family-therapy-session-in-brisbane",
+      "blog__what-anxiety-therapy-looks-like-men",
+      "blog__what-relationship-counselling-brisbane-looks-like",
+      "blog__what-to-expect-from-child-psychologist",
+      "blog__what-trauma-counselling-in-brisbane",
+      "blog__when-mental-health-counselling",
+      "blog__when-online-couples-therapy-fits",
+      "blog__why-teen-anxiety-feels-worse-in-january"
+    ]
+  }
+]

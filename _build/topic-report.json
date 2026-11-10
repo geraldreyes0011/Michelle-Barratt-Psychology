@@ -1,0 +1,268 @@
+[
+  {
+    "slug": "adhd-therapy-children",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/child-adolescent-therapy/#adhd-therapy",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg"
+    ],
+    "links": [
+      "https://www.understood.org/en/learning-attention-issues/treatments-approaches/medications/types-of-adhd-medications"
+    ]
+  },
+  {
+    "slug": "child-anxiety",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "adolescent-anxiety-depression",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "child-self-esteem",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/child-adolescent-therapy/#child-self-esteem",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg"
+    ],
+    "links": []
+  },
+  {
+    "slug": "bullying",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/child-adolescent-therapy/#bullying",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg"
+    ],
+    "links": [],
+    "note": "Brief linked #child-self-esteem for Bullying; the source page has a dedicated #bullying section, which was used."
+  },
+  {
+    "slug": "emotional-dysregulation",
+    "status": "blank-source-inaccessible",
+    "source": "https://drive.google.com/drive/folders/19GwhBvpUvNaMy_shvTR9xtQdws0fgY_K",
+    "note": "Google Drive folder requires sign-in; nothing could be retrieved."
+  },
+  {
+    "slug": "grief-loss",
+    "status": "blank-source-inaccessible",
+    "source": "https://drive.google.com/drive/folders/1lug7hN_7BO1Uga8-cstasbdsaK_VGXcO",
+    "note": "Google Drive folder requires sign-in; nothing could be retrieved."
+  },
+  {
+    "slug": "child-adolescent-trauma",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/trauma/",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/trauma.jpg"
+    ],
+    "links": [],
+    "note": "Source is the general trauma page; only its children-and-young-people section was migrated (adult content stays on Trauma Therapy)."
+  },
+  {
+    "slug": "oppositional-defiant-disorder",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/oppositional-defiant-disorder/",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/01/angry-kid.jpg",
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/bpd-therapy-nMKIafJb.webp",
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/38882.jpg"
+    ],
+    "links": [
+      "/practitioners"
+    ]
+  },
+  {
+    "slug": "ptsd-children-teenagers",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "adult-therapy",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "adhd-therapy-assessment",
+    "status": "blank-source-inaccessible",
+    "source": "https://drive.google.com/drive/folders/1Ei1Nm9zr9dgPK0wV0o0YEkRz3PjI9tth",
+    "note": "Google Drive folder requires sign-in; nothing could be retrieved."
+  },
+  {
+    "slug": "burnout",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "christian-counselling",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "emotional-regulation",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "managing-stress",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "trauma",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "diabetes",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "parkinsons",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "pregnancy-birth-trauma",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "couples",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "family-therapy",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "conflict-management",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "domestic-violence",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "divorce-separation",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "parenting-skills-therapy",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "ptsd",
+    "status": "blank-source-inaccessible",
+    "source": "https://drive.google.com/drive/folders/1-VSovjJeZN6EIbjZULndNhrFg4CeMqUN",
+    "note": "Google Drive folder requires sign-in; nothing could be retrieved."
+  },
+  {
+    "slug": "autism-therapy",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "bipolar-disorder",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "borderline-personality-disorder",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "eating-disorders",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "narcissistic-personality-disorder",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "cbt",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/interventions/#cbt",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg"
+    ],
+    "links": []
+  },
+  {
+    "slug": "dbt",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/interventions/#dbt",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg"
+    ],
+    "links": [],
+    "note": "Brief linked #cbt for DBT; the source page has a dedicated #dbt section, which was used."
+  },
+  {
+    "slug": "emdr",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/interventions/#emdr",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg"
+    ],
+    "links": [],
+    "note": "Source section repeats the Behaviour Modification text under \"A Powerful Tool for Healing Trauma\" (copy error on the live site); that duplicate was left out."
+  },
+  {
+    "slug": "acceptance-commitment-therapy",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "psychodynamic-therapy",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "schema-therapy",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "assessments",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/assessment/",
+    "images": [],
+    "links": [
+      "/contact",
+      "/practitioners",
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/01/MBP-CONSENT-FORM-FOR-ASSESSMENTS-TO-BE-PROVIDED-2025-10th-JANUARY-2025.pdf"
+    ]
+  },
+  {
+    "slug": "ndis",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/referrals/#NDIS",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg"
+    ],
+    "links": []
+  },
+  {
+    "slug": "workcover",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "salvation-army-veterans",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  }
+]
