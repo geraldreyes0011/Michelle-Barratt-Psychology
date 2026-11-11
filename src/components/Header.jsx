@@ -147,8 +147,13 @@ export default function Header() {
       <div className="mx-auto max-w-[1800px] px-5 lg:px-8 2xl:px-10 h-20 flex items-center justify-between gap-6 2xl:gap-10">
         <Link to="/" onClick={close} aria-label="Michelle Barratt Psychology home" className="flex items-center gap-3 shrink-0">
           <img src={img(LOGO)} alt="" width="64" height="64" className="h-16 w-16 object-contain" />
-          <span className="font-heading text-[18px] md:text-[20px] 2xl:text-[22px] font-semibold text-plum leading-[1.15]">
-            Michelle Barratt<br className="sm:hidden" /> Psychology
+          <span className="text-center">
+            <span className="block font-heading text-[18px] md:text-[20px] 2xl:text-[22px] font-semibold text-plum leading-[1.15]">
+              <span className="brand-pink">M</span>ichelle <span className="brand-pink">B</span>arratt<br className="sm:hidden" /> <span className="brand-pink">P</span>sychology
+            </span>
+            <span className="brand-subtitle block font-heading uppercase text-plum">
+              &amp; Administration Services – <span className="brand-pink font-semibold">MBP</span>
+            </span>
           </span>
         </Link>
         <nav aria-label="Primary" className="hidden min-[1440px]:flex items-center gap-4 2xl:gap-7">

@@ -21,3 +21,9 @@ article[id] { scroll-margin-top: 8.5rem; }
   .section-photo-grid { grid-template-columns: minmax(0, 1fr) 340px; }
   .section-photo { max-width: none; }
 }
+
+/* Brand name in header and footer: pink initials and the "& Administration Services – MBP"
+   subtitle, per the supplied brand reference. */
+.brand-pink { color: #D84B83; }
+.brand-subtitle { margin-top: 0.25rem; font-size: 8px; letter-spacing: 0.14em; line-height: 1.2; white-space: nowrap; }
+@media (width>=640px) { .brand-subtitle { font-size: 9px; letter-spacing: 0.22em; } }
