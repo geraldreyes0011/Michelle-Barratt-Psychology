@@ -25,5 +25,16 @@ article[id] { scroll-margin-top: 8.5rem; }
 /* Brand name in header and footer: pink initials and the "& Administration Services – MBP"
    subtitle, per the supplied brand reference. */
 .brand-pink { color: #D84B83; }
-.brand-subtitle { margin-top: 0.25rem; font-size: 8px; letter-spacing: 0.14em; line-height: 1.2; white-space: nowrap; }
-@media (width>=640px) { .brand-subtitle { font-size: 9px; letter-spacing: 0.22em; } }
+.brand-dark { color: #263C37; } /* the brand's dark letters, kept off the site palette */
+.brand-subtitle { margin-top: 0.25rem; font-size: 9px; letter-spacing: 0.14em; line-height: 1.2; white-space: nowrap; }
+@media (width>=640px) { .brand-subtitle { font-size: 10.5px; letter-spacing: 0.22em; } }
+
+/* Gold (#EEB506) buttons carry dark text, as in the brand reference; white is unreadable on gold. */
+.bg-rose.text-white, .bg-sun.text-white { color: #1C302D; }
+
+/* Page heroes: deep green strongest on the left, fading so the photo shows on the right. */
+.hero-overlay {
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 0.38) 0%, rgb(0 0 0 / 0.2) 45%, rgb(0 0 0 / 0) 75%),
+    linear-gradient(90deg, rgb(0 103 79 / 0.96) 0%, rgb(0 103 79 / 0.88) 32%, rgb(0 103 79 / 0.45) 62%, rgb(0 103 79 / 0.08) 100%);
+}

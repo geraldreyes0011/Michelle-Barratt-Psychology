@@ -7,7 +7,7 @@ export function PhotoHero({ image, children }) {
   return (
     <section className="relative isolate overflow-hidden bg-plum text-white">
       {image && <img src={img(image.src)} alt={image.alt} fetchpriority="high" className="absolute inset-0 h-full w-full object-cover object-center" />}
-      <div className="absolute inset-0 bg-gradient-to-r from-plum/95 via-plum/90 to-plum/45" aria-hidden="true" />
+      <div className="absolute inset-0 hero-overlay" aria-hidden="true" />
       <div className="relative mx-auto max-w-7xl px-5 py-12 md:py-16">{children}</div>
     </section>
   );

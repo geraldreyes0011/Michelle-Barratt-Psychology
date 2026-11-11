@@ -148,10 +148,10 @@ export default function Header() {
         <Link to="/" onClick={close} aria-label="Michelle Barratt Psychology home" className="flex items-center gap-3 shrink-0">
           <img src={img(LOGO)} alt="" width="64" height="64" className="h-16 w-16 object-contain" />
           <span className="text-center">
-            <span className="block font-heading text-[18px] md:text-[20px] 2xl:text-[22px] font-semibold text-plum leading-[1.15]">
+            <span className="brand-dark block font-heading text-[18px] md:text-[20px] 2xl:text-[22px] font-semibold leading-[1.15]">
               <span className="brand-pink">M</span>ichelle <span className="brand-pink">B</span>arratt<br className="sm:hidden" /> <span className="brand-pink">P</span>sychology
             </span>
-            <span className="brand-subtitle block font-heading uppercase text-plum">
+            <span className="brand-dark brand-subtitle block font-heading uppercase">
               &amp; Administration Services – <span className="brand-pink font-semibold">MBP</span>
             </span>
           </span>

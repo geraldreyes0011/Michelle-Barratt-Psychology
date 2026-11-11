@@ -69,7 +69,7 @@ export function backgroundHero(html, hero) {
   let after = html.slice(i + GRADIENT_HERO.length);
   const j = after.indexOf('<div class="mx-auto max-w-');
   if (j !== -1) after = `${after.slice(0, j)}<div class="relative ${after.slice(j + 12)}`;
-  return `${before}<section class="relative isolate overflow-hidden bg-plum text-white"><img src="${attr(hero.src)}" alt="${attr(hero.alt)}" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover object-center"/><div class="absolute inset-0 bg-gradient-to-r from-plum/95 via-plum/90 to-plum/45" aria-hidden="true"></div>${after}`;
+  return `${before}<section class="relative isolate overflow-hidden bg-plum text-white"><img src="${attr(hero.src)}" alt="${attr(hero.alt)}" fetchpriority="high" class="absolute inset-0 h-full w-full object-cover object-center"/><div class="absolute inset-0 hero-overlay" aria-hidden="true"></div>${after}`;
 }
 
 // ------------------------------------------------------------------ requested updates
