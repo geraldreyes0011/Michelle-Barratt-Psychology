@@ -32,11 +32,12 @@ article[id] { scroll-margin-top: 8.5rem; }
 /* Yellow (#FFD200) buttons carry deep-teal text, per the MBP brand kit; white is unreadable on yellow. */
 .bg-rose.text-white, .bg-sun.text-white { color: #004C54; }
 
-/* Page heroes: Deep Ocean Teal strongest on the left, fading so the photo shows on the right. */
+/* Page heroes: Deep Ocean Teal strongest on the left, fading out at about three-quarters across (~77%) so the far right
+   of the photo is untinted. Eased stops avoid a visible edge. */
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgb(0 0 0 / 0.3) 0%, rgb(0 0 0 / 0.15) 45%, rgb(0 0 0 / 0) 75%),
-    linear-gradient(90deg, rgb(0 76 84 / 0.96) 0%, rgb(0 76 84 / 0.88) 32%, rgb(0 76 84 / 0.45) 62%, rgb(0 76 84 / 0.08) 100%);
+    linear-gradient(90deg, rgb(0 0 0 / 0.3) 0%, rgb(0 0 0 / 0.16) 37%, rgb(0 0 0 / 0.05) 60%, rgb(0 0 0 / 0) 74%),
+    linear-gradient(90deg, rgb(0 76 84 / 0.96) 0%, rgb(0 76 84 / 0.9) 30%, rgb(0 76 84 / 0.66) 48%, rgb(0 76 84 / 0.34) 62%, rgb(0 76 84 / 0.1) 70%, rgb(0 76 84 / 0) 77%);
 }
 
 /* Accent labels read in Ocean Teal on light backgrounds and switch to the yellow accent on
@@ -67,6 +68,22 @@ article[id] { scroll-margin-top: 8.5rem; }
 .brand-dropdown a.font-heading:hover { color: #fff; }
 .brand-dropdown .border-lilac, .brand-dropdown .divide-lilac > :not([hidden]) ~ :not([hidden]) { border-color: rgb(255 255 255 / 0.18); }
 .brand-dropdown :focus-visible { outline-color: #FFD200; }
+
+/* Therapy Services mega-menu: each yellow category heading reveals its services in a nested
+   dropdown directly beneath it (no gap, so the pointer can move into it), fading and sliding in. */
+.mega-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 1.5rem; row-gap: 0.75rem; align-items: start; }
+.mega-heading { cursor: default; }
+.mega-heading svg { opacity: 0.75; }
+.mega-flyout {
+  position: absolute; z-index: 20; top: 100%; left: -0.75rem; width: calc(100% + 1.5rem); min-width: 15rem;
+  padding: 0.75rem; border: 1px solid rgb(255 255 255 / 0.14); border-radius: 0.375rem;
+  background-color: rgb(0 76 84 / 0.98);
+  box-shadow: 0 16px 24px -8px rgb(0 0 0 / 0.3), 0 4px 8px rgb(0 0 0 / 0.12);
+  opacity: 0; visibility: hidden; transform: translateY(-4px);
+  transition: opacity 200ms ease, transform 200ms ease, visibility 0s linear 200ms;
+}
+.mega-flyout.is-open { opacity: 1; visibility: visible; transform: none; transition: opacity 200ms ease, transform 200ms ease, visibility 0s; }
+@media (prefers-reduced-motion: reduce) { .mega-flyout, .mega-flyout.is-open { transition: none; transform: none; } }
 
 /* Main header nav items (links and dropdown triggers): on hover, a 2px lift and a thin underline
    in the item's own colour that grows from the centre. */

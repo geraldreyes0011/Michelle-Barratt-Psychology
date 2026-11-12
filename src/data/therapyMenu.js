@@ -108,8 +108,20 @@ export const therapyMenu = [
   },
 ];
 
-// Desktop mega-menu columns (category indexes), balanced to ~10 links per column.
-export const megaMenuColumns = [[0], [1], [2, 3], [4, 6], [5]];
+// Desktop mega-menu: eight categories in the client's order, with Wellbeing Therapy shown as its
+// own category (it stays a subgroup of Individual & Adult Therapy elsewhere on the site).
+const byId = (id) => therapyMenu.find((c) => c.id === id);
+const individual = byId('individual-and-adult-therapy');
+export const megaMenuCategories = [
+  byId('children-and-adolescent-therapy'),
+  { ...individual, subgroup: undefined },
+  byId('relationships-and-family-therapy'),
+  byId('complex-clinical-therapy'),
+  byId('interventions-and-approaches'),
+  byId('trauma-and-ptsd-therapy'),
+  { id: 'wellbeing-therapy', title: individual.subgroup.title, links: individual.subgroup.links },
+  byId('other-services-and-care-hub'),
+];
 
 // Reference pages that are no longer listed in the menu keep their route; this is
 // the category they now sit under for their eyebrow and "More in" links.
