@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { ChevronDown, MapPin, Menu, Phone, X } from './Icons.jsx';
 import { LOGO, PHONE, helpfulInfoGroups, img, topLinks } from '../data/site.js';
 import { categoryHref, megaMenuColumns, therapyMenu } from '../data/therapyMenu.js';
@@ -33,7 +33,7 @@ function Dropdown({ label, children, panelClass = '' }) {
         aria-expanded={open}
         aria-haspopup="true"
         onClick={() => setOpen((o) => !o)}
-        className="inline-flex items-center gap-1.5 text-[11px] 2xl:text-[12px] font-semibold uppercase tracking-[0.1em] 2xl:tracking-[0.14em] text-plum hover:text-rose transition-colors py-2 whitespace-nowrap"
+        className={cn('inline-flex items-center gap-1.5 text-[11px] 2xl:text-[12px] font-semibold uppercase tracking-[0.1em] 2xl:tracking-[0.14em] transition-colors py-2 whitespace-nowrap', open ? 'text-sun' : 'text-plum')}
       >
         {label}
         <ChevronDown className={cn('h-3.5 w-3.5 transition-transform duration-200', open && 'rotate-180')} />
@@ -43,7 +43,7 @@ function Dropdown({ label, children, panelClass = '' }) {
         style={shift ? { marginLeft: shift } : undefined}
         className={cn('absolute left-0 top-full pt-3 z-50 transition-all duration-200', open ? 'opacity-100 translate-y-0 visible' : 'opacity-0 translate-y-1 invisible', panelClass)}
       >
-        <div className="bg-white border border-lilac rounded shadow-xl p-5" onClick={() => setOpen(false)}>
+        <div className="brand-dropdown bg-white border border-lilac rounded shadow-xl p-5" onClick={() => setOpen(false)}>
           {children}
         </div>
       </div>
@@ -131,7 +131,8 @@ function MobileNav({ onNavigate }) {
   );
 }
 
-const topLinkClass = 'text-[11px] 2xl:text-[12px] font-semibold uppercase tracking-[0.1em] 2xl:tracking-[0.14em] text-plum hover:text-rose transition-colors py-2 whitespace-nowrap';
+// Top-level items: no hover colour; the current page's item is yellow.
+const topLinkClass = ({ isActive }) => cn('text-[11px] 2xl:text-[12px] font-semibold uppercase tracking-[0.1em] 2xl:tracking-[0.14em] transition-colors py-2 whitespace-nowrap', isActive ? 'text-sun' : 'text-plum');
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -171,7 +172,7 @@ export default function Header() {
               </Link>
             </div>
           </Dropdown>
-          {topLinks.map(([label, to]) => <Link key={to} to={to} className={topLinkClass}>{label}</Link>)}
+          {topLinks.map(([label, to]) => <NavLink key={to} to={to} className={topLinkClass}>{label}</NavLink>)}
           <Dropdown label="Helpful Info" panelClass="right-0 left-auto w-[min(900px,calc(100vw-3rem))]">
             <div className="grid grid-cols-3 gap-7">
               {helpfulInfoGroups.map((g) => (

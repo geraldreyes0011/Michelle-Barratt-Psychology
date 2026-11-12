@@ -29,12 +29,66 @@ article[id] { scroll-margin-top: 8.5rem; }
 .brand-subtitle { margin-top: 0.25rem; font-size: 9px; letter-spacing: 0.14em; line-height: 1.2; white-space: nowrap; }
 @media (width>=640px) { .brand-subtitle { font-size: 10.5px; letter-spacing: 0.22em; } }
 
-/* Gold (#EEB506) buttons carry dark text, as in the brand reference; white is unreadable on gold. */
-.bg-rose.text-white, .bg-sun.text-white { color: #1C302D; }
+/* Yellow (#FFD200) buttons carry deep-teal text, per the MBP brand kit; white is unreadable on yellow. */
+.bg-rose.text-white, .bg-sun.text-white { color: #004C54; }
 
-/* Page heroes: deep green strongest on the left, fading so the photo shows on the right. */
+/* Page heroes: Deep Ocean Teal strongest on the left, fading so the photo shows on the right. */
 .hero-overlay {
   background:
-    linear-gradient(90deg, rgb(0 0 0 / 0.38) 0%, rgb(0 0 0 / 0.2) 45%, rgb(0 0 0 / 0) 75%),
-    linear-gradient(90deg, rgb(0 103 79 / 0.96) 0%, rgb(0 103 79 / 0.88) 32%, rgb(0 103 79 / 0.45) 62%, rgb(0 103 79 / 0.08) 100%);
+    linear-gradient(90deg, rgb(0 0 0 / 0.3) 0%, rgb(0 0 0 / 0.15) 45%, rgb(0 0 0 / 0) 75%),
+    linear-gradient(90deg, rgb(0 76 84 / 0.96) 0%, rgb(0 76 84 / 0.88) 32%, rgb(0 76 84 / 0.45) 62%, rgb(0 76 84 / 0.08) 100%);
+}
+
+/* Accent labels read in Ocean Teal on light backgrounds and switch to the yellow accent on
+   deep-teal backgrounds, where yellow has the contrast. */
+:is(.bg-plum, .bg-ink, .bg-ocean, .from-plum) .text-rose,
+:is(.bg-plum, .bg-ink, .bg-ocean, .from-plum) .hover\:text-rose:hover { color: #FFD200; }
+:is(.bg-plum, .bg-ink, .bg-ocean, .from-plum) :is(.bg-white, .bg-soft) .text-rose { color: #2E6F7A; }
+
+/* Header dropdowns (Therapy Services, Helpful Info): Deep Ocean Teal panel so the yellow
+   category headings stay readable; links light, yellow on hover. */
+.brand-dropdown.bg-white { background-color: #004C54; border-color: #2E6F7A; }
+/* Both panels: same Deep Ocean Teal at 92% with a light blur behind it. */
+.brand-dropdown.bg-white {
+  background-color: rgb(0 76 84 / 0.92);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1), 0 2px 6px rgb(0 0 0 / 0.08);
+}
+.brand-dropdown :is(.text-rose, .text-\[\#C32D70\]) { color: #FFD200; }
+.brand-dropdown :is(.text-ink\/85, .text-plum) { color: rgb(255 255 255 / 0.9); }
+.brand-dropdown :is(.hover\:text-rose, .hover\:text-plum):hover { color: #FFD200; }
+.brand-dropdown a.font-heading:hover { color: #fff; }
+.brand-dropdown .border-lilac, .brand-dropdown .divide-lilac > :not([hidden]) ~ :not([hidden]) { border-color: rgb(255 255 255 / 0.18); }
+.brand-dropdown :focus-visible { outline-color: #FFD200; }
+
+/* Mobile menu sits on the light header, so its category headings use Ocean Teal. */
+#mobile-nav .text-\[\#C32D70\] { color: #2E6F7A; }
+
+/* Brand-kit graphics, used sparingly: flowing teal lines and a botanical sprig with yellow
+   organic shapes (plus a touch of pink and plum) in the corners of the closing call-to-action
+   section on each page, and faint flowing lines in the footer. Decorative only, behind content,
+   and shown only where the corners are clear of text. */
+section[class="bg-blush"]:has(> .max-w-4xl.text-center), footer.bg-plum { position: relative; isolation: isolate; }
+@media (width>=1024px) {
+  section[class="bg-blush"]:has(> .max-w-4xl.text-center)::before,
+  section[class="bg-blush"]:has(> .max-w-4xl.text-center)::after {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    background-repeat: no-repeat; background-size: contain;
+  }
+  section[class="bg-blush"]:has(> .max-w-4xl.text-center)::before {
+    left: 0; top: 0; width: 320px; height: 120px; opacity: 0.6; background-position: left top;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 120' fill='none' stroke-linecap='round'%3E%3Cpath d='M0 28C60 4 110 52 170 34S270 2 320 18' stroke='%236E9F9A' stroke-width='2.5'/%3E%3Cpath d='M0 48C64 22 116 74 178 54S276 22 320 40' stroke='%232E6F7A' stroke-width='2'/%3E%3Cpath d='M0 68C70 42 124 94 186 74S282 44 320 62' stroke='%23A9C0C8' stroke-width='2'/%3E%3C/svg%3E");
+  }
+  section[class="bg-blush"]:has(> .max-w-4xl.text-center)::after {
+    right: 32px; bottom: 0; width: 240px; height: 240px; opacity: 0.85; background-position: right bottom;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Cpath d='M138 70c42-16 90 6 93 50 3 41-31 74-74 73-38-2-66-28-62-62 2-28 18-51 43-61z' fill='%23FFD200' fill-opacity='.5'/%3E%3Ccircle cx='70' cy='196' r='20' fill='%23FFD200' fill-opacity='.35'/%3E%3Cg fill='none' stroke='%23004C54' stroke-opacity='.65' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M56 238C98 196 136 142 176 34'/%3E%3Cpath d='M84 208C66 190 46 186 32 192 46 208 66 214 84 208Z'/%3E%3Cpath d='M106 182C126 172 140 156 142 138 124 144 110 160 106 182Z'/%3E%3Cpath d='M124 156C104 140 86 138 72 146 88 160 108 164 124 156Z'/%3E%3Cpath d='M142 124C162 112 174 94 174 76 156 84 144 102 142 124Z'/%3E%3Cpath d='M156 92C140 74 122 68 108 72 120 88 140 96 156 92Z'/%3E%3Cpath d='M170 56C186 44 194 28 192 12 176 22 168 38 170 56Z'/%3E%3C/g%3E%3Cpath d='M94 194c14-10 30-12 42-6-10 12-26 16-42 6z' fill='%23F10C45' fill-opacity='.55'/%3E%3Cpath d='M160 74c4-14 16-22 28-22-2 14-14 22-28 22z' fill='%234A1458' fill-opacity='.45'/%3E%3C/svg%3E");
+  }
+}
+@media (width>=768px) {
+  footer.bg-plum::before {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    top: 0; right: 0; width: min(680px, 55%); height: 210px; opacity: 0.22;
+    background: no-repeat right top / contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 680 210' fill='none' stroke-linecap='round'%3E%3Cpath d='M0 40C120 4 220 90 340 52S560 0 680 30' stroke='%236E9F9A' stroke-width='2.5'/%3E%3Cpath d='M0 72C130 34 232 124 354 86S572 36 680 64' stroke='%23A9C0C8' stroke-width='2'/%3E%3Cpath d='M0 104C140 66 244 156 368 118S584 72 680 98' stroke='%232E6F7A' stroke-width='2'/%3E%3Cpath d='M220 136C300 112 360 160 440 140' stroke='%23FFD200' stroke-width='1.5'/%3E%3C/svg%3E");
+  }
 }
