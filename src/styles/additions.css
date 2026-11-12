@@ -73,6 +73,9 @@ article[id] { scroll-margin-top: 8.5rem; }
    dropdown directly beneath it (no gap, so the pointer can move into it), fading and sliding in. */
 .mega-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 1.5rem; row-gap: 0.75rem; align-items: start; }
 .mega-heading { cursor: default; }
+/* Category headings rest white, turn #FFD200 on hover and stay yellow while their list is open. */
+.brand-dropdown .mega-heading { color: #fff; transition: color 250ms ease; }
+.brand-dropdown .mega-heading:hover, .brand-dropdown .mega-heading[aria-expanded="true"] { color: #FFD200; }
 .mega-heading svg { opacity: 0.75; }
 .mega-flyout {
   position: absolute; z-index: 20; top: 100%; left: -0.75rem; width: calc(100% + 1.5rem); min-width: 15rem;
