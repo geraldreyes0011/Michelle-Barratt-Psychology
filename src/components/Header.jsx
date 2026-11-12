@@ -1,4 +1,4 @@
-import { useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { ChevronDown, MapPin, Menu, Phone, X } from './Icons.jsx';
 import { LOGO, PHONE, helpfulInfoGroups, img, topLinks } from '../data/site.js';
@@ -12,6 +12,11 @@ function Dropdown({ label, children, panelClass = '' }) {
   const [shift, setShift] = useState(0);
   const ref = useRef(null);
   const panelRef = useRef(null);
+  // A short grace period before closing, so a diagonal move from the trigger to the panel
+  // (which briefly leaves both) does not close and reopen it.
+  const closeTimer = useRef(null);
+  const cancelClose = () => clearTimeout(closeTimer.current);
+  useEffect(() => cancelClose, []);
   // Panels open from the button's left edge (reference); pull a wide panel back inside the viewport.
   useLayoutEffect(() => {
     if (!open || !panelRef.current) return;
@@ -23,8 +28,8 @@ function Dropdown({ label, children, panelClass = '' }) {
     <div
       ref={ref}
       className="relative"
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      onMouseEnter={() => { cancelClose(); setOpen(true); }}
+      onMouseLeave={() => { cancelClose(); closeTimer.current = setTimeout(() => setOpen(false), 200); }}
       onBlur={(e) => { if (!ref.current?.contains(e.relatedTarget)) setOpen(false); }}
       onKeyDown={(e) => { if (e.key === 'Escape') setOpen(false); }}
     >
@@ -33,7 +38,7 @@ function Dropdown({ label, children, panelClass = '' }) {
         aria-expanded={open}
         aria-haspopup="true"
         onClick={() => setOpen((o) => !o)}
-        className={cn('inline-flex items-center gap-1.5 text-[11px] 2xl:text-[12px] font-semibold uppercase tracking-[0.1em] 2xl:tracking-[0.14em] transition-colors py-2 whitespace-nowrap', open ? 'text-sun' : 'text-plum')}
+        className={cn('nav-anim inline-flex items-center gap-1.5 text-[11px] 2xl:text-[12px] font-semibold uppercase tracking-[0.1em] 2xl:tracking-[0.14em] transition-colors py-2 whitespace-nowrap', open ? 'text-sun' : 'text-plum')}
       >
         {label}
         <ChevronDown className={cn('h-3.5 w-3.5 transition-transform duration-200', open && 'rotate-180')} />
@@ -132,7 +137,7 @@ function MobileNav({ onNavigate }) {
 }
 
 // Top-level items: no hover colour; the current page's item is yellow.
-const topLinkClass = ({ isActive }) => cn('text-[11px] 2xl:text-[12px] font-semibold uppercase tracking-[0.1em] 2xl:tracking-[0.14em] transition-colors py-2 whitespace-nowrap', isActive ? 'text-sun' : 'text-plum');
+const topLinkClass = ({ isActive }) => cn('nav-anim text-[11px] 2xl:text-[12px] font-semibold uppercase tracking-[0.1em] 2xl:tracking-[0.14em] transition-colors py-2 whitespace-nowrap', isActive ? 'text-sun' : 'text-plum');
 
 export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
