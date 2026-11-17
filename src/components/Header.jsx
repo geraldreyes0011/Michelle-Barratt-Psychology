@@ -1,10 +1,28 @@
 import { useEffect, useLayoutEffect, useRef, useState } from 'react';
-import { Link, NavLink, useNavigate } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { ChevronDown, MapPin, Menu, Phone, X } from './Icons.jsx';
 import { LOGO, PHONE, helpfulInfoGroups, img, topLinks } from '../data/site.js';
-import { categoryHref, megaMenuCategories, therapyMenu } from '../data/therapyMenu.js';
+import { therapyMenu } from '../data/therapyMenu.js';
 
 export const cn = (...c) => c.filter(Boolean).join(' ');
+
+// Dropdown links are listed A-Z by displayed name; group order is set explicitly below.
+const az = (a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : a.toLowerCase() > b.toLowerCase() ? 1 : 0);
+const helpfulInfoOrder = ['Policies', 'Client Resources', 'Mental Health Information'];
+const helpfulInfoMenu = [...helpfulInfoGroups]
+  .map((g) => ({ ...g, links: [...g.links].sort((x, y) => az(x[0], y[0])) }))
+  .sort((x, y) => helpfulInfoOrder.indexOf(x.title) - helpfulInfoOrder.indexOf(y.title));
+
+// Navigation order set by the client (menus only; the Therapy Services page keeps its own order).
+const therapyMenuOrder = [
+  'children-and-adolescent-therapy',
+  'individual-and-adult-therapy',
+  'relationships-and-family-therapy',
+  'trauma-and-ptsd-therapy',
+  'complex-clinical-therapy',
+  'types-of-therapy',
+];
+const navTherapyMenu = [...therapyMenu].sort((a, b) => therapyMenuOrder.indexOf(a.id) - therapyMenuOrder.indexOf(b.id));
 
 // Hover/click dropdown with fade + 4px rise (reference: opacity/translate-y, 200ms).
 function Dropdown({ label, children, panelClass = '', onDoubleClick }) {
@@ -60,25 +78,74 @@ function Dropdown({ label, children, panelClass = '', onDoubleClick }) {
 
 const megaLinkClass = 'text-[14px] leading-snug text-ink/85 hover:text-rose transition-colors';
 
-// Therapy Services mega-menu: yellow category headings (not links). Hovering a heading reveals its
-// services in a nested dropdown beneath it; on touch screens and keyboards the heading toggles it.
-// Services open their own page in a new tab. Styles: .mega-heading / .mega-flyout in additions.css.
+// Therapy Services mega-menu: six category headings in one row of columns (Types of Therapy in
+// its own column). Hovering a heading reveals its services in a nested dropdown beneath it; on
+// touch screens and keyboards the heading toggles it. Secondary categories inside a dropdown expand
+// and collapse on click/tap/Enter. Services open their own page in a new tab.
+// Styles: .mega-grid / .mega-heading / .mega-flyout / .mega-sub in additions.css.
+function MegaLinks({ links }) {
+  // The page being viewed is marked so its link shows the highlighted (active) state.
+  const { pathname } = useLocation();
+  return (
+    <ul className="mega-list">
+      {links.map((l) => (
+        <li key={l.label}><Link to={l.to} target="_blank" rel="noopener" className={cn('dd-item', megaLinkClass, !l.hash && l.to === pathname && 'is-current')}>{l.label}</Link></li>
+      ))}
+    </ul>
+  );
+}
+
+// A secondary category inside a category dropdown. With a mouse, resting on it for a moment opens
+// its list (it stays open while the pointer moves into the list, so nothing jumps or disappears);
+// click / tap / Enter toggles it. Lists close when their category dropdown changes or closes.
+function MegaSubgroup({ id, group, open, onToggle, onHoverOpen }) {
+  const intent = useRef(null);
+  const hoverOpenedAt = useRef(0);
+  useEffect(() => () => clearTimeout(intent.current), []);
+  // A click that lands just after hover opened the list confirms it rather than closing it again.
+  const onClick = () => {
+    clearTimeout(intent.current);
+    if (open && Date.now() - hoverOpenedAt.current < 700) { hoverOpenedAt.current = 0; return; }
+    onToggle();
+  };
+  return (
+    <div
+      className="mega-subgroup"
+      onPointerEnter={(e) => { if (e.pointerType === 'mouse' && !open) intent.current = setTimeout(() => { hoverOpenedAt.current = Date.now(); onHoverOpen(); }, 120); }}
+      onPointerLeave={() => clearTimeout(intent.current)}
+    >
+      <button type="button" className="mega-sub-toggle" aria-expanded={open} aria-controls={id} onClick={onClick}>
+        <span>{group.title}</span>
+        <ChevronDown className={cn('h-3.5 w-3.5 shrink-0 transition-transform duration-200', open && 'rotate-180')} />
+      </button>
+      <div id={id} className={cn('mega-sub', open && 'is-open')}>
+        <div><div className="mega-sub-list"><MegaLinks links={group.links} /></div></div>
+      </div>
+    </div>
+  );
+}
+
 function TherapyMegaMenu() {
   const [openId, setOpenId] = useState(null);
+  const [openSubs, setOpenSubs] = useState(() => new Set());
   // Short grace period before closing, so brushing past a gap does not flicker the list.
   const timer = useRef(null);
   const cancel = () => clearTimeout(timer.current);
   useEffect(() => cancel, []);
+  // Switching category starts its secondary categories collapsed.
+  const show = (id) => setOpenId((cur) => { if (cur !== id) setOpenSubs(new Set()); return id; });
+  const toggleSub = (key) => setOpenSubs((cur) => { const next = new Set(cur); if (next.has(key)) next.delete(key); else next.add(key); return next; });
+  const openSub = (key) => setOpenSubs((cur) => (cur.has(key) ? cur : new Set(cur).add(key)));
   return (
     <div className="mega-grid">
-      {megaMenuCategories.map((c) => {
+      {navTherapyMenu.map((c, i) => {
         const open = openId === c.id;
         const listId = `mega-${c.id}`;
         return (
           <div
             key={c.id}
-            className="relative"
-            onPointerEnter={(e) => { if (e.pointerType !== 'mouse') return; cancel(); setOpenId(c.id); }}
+            className={cn('relative', i >= navTherapyMenu.length - 2 && 'mega-end')}
+            onPointerEnter={(e) => { if (e.pointerType !== 'mouse') return; cancel(); show(c.id); }}
             onPointerLeave={(e) => { if (e.pointerType !== 'mouse') return; cancel(); timer.current = setTimeout(() => setOpenId((id) => (id === c.id ? null : id)), 150); }}
           >
             <button
@@ -86,17 +153,17 @@ function TherapyMegaMenu() {
               className="mega-heading flex w-full items-start justify-between gap-2 py-1 text-left font-heading text-lg font-semibold leading-tight text-[#C32D70]"
               aria-expanded={open}
               aria-controls={listId}
-              onClick={(e) => { cancel(); setOpenId(e.nativeEvent.pointerType === 'mouse' || !open ? c.id : null); }}
+              onClick={(e) => { cancel(); if (e.nativeEvent.pointerType === 'mouse' || !open) show(c.id); else setOpenId(null); }}
             >
               <span>{c.title}</span>
               <ChevronDown className={cn('mt-1 h-3.5 w-3.5 shrink-0 transition-transform duration-200', open && 'rotate-180')} />
             </button>
             <div id={listId} className={cn('mega-flyout', open && 'is-open')}>
-              <ul className="space-y-1.5">
-                {c.links.map((l) => (
-                  <li key={l.to}><Link to={l.to} target="_blank" rel="noopener" className={megaLinkClass}>{l.label}</Link></li>
-                ))}
-              </ul>
+              {c.links.length > 0 && <MegaLinks links={c.links} />}
+              {(c.subgroups ?? []).map((g) => {
+                const key = `${c.id}:${g.title}`;
+                return <MegaSubgroup key={key} id={`mega-${c.id}-${g.title.toLowerCase().replace(/[^a-z]+/g, '-')}`} group={g} open={openSubs.has(key)} onToggle={() => toggleSub(key)} onHoverOpen={() => openSub(key)} />;
+              })}
             </div>
           </div>
         );
@@ -121,21 +188,38 @@ function MobileSection({ label, children }) {
   );
 }
 
+// Nested tap-to-expand group inside the mobile menu (therapy categories and their secondary categories).
+function MobileGroup({ title, level = 1, children }) {
+  const [open, setOpen] = useState(false);
+  return (
+    <div className={level === 1 ? 'pt-2' : 'pt-1 pl-3 border-l border-lilac'}>
+      <button
+        type="button"
+        aria-expanded={open}
+        onClick={() => setOpen((o) => !o)}
+        className={cn('w-full flex items-center justify-between gap-3 text-left', level === 1 ? 'py-1.5 font-heading text-lg text-[#C32D70]' : 'py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-rose')}
+      >
+        {title}
+        <ChevronDown className={cn('h-4 w-4 shrink-0 transition-transform', open && 'rotate-180')} />
+      </button>
+      {open && <div className="pb-1">{children}</div>}
+    </div>
+  );
+}
+
 function MobileNav({ onNavigate }) {
   return (
     <nav id="mobile-nav" aria-label="Mobile" className="min-[1440px]:hidden bg-soft border-t border-lilac max-h-[calc(100vh-7rem)] overflow-y-auto px-5 pb-6">
       <MobileSection label="Therapy Services">
-        {therapyMenu.map((c) => (
-          <div key={c.id} className="pt-2">
-            <Link to={categoryHref(c)} onClick={onNavigate} className="block font-heading text-lg text-[#C32D70]">{c.title}</Link>
-            {c.links.map((l) => <Link key={l.to} to={l.to} onClick={onNavigate} className={mobileLink}>{l.label}</Link>)}
-            {c.subgroup && (
-              <div className="pt-1 pl-3 border-l border-lilac">
-                <p className="pt-1 text-[11px] font-semibold uppercase tracking-[0.14em] text-rose">{c.subgroup.title}</p>
-                {c.subgroup.links.map((l) => <Link key={l.to} to={l.to} onClick={onNavigate} className={mobileLink}>{l.label}</Link>)}
-              </div>
-            )}
-          </div>
+        {navTherapyMenu.map((c) => (
+          <MobileGroup key={c.id} title={c.title}>
+            {c.links.map((l) => <Link key={l.label} to={l.to} onClick={onNavigate} className={mobileLink}>{l.label}</Link>)}
+            {(c.subgroups ?? []).map((g) => (
+              <MobileGroup key={g.title} title={g.title} level={2}>
+                {g.links.map((l) => <Link key={l.label} to={l.to} onClick={onNavigate} className={mobileLink}>{l.label}</Link>)}
+              </MobileGroup>
+            ))}
+          </MobileGroup>
         ))}
         <Link to="/therapy-services" onClick={onNavigate} className="mt-2 inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.12em] text-rose">All Therapy Services</Link>
       </MobileSection>
@@ -143,7 +227,7 @@ function MobileNav({ onNavigate }) {
         <Link key={to} to={to} onClick={onNavigate} className={cn(mobileTop, 'border-b border-lilac')}>{label}</Link>
       ))}
       <MobileSection label="Helpful Info">
-        {helpfulInfoGroups.map((g) => (
+        {helpfulInfoMenu.map((g) => (
           <div key={g.title} className="pt-2">
             <p className="font-heading text-lg text-plum">{g.title}</p>
             {g.links.map(([label, to]) => <Link key={to} to={to} onClick={onNavigate} className={mobileLink}>{label}</Link>)}
@@ -165,19 +249,20 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const close = () => setMobileOpen(false);
   const navigate = useNavigate();
+  const { pathname } = useLocation();
   return (
     <header className="sticky top-0 z-50 bg-soft border-b border-lilac">
       <div className="bg-plum text-white text-[12px] tracking-wide">
-        <div className="mx-auto max-w-[1800px] px-6 lg:px-10 h-9 flex items-center justify-between">
-          <span className="flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-sun" /> Toowong · Manly-West · Online</span>
+        <div className="relative mx-auto max-w-[1800px] px-6 lg:px-10 h-9 flex items-center justify-between">
+          <span className="flex items-center gap-2"><MapPin className="h-3.5 w-3.5 text-sun" /> Toowong · Manly-West · Online<span className="brand-branch" aria-hidden="true" /></span>
           <a href={PHONE.href} className="flex items-center gap-2 hover:underline"><Phone className="h-3.5 w-3.5 text-sun" /> {PHONE.label}</a>
         </div>
       </div>
-      <div className="mx-auto max-w-[1800px] px-5 lg:px-8 2xl:px-10 h-20 flex items-center justify-between gap-6 2xl:gap-10">
+      <div className="header-row mx-auto max-w-[1800px] px-5 lg:px-8 2xl:px-10 flex items-center justify-between gap-6 2xl:gap-10">
         <Link to="/" onClick={close} aria-label="Michelle Barratt Psychology home" className="flex items-center gap-3 shrink-0">
-          <img src={img(LOGO)} alt="" width="64" height="64" className="h-16 w-16 object-contain" />
+          <img src={img(LOGO)} alt="" width="100" height="100" className="brand-logo object-contain" />
           <span className="text-center">
-            <span className="brand-dark block font-heading text-[18px] md:text-[20px] 2xl:text-[22px] font-semibold leading-[1.15]">
+            <span className="brand-dark brand-name block font-heading font-semibold leading-[1.15]">
               <span className="brand-pink">M</span>ichelle <span className="brand-pink">B</span>arratt<br className="sm:hidden" /> <span className="brand-pink">P</span>sychology
             </span>
             <span className="brand-dark brand-subtitle block font-heading uppercase">
@@ -190,7 +275,7 @@ export default function Header() {
           <Dropdown label="Therapy Services" panelClass="mega-panel" onDoubleClick={() => navigate('/therapy-services')}>
             <TherapyMegaMenu />
             <div className="mt-4 pt-4 border-t border-lilac">
-              <Link to="/therapy-services" className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-plum hover:text-rose transition-colors">
+              <Link to="/therapy-services" className="dropdown-label inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em]">
                 All Therapy Services
               </Link>
             </div>
@@ -198,19 +283,19 @@ export default function Header() {
           {topLinks.map(([label, to]) => <NavLink key={to} to={to} className={topLinkClass}>{label}</NavLink>)}
           <Dropdown label="Helpful Info" panelClass="right-0 left-auto w-[min(900px,calc(100vw-3rem))]">
             <div className="grid grid-cols-3 gap-7">
-              {helpfulInfoGroups.map((g) => (
+              {helpfulInfoMenu.map((g) => (
                 <div key={g.title}>
-                  <p className="text-[12px] font-semibold uppercase tracking-[0.14em] text-rose mb-2">{g.title}</p>
+                  <p className={cn('dropdown-label text-[12px] font-semibold uppercase tracking-[0.14em] mb-2', g.links.some(([, to]) => to === pathname) && 'is-current')}>{g.title}</p>
                   <ul className="divide-y divide-lilac">
                     {g.links.map(([label, to]) => (
-                      <li key={to}><Link to={to} className="block py-2.5 text-[14px] leading-snug text-ink/85 hover:text-plum transition-colors">{label}</Link></li>
+                      <li key={to}><Link to={to} className={cn('dd-item block py-2.5 text-[14px] leading-snug text-ink/85 hover:text-plum transition-colors', to === pathname && 'is-current')}>{label}</Link></li>
                     ))}
                   </ul>
                 </div>
               ))}
             </div>
             <div className="mt-4 pt-4 border-t border-lilac">
-              <Link to="/helpful-info" className="inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em] text-plum hover:text-rose transition-colors">All Helpful Info</Link>
+              <Link to="/helpful-info" className="dropdown-label inline-flex items-center gap-2 text-[12px] font-semibold uppercase tracking-[0.12em]">All Helpful Info</Link>
             </div>
           </Dropdown>
           <Link to="/practitioners" className="inline-flex items-center justify-center min-h-12 px-5 2xl:px-7 rounded whitespace-nowrap text-[12px] 2xl:text-[13px] font-semibold uppercase tracking-[0.12em] bg-rose text-white hover:bg-[#D84B83] transition-colors duration-300">

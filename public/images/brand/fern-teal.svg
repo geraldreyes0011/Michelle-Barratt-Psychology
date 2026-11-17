@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 300" fill="none">
+  <!-- MBP brand graphic: deep-teal and sage leaves on a curving stem with a single yellow leaf and a
+       soft turquoise wash (after the leaf tiles in the "Brand patterns & graphics" reference).
+       Transparent background. -->
+  <defs>
+    <filter id="wash" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="2" />
+      <feDisplacementMap in="SourceGraphic" scale="10" />
+    </filter>
+    <filter id="leaf" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.07" numOctaves="2" seed="6" />
+      <feDisplacementMap in="SourceGraphic" scale="3" />
+    </filter>
+  </defs>
+  <path filter="url(#wash)" d="M54 70c40-26 104-12 122 34 18 48-6 112-56 130-48 18-98-10-104-58-5-40 8-84 38-106z" fill="#A9C0C8" fill-opacity=".35" />
+  <g filter="url(#leaf)">
+    <path d="M70 292C96 220 112 140 160 24" stroke="#004C54" stroke-opacity=".6" stroke-width="2.2" stroke-linecap="round" />
+    <path d="M92 240c-22-12-46-10-60 2 18 14 42 14 60-2z" fill="#004C54" fill-opacity=".8" />
+    <path d="M100 214c8-24 28-38 50-38-6 24-26 38-50 38z" fill="#6E9F9A" fill-opacity=".9" />
+    <path d="M112 176c-22-14-48-14-62-2 18 16 44 16 62 2z" fill="#2E6F7A" fill-opacity=".85" />
+    <path d="M122 144c8-24 28-36 50-36-6 24-26 36-50 36z" fill="#004C54" fill-opacity=".75" />
+    <path d="M132 108c-20-14-44-16-58-6 16 16 40 18 58 6z" fill="#FFD200" fill-opacity=".9" />
+    <path d="M144 76c6-20 22-32 42-32-6 20-22 32-42 32z" fill="#6E9F9A" fill-opacity=".9" />
+    <path d="M152 48c-14-12-32-14-42-8 12 12 28 14 42 8z" fill="#2E6F7A" fill-opacity=".8" />
+  </g>
+</svg>

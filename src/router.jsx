@@ -1,4 +1,4 @@
-import { createBrowserRouter } from 'react-router-dom';
+import { Navigate, createBrowserRouter } from 'react-router-dom';
 import Layout from './components/Layout.jsx';
 import DataPage from './pages/DataPage.jsx';
 import HelpfulInfoIndex from './pages/HelpfulInfoIndex.jsx';
@@ -8,6 +8,12 @@ import PractitionerPage from './pages/PractitionerPage.jsx';
 
 // Same route table as the reference site. Every content page is a JSON data file
 // (src/data/pages/<key>.json) rendered by DataPage; `pageKey` maps URL -> data key.
+// Original-site eating disorder URLs now live in the Eating Disorders page's "Common Eating
+// Disorders" section. Permanent (301) redirects are in vercel.json; these routes give the same
+// result inside the app and in local preview.
+const EATING_DISORDERS = '/therapy-services/eating-disorders#common-eating-disorders';
+const legacyRedirects = ['/anorexia', '/bulimia', '/binge-eating'].map((path) => ({ path, element: <Navigate to={EATING_DISORDERS} replace /> }));
+
 export const router = createBrowserRouter([
   {
     element: <Layout />,
@@ -26,6 +32,7 @@ export const router = createBrowserRouter([
       { path: '/helpful-info/:slug', element: <HelpfulInfoPage /> },
       { path: '/therapy-services', element: <DataPage pageKey={() => 'therapy-services'} /> },
       { path: '/therapy-services/:slug', element: <DataPage pageKey={({ slug }) => `therapy-services__${slug}`} /> },
+      ...legacyRedirects,
       { path: '*', element: <NotFound /> },
     ],
   },

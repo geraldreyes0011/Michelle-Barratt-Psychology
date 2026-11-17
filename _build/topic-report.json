@@ -11,11 +11,6 @@
     ]
   },
   {
-    "slug": "child-anxiety",
-    "status": "existing-page",
-    "note": "Reference page kept; content unchanged."
-  },
-  {
     "slug": "adolescent-anxiety-depression",
     "status": "existing-page",
     "note": "Reference page kept; content unchanged."
@@ -40,16 +35,9 @@
     "note": "Brief linked #child-self-esteem for Bullying; the source page has a dedicated #bullying section, which was used."
   },
   {
-    "slug": "emotional-dysregulation",
-    "status": "blank-source-inaccessible",
-    "source": "https://drive.google.com/drive/folders/19GwhBvpUvNaMy_shvTR9xtQdws0fgY_K",
-    "note": "Google Drive folder requires sign-in; nothing could be retrieved."
-  },
-  {
-    "slug": "grief-loss",
-    "status": "blank-source-inaccessible",
-    "source": "https://drive.google.com/drive/folders/1lug7hN_7BO1Uga8-cstasbdsaK_VGXcO",
-    "note": "Google Drive folder requires sign-in; nothing could be retrieved."
+    "slug": "child-adolescent-therapy",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
   },
   {
     "slug": "child-adolescent-trauma",
@@ -60,6 +48,23 @@
     ],
     "links": [],
     "note": "Source is the general trauma page; only its children-and-young-people section was migrated (adult content stays on Trauma Therapy)."
+  },
+  {
+    "slug": "child-anxiety",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "emotional-dysregulation",
+    "status": "blank-source-inaccessible",
+    "source": "https://drive.google.com/drive/folders/19GwhBvpUvNaMy_shvTR9xtQdws0fgY_K",
+    "note": "Google Drive folder requires sign-in; nothing could be retrieved."
+  },
+  {
+    "slug": "grief-loss",
+    "status": "blank-source-inaccessible",
+    "source": "https://drive.google.com/drive/folders/1lug7hN_7BO1Uga8-cstasbdsaK_VGXcO",
+    "note": "Google Drive folder requires sign-in; nothing could be retrieved."
   },
   {
     "slug": "oppositional-defiant-disorder",
@@ -80,7 +85,32 @@
     "note": "No source supplied; page left blank."
   },
   {
-    "slug": "adult-therapy",
+    "slug": "adhd-therapy",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "autism-therapy",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
+  },
+  {
+    "slug": "bipolar-disorder",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "borderline-personality-disorder",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "eating-disorders",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "narcissistic-personality-disorder",
     "status": "existing-page",
     "note": "Reference page kept; content unchanged."
   },
@@ -91,12 +121,22 @@
     "note": "Google Drive folder requires sign-in; nothing could be retrieved."
   },
   {
+    "slug": "adult-therapy",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
     "slug": "burnout",
     "status": "existing-page",
     "note": "Reference page kept; content unchanged."
   },
   {
     "slug": "christian-counselling",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "conflict-management",
     "status": "existing-page",
     "note": "Reference page kept; content unchanged."
   },
@@ -126,22 +166,17 @@
     "note": "No source supplied; page left blank."
   },
   {
-    "slug": "pregnancy-birth-trauma",
-    "status": "blank-no-source",
-    "note": "No source supplied; page left blank."
+    "slug": "christian-couples-therapy",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/christian-counselling/",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/couples-therapy.jpg"
+    ],
+    "links": [],
+    "note": "Content is the \"Christian Couples Therapy\" section of the original Christian Counselling page."
   },
   {
     "slug": "couples",
-    "status": "existing-page",
-    "note": "Reference page kept; content unchanged."
-  },
-  {
-    "slug": "family-therapy",
-    "status": "existing-page",
-    "note": "Reference page kept; content unchanged."
-  },
-  {
-    "slug": "conflict-management",
     "status": "existing-page",
     "note": "Reference page kept; content unchanged."
   },
@@ -156,9 +191,32 @@
     "note": "Reference page kept; content unchanged."
   },
   {
+    "slug": "family-therapy",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
+  },
+  {
     "slug": "parenting-skills-therapy",
     "status": "existing-page",
     "note": "Reference page kept; content unchanged."
+  },
+  {
+    "slug": "setting-boundaries-for-your-teenager",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/child-adolescent-therapy/",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/parenting-skills-1.jpg"
+    ],
+    "links": []
+  },
+  {
+    "slug": "surviving-your-teenager",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/child-adolescent-therapy/",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adolescent-dpression-and-anxiety.jpg"
+    ],
+    "links": []
   },
   {
     "slug": "ptsd",
@@ -167,29 +225,25 @@
     "note": "Google Drive folder requires sign-in; nothing could be retrieved."
   },
   {
-    "slug": "autism-therapy",
+    "slug": "ptsd-teenage",
     "status": "blank-no-source",
     "note": "No source supplied; page left blank."
   },
   {
-    "slug": "bipolar-disorder",
-    "status": "existing-page",
-    "note": "Reference page kept; content unchanged."
+    "slug": "acceptance-commitment-therapy",
+    "status": "blank-no-source",
+    "note": "No source supplied; page left blank."
   },
   {
-    "slug": "borderline-personality-disorder",
-    "status": "existing-page",
-    "note": "Reference page kept; content unchanged."
-  },
-  {
-    "slug": "eating-disorders",
-    "status": "existing-page",
-    "note": "Reference page kept; content unchanged."
-  },
-  {
-    "slug": "narcissistic-personality-disorder",
-    "status": "existing-page",
-    "note": "Reference page kept; content unchanged."
+    "slug": "assessments",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/assessment/",
+    "images": [],
+    "links": [
+      "/contact",
+      "/practitioners",
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/01/MBP-CONSENT-FORM-FOR-ASSESSMENTS-TO-BE-PROVIDED-2025-10th-JANUARY-2025.pdf"
+    ]
   },
   {
     "slug": "cbt",
@@ -221,9 +275,9 @@
     "note": "Source section repeats the Behaviour Modification text under \"A Powerful Tool for Healing Trauma\" (copy error on the live site); that duplicate was left out."
   },
   {
-    "slug": "acceptance-commitment-therapy",
-    "status": "blank-no-source",
-    "note": "No source supplied; page left blank."
+    "slug": "interventions",
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
   },
   {
     "slug": "psychodynamic-therapy",
@@ -236,15 +290,15 @@
     "note": "No source supplied; page left blank."
   },
   {
-    "slug": "assessments",
+    "slug": "fees-funding-referrals",
     "status": "migrated",
-    "source": "https://michellebarrattpsychology.com.au/assessment/",
-    "images": [],
-    "links": [
-      "/contact",
-      "/practitioners",
-      "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/01/MBP-CONSENT-FORM-FOR-ASSESSMENTS-TO-BE-PROVIDED-2025-10th-JANUARY-2025.pdf"
-    ]
+    "source": "https://michellebarrattpsychology.com.au/referrals/",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg",
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2026/05/bpd-therapy-nMKIafJb.webp"
+    ],
+    "links": [],
+    "note": "Hub built from the original Referrals, Funding Options & Practitioner Information page. Its editing note \"– make clickable to jump to MHCP section\" was implemented as a link and removed from the text."
   },
   {
     "slug": "ndis",
@@ -256,13 +310,18 @@
     "links": []
   },
   {
-    "slug": "workcover",
+    "slug": "salvation-army-veterans",
     "status": "blank-no-source",
     "note": "No source supplied; page left blank."
   },
   {
-    "slug": "salvation-army-veterans",
-    "status": "blank-no-source",
-    "note": "No source supplied; page left blank."
+    "slug": "workcover",
+    "status": "migrated",
+    "source": "https://michellebarrattpsychology.com.au/referrals/#Workcover",
+    "images": [
+      "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg"
+    ],
+    "links": [],
+    "note": "Brief marked WorkCover as new content; the original Referrals page has a WorkCover QLD section, which was used."
   }
 ]

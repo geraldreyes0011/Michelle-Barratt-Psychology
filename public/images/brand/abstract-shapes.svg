@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 220" fill="none">
+  <!-- MBP brand graphic: loose watercolour organic shapes in muted burgundy, rose, teal and sage
+       (after the abstract tile in the "Brand patterns & graphics" reference). Transparent background. -->
+  <defs>
+    <filter id="wc" x="-15%" y="-15%" width="130%" height="130%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="3" seed="9" />
+      <feDisplacementMap in="SourceGraphic" scale="8" />
+    </filter>
+  </defs>
+  <g filter="url(#wc)">
+    <path d="M30 40c18-14 46-10 54 8 8 20-6 40-28 42-22 2-38-14-34-32 1-7 3-13 8-18z" fill="#8E4A5E" fill-opacity=".55" />
+    <path d="M104 22c22-8 46 4 48 24 2 18-14 32-34 30-20-2-30-18-26-34 2-9 6-16 12-20z" fill="#2E6F7A" fill-opacity=".5" />
+    <path d="M176 44c20-10 46 0 50 20 4 22-14 38-36 36-22-2-32-22-26-40 3-8 6-13 12-16z" fill="#C46A86" fill-opacity=".45" />
+    <path d="M48 112c20-12 48-4 54 16 6 22-12 40-34 40-22 0-36-18-30-36 2-9 5-15 10-20z" fill="#6E9F9A" fill-opacity=".55" />
+    <path d="M124 104c18-6 40 4 42 22 2 18-12 30-30 30-18 0-30-14-26-30 2-10 7-18 14-22z" fill="#A86070" fill-opacity=".45" />
+    <path d="M190 120c18-8 40 2 42 20 2 18-12 32-30 32-18 0-30-14-26-30 2-10 7-17 14-22z" fill="#2E6F7A" fill-opacity=".4" />
+    <path d="M92 176c14-8 32-2 36 12 4 14-6 26-22 26-16 0-26-10-24-22 1-7 4-12 10-16z" fill="#A9C0C8" fill-opacity=".6" />
+    <path d="M160 182c12-6 28 0 30 12 2 12-8 22-22 22-13 0-22-9-20-20 1-6 5-11 12-14z" fill="#8E4A5E" fill-opacity=".4" />
+  </g>
+</svg>

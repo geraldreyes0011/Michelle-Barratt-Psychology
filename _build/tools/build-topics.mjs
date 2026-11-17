@@ -13,7 +13,7 @@ import * as cheerio from 'cheerio';
 const root = process.argv[2];
 const wpDir = join(root, '_build/source-data/wordpress-originals');
 const pagesDir = join(root, 'src/data/pages');
-const { therapyMenu, primaryCategory, allTopicSlugs } = await import(pathToFileURL(join(root, 'src/data/therapyMenu.js')).href);
+const { therapyMenu, primaryCategory, allTopicSlugs, pageLinks } = await import(pathToFileURL(join(root, 'src/data/therapyMenu.js')).href);
 
 const WP = 'https://michellebarrattpsychology.com.au';
 const UP = `${WP}/wp-content/uploads`;
@@ -71,6 +71,47 @@ const MIGRATED = {
     file: 'assessment', from: 'h1', to: 'We Are Here to Help', introParagraphs: 1,
     title: 'Psychology Assessments and Reports',
     source: `${WP}/assessment/`,
+  },
+  'christian-couples-therapy': {
+    file: 'christian-counselling', from: 'Christian Couples Therapy', to: 'Christian Child and Adolescent Therapy',
+    hero: { src: `${UP}/2022/11/couples-therapy.jpg`, alt: 'Christian couples therapy' },
+    source: `${WP}/christian-counselling/`,
+    note: 'Content is the "Christian Couples Therapy" section of the original Christian Counselling page.',
+  },
+  'surviving-your-teenager': {
+    file: 'child-adolescent-therapy', from: 'Surviving Your Teenager', to: '#toddler-tantrums',
+    hero: { src: `${UP}/2022/11/adolescent-dpression-and-anxiety.jpg`, alt: 'Parenting a teenager' },
+    source: `${WP}/child-adolescent-therapy/`,
+  },
+  'setting-boundaries-for-your-teenager': {
+    file: 'child-adolescent-therapy', from: 'Setting Boundaries for Your Teenager', to: 'Surviving Your Parents',
+    hero: { src: `${UP}/2020/10/parenting-skills-1.jpg`, alt: 'Setting boundaries for your teenager' },
+    source: `${WP}/child-adolescent-therapy/`,
+  },
+  workcover: {
+    file: 'referrals', from: '#Workcover', to: '#NDIS',
+    hero: { src: `${UP}/2025/12/care-learning-9954699_1280.jpg`, alt: 'WorkCover psychology support' },
+    source: `${WP}/referrals/#Workcover`,
+    note: 'Brief marked WorkCover as new content; the original Referrals page has a WorkCover QLD section, which was used.',
+  },
+  'fees-funding-referrals': {
+    file: 'referrals', title: 'Fees, Funding & Referrals', introParagraphs: 2,
+    // Intro; the referral-types overview (stopping before its duplicate WorkCover tab panel);
+    // then Medicare, WorkCover, NDIS, DVA, referral FAQ and GP information.
+    ranges: [['h1', 'Table of Contents'], ['What type of referrals do we accept?', 'p:We provide support for individuals'], ['#Medicare-funding', 'Our Partnership Network']],
+    skipP: [/^Please Note: We are a private billing practice/],
+    promote: ['Do I need a referral to see a psychologist?', 'Information for Referring General Practitioners'],
+    sectionIds: {
+      'Mental Health Care Plan (MHCP) via a GP': 'medicare',
+      'WorkCover QLD': 'workcover',
+      'National Disability Insurance Scheme (NDIS)': 'ndis',
+      "Department of Veterans' Affairs (DVA)": 'dva',
+    },
+    // The live page still carries an editing note asking for this phrase to link to the MHCP section.
+    replace: [['Mental Health Care Plan (MHCP) – make clickable to jump to MHCP section', '<a href="#medicare" class="text-ocean underline underline-offset-4 font-medium">Mental Health Care Plan (MHCP)</a>']],
+    hero: { src: `${UP}/2025/12/care-learning-9954699_1280.jpg`, alt: 'Fees, funding and referrals' },
+    source: `${WP}/referrals/`,
+    note: 'Hub built from the original Referrals, Funding Options & Practitioner Information page. Its editing note "– make clickable to jump to MHCP section" was implemented as a link and removed from the text.',
   },
   ndis: {
     file: 'referrals', from: '#NDIS', to: '#DVA',
@@ -210,12 +251,17 @@ const isBoldOnly = ($, el) => {
 function matches($, el, marker) {
   if (marker === 'h1') return el.tagName.toLowerCase() === 'h1';
   if (marker.startsWith('#')) return $(el).attr('id') === marker.slice(1);
+  if (marker.startsWith('p:')) return el.tagName.toLowerCase() === 'p' && textOf($, el).startsWith(marker.slice(2));
   return /^h[1-6]$/i.test(el.tagName) && textOf($, el).toLowerCase() === marker.toLowerCase();
 }
 
 function extractBlocks(spec) {
+  if (spec.ranges) {
+    const parts = spec.ranges.map(([from, to]) => extractBlocks({ ...spec, ranges: undefined, from, to }));
+    return { blocks: parts.flatMap((p) => p.blocks), images: [...new Set(parts.flatMap((p) => p.images))], links: [...new Set(parts.flatMap((p) => p.links))] };
+  }
   const $ = cheerio.load(readFileSync(join(wpDir, `${spec.file}.html`), 'utf8'));
-  $('header, footer, nav, script, style, noscript, form, .elementor-toc, .elementor-location-header, .elementor-location-footer').remove();
+  $('header.site-header, footer, nav, script, style, noscript, form, .elementor-toc, .elementor-location-header, .elementor-location-footer').remove();
   const blocks = [];
   const images = [];
   const links = [];
@@ -240,7 +286,7 @@ function extractBlocks(spec) {
     if (tag === 'p') {
       if ($(el).closest('li').length) continue;
       const text = textOf($, el);
-      if (!text || SKIP_TEXT.some((r) => r.test(text))) continue;
+      if (!text || SKIP_TEXT.some((r) => r.test(text)) || (spec.skipP ?? []).some((r) => r.test(text))) continue;
       if (isBoldOnly($, el)) { blocks.push({ type: 'h3', bold: true, html: cleanInline($, el).replace(/<\/?strong>/g, '').replace(/:\s*$/, ''), text }); continue; }
       const html = cleanInline($, el);
       // "• a• b• c" paragraphs are lists flattened by the page builder.
@@ -272,7 +318,10 @@ function extractBlocks(spec) {
     }
   }
   if (!on) throw new Error(`${spec.file}: start marker not found: ${spec.from}`);
-  return { blocks: normaliseBlocks(blocks), images, links };
+  // Promote listed sub-headings to sections; drop a heading that repeats the one just before it.
+  const promoted = blocks.map((b) => (/^h[23]$/.test(b.type) && (spec.promote ?? []).includes(b.text) ? { ...b, type: 'h2' } : b));
+  const deduped = normaliseBlocks(promoted).filter((b, i, all) => !(/^h[1-3]$/.test(b.type) && /^h[1-3]$/.test(all[i - 1]?.type ?? '') && all[i - 1].text === b.text));
+  return { blocks: deduped, images, links };
 }
 
 function largestSrc($, el) {
@@ -287,7 +336,7 @@ function largestSrc($, el) {
 }
 
 // ---------------------------------------------------------------- render
-function renderBody(blocks, { heroImageSrc, defaultAlt }) {
+function renderBody(blocks, { heroImageSrc, defaultAlt, sectionIds = {} }) {
   const sections = [];
   let cur = null;
   const open = (heading) => { cur = { heading, parts: [] }; sections.push(cur); };
@@ -329,12 +378,12 @@ function renderBody(blocks, { heroImageSrc, defaultAlt }) {
 
   return sections
     .filter((s) => s.parts.length)
-    .map((s, n) => `<section class="${n % 2 ? 'bg-soft' : 'bg-white'} "><div class="mx-auto max-w-7xl px-5 py-14 md:py-20 ">${s.heading ? h2Html(s.heading) : ''}${s.parts.join('')}</div></section>`)
+    .map((s, n) => `<section${s.heading && sectionIds[s.heading.replace(/<[^>]+>/g, '').replace(/&#x27;|&#39;/g, "'")] ? ` id="${sectionIds[s.heading.replace(/<[^>]+>/g, '').replace(/&#x27;|&#39;/g, "'")]}"` : ''} class="${n % 2 ? 'bg-soft' : 'bg-white'} "><div class="mx-auto max-w-7xl px-5 py-14 md:py-20 ">${s.heading ? h2Html(s.heading) : ''}${s.parts.join('')}</div></section>`)
     .join('');
 }
 
 function labelFor(slug) {
-  for (const c of therapyMenu) for (const l of [...c.links, ...(c.subgroup?.links ?? [])]) if (l.slug === slug) return l.label;
+  for (const c of therapyMenu) for (const l of pageLinks(c)) if (l.slug === slug) return l.label;
   return slug;
 }
 
@@ -366,8 +415,12 @@ for (const slug of allTopicSlugs()) {
     }
     if (spec.hero) heroImages[`/therapy-services/${slug}`] = spec.hero;
     html = `<!--$-->${heroHtml({ title, eyebrow: category.title, intro })}`
-      + renderBody(rest, { heroImageSrc: spec.hero?.src, defaultAlt: title })
+      + renderBody(rest, { heroImageSrc: spec.hero?.src, defaultAlt: title, sectionIds: spec.sectionIds })
       + `<div data-mbp="related"></div>${ctaHtml}<!--/$-->`;
+    for (const [from, to] of spec.replace ?? []) {
+      if (!html.includes(from)) throw new Error(`${slug}: replace target not found: ${from}`);
+      html = html.replace(from, to);
+    }
     entry = { slug, status: 'migrated', source: spec.source, images: [...new Set([spec.hero?.src, ...images].filter(Boolean))], links: [...new Set(links)], note: spec.note };
   } else {
     html = `<!--$-->${heroHtml({ title: label, eyebrow: category.title, intro: [] })}`

@@ -51,6 +51,17 @@ export default function PageView({ html, className }) {
   });
 
   const onClick = (e) => {
+    // Expandable cards in page content (e.g. Online Therapy benefits): the button toggles its card.
+    // Closing a card the pointer is still over also suppresses its hover preview until the pointer leaves.
+    const toggle = e.target.closest?.('[data-expand]');
+    if (toggle) {
+      const card = toggle.closest('.expand-card');
+      const open = !card.classList.contains('is-open');
+      card.classList.toggle('is-open', open);
+      card.classList.toggle('is-dismissed', !open);
+      toggle.setAttribute('aria-expanded', String(open));
+      return;
+    }
     const a = e.target.closest?.('a');
     const href = a?.getAttribute('href');
     if (!a || !href || !href.startsWith('/') || href.startsWith('//') || a.target === '_blank' || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
@@ -60,7 +71,14 @@ export default function PageView({ html, className }) {
   };
 
   return (
-    <div className={className} onClick={onClick}>
+    <div
+      className={className}
+      onClick={onClick}
+      onPointerOut={(e) => {
+        const card = e.target.closest?.('.expand-card.is-dismissed');
+        if (card && !card.contains(e.relatedTarget)) card.classList.remove('is-dismissed');
+      }}
+    >
       {split ? (
         <>
           <section className={recolour(split.sectionClass)}>

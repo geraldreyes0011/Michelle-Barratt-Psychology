@@ -19,6 +19,18 @@
     "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2021/01/angry-kid.jpg",
     "alt": "Oppositional defiant disorder support"
   },
+  "/therapy-services/christian-couples-therapy": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/couples-therapy.jpg",
+    "alt": "Christian couples therapy"
+  },
+  "/therapy-services/setting-boundaries-for-your-teenager": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/10/parenting-skills-1.jpg",
+    "alt": "Setting boundaries for your teenager"
+  },
+  "/therapy-services/surviving-your-teenager": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2022/11/adolescent-dpression-and-anxiety.jpg",
+    "alt": "Parenting a teenager"
+  },
   "/therapy-services/cbt": {
     "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
     "alt": "Cognitive behavioural therapy"
@@ -31,8 +43,16 @@
     "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2020/09/Interventions-1.jpg",
     "alt": "EMDR therapy"
   },
+  "/therapy-services/fees-funding-referrals": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg",
+    "alt": "Fees, funding and referrals"
+  },
   "/therapy-services/ndis": {
     "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg",
     "alt": "NDIS psychology support"
+  },
+  "/therapy-services/workcover": {
+    "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg",
+    "alt": "WorkCover psychology support"
   }
 }

@@ -3,7 +3,7 @@
 
 /* Seven-category Therapy Services mega-menu: five balanced columns, slightly wider than the
    reference five-category panel (1020px) so long labels do not crowd. */
-.mega-panel { width: min(1100px, calc(100vw - 3rem)); }
+.mega-panel { width: min(1180px, calc(100vw - 3rem)); }
 
 /* Wellbeing Therapy subgroup label spans both link columns in the services directory. */
 .grid-row-full { grid-column: 1 / -1; }
@@ -11,8 +11,8 @@
 /* Placeholder height while a page's data loads, so the footer does not jump up. */
 .page-loading { min-height: 60vh; }
 
-/* Category anchors on /therapy-services clear the sticky header. */
-article[id] { scroll-margin-top: 8.5rem; }
+/* Category anchors on /therapy-services and section anchors (e.g. Fees, Funding & Referrals) clear the sticky header. */
+article[id], section[id] { scroll-margin-top: 8.5rem; }
 
 /* Supplied practice photos beside section text (home lilac, therapy-services blush): stacked
    below the text on mobile, fixed right column from lg. Portrait images keep their ratio. */
@@ -46,12 +46,13 @@ article[id] { scroll-margin-top: 8.5rem; }
 :is(.bg-plum, .bg-ink, .bg-ocean, .from-plum) .hover\:text-rose:hover { color: #FFD200; }
 :is(.bg-plum, .bg-ink, .bg-ocean, .from-plum) :is(.bg-white, .bg-soft) .text-rose { color: #2E6F7A; }
 
-/* Header dropdowns (Therapy Services, Helpful Info): Deep Ocean Teal panel so the yellow
-   category headings stay readable; links light, yellow on hover. */
-.brand-dropdown.bg-white { background-color: #004C54; border-color: #2E6F7A; }
-/* Both panels: same Deep Ocean Teal at 92% with a light blur behind it. */
+/* Header dropdowns (Therapy Services, Helpful Info): #689F9A (brand sage) panel at 92% with a light
+   blur behind it. White and yellow text do not have enough contrast on sage (about 3:1 and 2:1), so
+   dropdown text is the brand's dark ink (#0E2A2F, about 5:1); headings and links turn white on
+   hover / while open. */
 .brand-dropdown.bg-white {
-  background-color: rgb(0 76 84 / 0.92);
+  background-color: rgb(104 159 154 / 0.92);
+  border-color: rgb(255 255 255 / 0.35);
   -webkit-backdrop-filter: blur(8px);
   backdrop-filter: blur(8px);
   box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1), 0 2px 6px rgb(0 0 0 / 0.08);
@@ -59,40 +60,67 @@ article[id] { scroll-margin-top: 8.5rem; }
 }
 /* Hovering a panel firms it up slightly (92% → 94%) and lifts its shadow a touch. */
 .brand-dropdown.bg-white:hover {
-  background-color: rgb(0 76 84 / 0.94);
+  background-color: rgb(104 159 154 / 0.94);
   box-shadow: 0 22px 28px -6px rgb(0 0 0 / 0.14), 0 8px 12px -6px rgb(0 0 0 / 0.12), 0 2px 6px rgb(0 0 0 / 0.1);
 }
-.brand-dropdown :is(.text-rose, .text-\[\#C32D70\]) { color: #FFD200; }
-.brand-dropdown :is(.text-ink\/85, .text-plum) { color: rgb(255 255 255 / 0.9); }
-.brand-dropdown :is(.hover\:text-rose, .hover\:text-plum):hover { color: #FFD200; }
-.brand-dropdown a.font-heading:hover { color: #fff; }
-.brand-dropdown .border-lilac, .brand-dropdown .divide-lilac > :not([hidden]) ~ :not([hidden]) { border-color: rgb(255 255 255 / 0.18); }
-.brand-dropdown :focus-visible { outline-color: #FFD200; }
+.brand-dropdown :is(.text-rose, .text-\[\#C32D70\], .text-ink\/85, .text-plum) { color: #0E2A2F; }
+.brand-dropdown :is(.hover\:text-rose, .hover\:text-plum):hover { color: #fff; }
+.brand-dropdown .border-lilac, .brand-dropdown .divide-lilac > :not([hidden]) ~ :not([hidden]) { border-color: rgb(255 255 255 / 0.4); }
+.brand-dropdown :focus-visible { outline: 2px solid #0E2A2F; outline-offset: 2px; }
 
-/* Therapy Services mega-menu: each yellow category heading reveals its services in a nested
-   dropdown directly beneath it (no gap, so the pointer can move into it), fading and sliding in. */
-.mega-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 1.5rem; row-gap: 0.75rem; align-items: start; }
+/* Therapy Services mega-menu: six category columns (Types of Therapy is the last column). Each
+   heading reveals its services in a nested dropdown directly beneath it (no gap, so the pointer can
+   move into it), fading and sliding in. The last two columns' dropdowns align right so they stay
+   inside the panel. */
+.mega-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: 1.25rem; align-items: start; }
 .mega-heading { cursor: default; }
-/* Category headings rest white, turn #FFD200 on hover and stay yellow while their list is open. */
-.brand-dropdown .mega-heading { color: #fff; transition: color 250ms ease; }
-.brand-dropdown .mega-heading:hover, .brand-dropdown .mega-heading[aria-expanded="true"] { color: #FFD200; }
+/* Every dropdown text item (category headings, secondary categories, Helpful Info group titles, service
+   and info links, the "All …" links): white text at rest; yellow #FFD200 text on hover and while open /
+   current, back to white when the pointer leaves. Only the text colour changes - never the background.
+   A soft dark text shadow keeps both colours legible on the sage panel. */
+.brand-dropdown :is(.mega-heading, .mega-sub-toggle, .dropdown-label, .dd-item) {
+  color: #fff; background-color: transparent; text-shadow: 0 1px 1px rgb(14 42 47 / 0.35);
+  transition: color 250ms ease;
+}
+.brand-dropdown :is(.mega-heading, .mega-sub-toggle, .dropdown-label, .dd-item):is(:hover, [aria-expanded="true"], .is-current) {
+  color: #FFD200; background-color: transparent;
+}
+.brand-dropdown .dd-item { display: block; padding-inline: 0.5rem; margin-inline: -0.5rem; }
+.brand-dropdown .mega-flyout .dd-item { padding-block: 0.25rem; }
+.brand-dropdown :is(.mega-heading, .mega-sub-toggle) { padding: 0.3rem 0.5rem; margin-inline: -0.5rem; width: calc(100% + 1rem); }
+.brand-dropdown .dropdown-label { padding: 0.3rem 0.5rem; margin-inline: -0.5rem; }
 .mega-heading svg { opacity: 0.75; }
 .mega-flyout {
-  position: absolute; z-index: 20; top: 100%; left: -0.75rem; width: calc(100% + 1.5rem); min-width: 15rem;
-  padding: 0.75rem; border: 1px solid rgb(255 255 255 / 0.14); border-radius: 0.375rem;
-  background-color: rgb(0 76 84 / 0.98);
+  position: absolute; z-index: 20; top: 100%; left: -0.75rem; width: calc(100% + 1.5rem); min-width: 15.5rem;
+  max-height: min(70vh, 34rem); overflow-y: auto; overscroll-behavior: contain;
+  padding: 0.75rem; border: 1px solid rgb(255 255 255 / 0.4); border-radius: 0.375rem;
+  background-color: rgb(104 159 154 / 0.98);
   box-shadow: 0 16px 24px -8px rgb(0 0 0 / 0.3), 0 4px 8px rgb(0 0 0 / 0.12);
   opacity: 0; visibility: hidden; transform: translateY(-4px);
   transition: opacity 200ms ease, transform 200ms ease, visibility 0s linear 200ms;
 }
+.mega-end .mega-flyout { left: auto; right: -0.75rem; }
 .mega-flyout.is-open { opacity: 1; visibility: visible; transform: none; transition: opacity 200ms ease, transform 200ms ease, visibility 0s; }
-@media (prefers-reduced-motion: reduce) { .mega-flyout, .mega-flyout.is-open { transition: none; transform: none; } }
+/* Secondary categories (e.g. Couples Therapy, Fees, Funding & Referrals): small uppercase toggles
+   whose lists expand and collapse smoothly. */
+.mega-subgroup + .mega-subgroup, .mega-flyout > ul + .mega-subgroup { margin-top: 0.6rem; }
+.mega-sub-toggle {
+  display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 0.5rem; padding: 0.3rem 0;
+  font-size: 11px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; text-align: left;
+}
+.mega-sub { display: grid; grid-template-rows: 0fr; opacity: 0; visibility: hidden; transition: grid-template-rows 250ms ease, opacity 200ms ease, visibility 0s linear 250ms; }
+.mega-sub.is-open { grid-template-rows: 1fr; opacity: 1; visibility: visible; transition: grid-template-rows 250ms ease, opacity 200ms ease, visibility 0s; }
+.mega-sub > div { overflow: hidden; min-height: 0; }
+.mega-sub-list { border-left: 1px solid rgb(255 255 255 / 0.5); padding: 0.25rem 0 0.25rem 0.75rem; margin-top: 0.15rem; }
+@media (prefers-reduced-motion: reduce) { .mega-flyout, .mega-flyout.is-open, .mega-sub, .mega-sub.is-open { transition: none; transform: none; } }
 
 /* Main header nav items (links and dropdown triggers): on hover, a 2px lift and a thin underline
    in the item's own colour that grows from the centre. */
 .nav-anim { position: relative; transition: color 250ms ease, transform 250ms ease; }
-/* Plain links turn yellow on hover, matching the dropdown triggers (yellow while open). */
-a.nav-anim:hover { color: #FFD200; }
+/* Hover, current page and open dropdown: a darker gold of the brand yellow (#FFD200 was too light
+   on the light header). */
+a.nav-anim:hover,
+nav[aria-label="Primary"] .nav-anim:is(.text-sun, :hover, [aria-expanded="true"]) { color: #B98A00; }
 .nav-anim::after {
   content: ""; position: absolute; left: 0; right: 0; bottom: 2px; height: 1.5px;
   background: currentColor; transform: scaleX(0); transform-origin: center;
@@ -120,12 +148,12 @@ section[class="bg-blush"]:has(> .max-w-4xl.text-center), footer.bg-plum { positi
     background-repeat: no-repeat; background-size: contain;
   }
   section[class="bg-blush"]:has(> .max-w-4xl.text-center)::before {
-    left: 0; top: 0; width: 320px; height: 120px; opacity: 0.6; background-position: left top;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 120' fill='none' stroke-linecap='round'%3E%3Cpath d='M0 28C60 4 110 52 170 34S270 2 320 18' stroke='%236E9F9A' stroke-width='2.5'/%3E%3Cpath d='M0 48C64 22 116 74 178 54S276 22 320 40' stroke='%232E6F7A' stroke-width='2'/%3E%3Cpath d='M0 68C70 42 124 94 186 74S282 44 320 62' stroke='%23A9C0C8' stroke-width='2'/%3E%3C/svg%3E");
+    left: 0; top: 0; width: 360px; height: 190px; opacity: 0.55; background-position: left top;
+    background-image: url("/images/brand/waves-teal.svg");
   }
   section[class="bg-blush"]:has(> .max-w-4xl.text-center)::after {
-    right: 32px; bottom: 0; width: 240px; height: 240px; opacity: 0.85; background-position: right bottom;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 240 240'%3E%3Cpath d='M138 70c42-16 90 6 93 50 3 41-31 74-74 73-38-2-66-28-62-62 2-28 18-51 43-61z' fill='%23FFD200' fill-opacity='.5'/%3E%3Ccircle cx='70' cy='196' r='20' fill='%23FFD200' fill-opacity='.35'/%3E%3Cg fill='none' stroke='%23004C54' stroke-opacity='.65' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M56 238C98 196 136 142 176 34'/%3E%3Cpath d='M84 208C66 190 46 186 32 192 46 208 66 214 84 208Z'/%3E%3Cpath d='M106 182C126 172 140 156 142 138 124 144 110 160 106 182Z'/%3E%3Cpath d='M124 156C104 140 86 138 72 146 88 160 108 164 124 156Z'/%3E%3Cpath d='M142 124C162 112 174 94 174 76 156 84 144 102 142 124Z'/%3E%3Cpath d='M156 92C140 74 122 68 108 72 120 88 140 96 156 92Z'/%3E%3Cpath d='M170 56C186 44 194 28 192 12 176 22 168 38 170 56Z'/%3E%3C/g%3E%3Cpath d='M94 194c14-10 30-12 42-6-10 12-26 16-42 6z' fill='%23F10C45' fill-opacity='.55'/%3E%3Cpath d='M160 74c4-14 16-22 28-22-2 14-14 22-28 22z' fill='%234A1458' fill-opacity='.45'/%3E%3C/svg%3E");
+    right: 32px; bottom: 0; width: 230px; height: 260px; opacity: 0.85; background-position: right bottom;
+    background-image: url("/images/brand/sprig-teal-yellow.svg");
   }
 }
 @media (width>=768px) {
@@ -135,8 +163,192 @@ section[class="bg-blush"]:has(> .max-w-4xl.text-center), footer.bg-plum { positi
     background: no-repeat right top / contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 680 210' fill='none' stroke-linecap='round'%3E%3Cpath d='M0 40C120 4 220 90 340 52S560 0 680 30' stroke='%236E9F9A' stroke-width='2.5'/%3E%3Cpath d='M0 72C130 34 232 124 354 86S572 36 680 64' stroke='%23A9C0C8' stroke-width='2'/%3E%3Cpath d='M0 104C140 66 244 156 368 118S584 72 680 98' stroke='%232E6F7A' stroke-width='2'/%3E%3Cpath d='M220 136C300 112 360 160 440 140' stroke='%23FFD200' stroke-width='1.5'/%3E%3C/svg%3E");
   }
 }
+@media (width>=1280px) {
+  footer.bg-plum::after {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    right: 3%; bottom: 11rem; width: 110px; height: 144px; opacity: 0.35; transform: rotate(14deg);
+    background: no-repeat center / contain url("/images/brand/leaves-red.svg");
+  }
+}
 
 /* Practitioner profile pages: bullet lists (two columns for long lists from sm) and the Halaxy logo. */
 .profile-list { display: grid; gap: 0.625rem; }
 @media (width>=640px) { .profile-list-wide { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; } }
 .halaxy-logo { height: 18px; width: auto; }
+
+/* Practitioner photos: small circular portraits beside the name (cards) and centred in the profile
+   sidebar, with a thin brand ring. Faces sit in the upper part of the source photos. */
+.prac-head { display: flex; flex-direction: column; align-items: center; gap: 0.85rem; text-align: center; }
+/* Practitioner cards: photo centred above the name; title, badge and details centred; button full width. */
+article:has(.prac-head) > .p-5 { align-items: center; text-align: center; padding-top: 1.75rem; }
+article:has(.prac-head) .self-start { align-self: center; }
+article:has(.prac-head) .space-y-1 > div { justify-content: center; }
+article:has(.prac-head) .mt-auto { align-self: stretch; }
+article:has(.prac-head) .prac-photo { width: 9rem; height: 9rem; }
+@media (width>=640px) { article:has(.prac-head) .prac-photo { width: 10.5rem; height: 10.5rem; } }
+.prac-photo {
+  flex: none; display: block; width: 6.5rem; height: 6.5rem; border-radius: 9999px; overflow: hidden;
+  background: #e6eef0; box-shadow: 0 0 0 3px #fff, 0 0 0 4px #a9c0c8;
+}
+.prac-photo-lg { width: 12.5rem; height: 12.5rem; }
+.prac-photo-img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 25%; transition: transform 500ms ease; }
+.group:hover .prac-photo-img { transform: scale(1.05); }
+@media (prefers-reduced-motion: reduce) { .prac-photo-img { transition: none; } .group:hover .prac-photo-img { transform: none; } }
+
+/* Expandable information cards (Online Therapy benefits): title and first sentence show; the rest
+   is revealed on hover (devices with a mouse) and toggled by click / tap / keyboard. */
+.expand-grid { align-items: start; }
+.expand-toggle { text-align: left; font: inherit; color: inherit; cursor: pointer; }
+.expand-more { display: grid; grid-template-rows: 0fr; opacity: 0; visibility: hidden; transition: grid-template-rows 280ms ease, opacity 220ms ease, visibility 0s linear 280ms; }
+.expand-more > div { overflow: hidden; min-height: 0; }
+.expand-card.is-open .expand-more { grid-template-rows: 1fr; opacity: 1; visibility: visible; transition: grid-template-rows 280ms ease, opacity 220ms ease, visibility 0s; }
+@media (hover: hover) {
+  .expand-card:not(.is-dismissed):hover .expand-more { grid-template-rows: 1fr; opacity: 1; visibility: visible; transition: grid-template-rows 280ms ease, opacity 220ms ease, visibility 0s; }
+}
+.expand-cue {
+  margin-top: 0.75rem; display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer;
+  font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: #2E6F7A;
+}
+.expand-cue:hover { color: #004C54; }
+.expand-chevron { transition: transform 250ms ease; }
+.expand-card.is-open .expand-chevron { transform: rotate(180deg); }
+.expand-cue-less, .expand-card.is-open .expand-cue-more { display: none; }
+.expand-card.is-open .expand-cue-less { display: inline; }
+.expand-toggle:focus-visible, .expand-cue:focus-visible { outline: 2px solid #2E6F7A; outline-offset: 3px; border-radius: 2px; }
+@media (prefers-reduced-motion: reduce) { .expand-more, .expand-card .expand-more, .expand-chevron { transition: none !important; } }
+
+/* Logo: larger in the header and footer, same square proportions. */
+.header-row { height: 6rem; }
+.brand-logo { width: 5rem; height: 5rem; }
+@media (width>=768px) { .header-row { height: 6.5rem; } .brand-logo { width: 5.75rem; height: 5.75rem; } }
+@media (width>=1024px) { .header-row { height: 7rem; } .brand-logo { width: 6.25rem; height: 6.25rem; } }
+.footer-logo { width: 104px; height: 104px; }
+@media (width>=768px) { .footer-logo { width: 128px; height: 128px; } }
+
+/* Brand graphic in the header's top bar: a trailing botanical branch on the left, just after the
+   location text (the bar's quiet side), away from the logo and navigation. */
+.brand-branch { display: none; }
+@media (width>=900px) {
+  .brand-branch {
+    display: inline-block; width: 168px; height: 26px; margin-left: 1.25rem; flex: none; pointer-events: none;
+    background: no-repeat left center / contain url("/images/brand/branch-side.svg"); opacity: 0.85;
+  }
+}
+
+/* Short note section under the Practitioners hero: a red-leaf botanical fills its empty right side. */
+section.bg-blush:has(> div > p.max-w-4xl.font-medium.text-plum) { position: relative; isolation: isolate; overflow: hidden; }
+@media (width>=1024px) {
+  section.bg-blush:has(> div > p.max-w-4xl.font-medium.text-plum)::after {
+    content: ""; position: absolute; z-index: -1; pointer-events: none; right: 4%; top: 50%; width: 150px; height: 196px;
+    transform: translateY(-50%) rotate(-12deg); background: no-repeat center / contain url("/images/brand/leaves-red.svg"); opacity: 0.8;
+  }
+}
+
+/* Contact / booking buttons (Topics, Practitioners and Blog heroes, Online Therapy hero): black with
+   brand-yellow text. Topics "All Services": transparent with black text and border. */
+.btn-black-yellow { background-color: #000; color: #FFD200; }
+.btn-black-yellow:hover { background-color: #2a2a2a; color: #FFD200; }
+.btn-outline-black { background-color: transparent; color: #fff; border: 1px solid #fff; }
+.btn-outline-black:hover { background-color: rgb(255 255 255 / 0.18); }
+
+/* Wider source photos: zoom the circular crop towards the face (no stretching). */
+.prac-photo-img:is([alt^="Rachel Cleary"]) { transform: scale(1.22); transform-origin: 50% 24%; }
+.group:hover .prac-photo-img:is([alt^="Rachel Cleary"]) { transform: scale(1.27); }
+
+.self-stretch { align-self: stretch; }
+
+/* Closed header dropdown panels are invisible but still laid out; clip them so they never create a
+   sideways scroll (clip, unlike hidden, keeps the sticky header working). */
+#root { overflow-x: clip; }
+
+/* Practitioners page, location sections (Toowong, Manly-West, Online): each fills the empty card slot
+   at the end of its grid with a different botanical, from lg up (3-column grid). Behind content,
+   never over a card. */
+section:has(article .prac-head) { position: relative; isolation: isolate; }
+@media (width>=1024px) {
+  section:has(article .prac-head)::after {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    right: max(2.5rem, calc((100% - 80rem) / 2 + 4rem)); bottom: 4rem; width: 230px; height: 300px;
+    background: no-repeat center / contain url("/images/brand/fern-teal.svg"); opacity: 0.9;
+  }
+  section:has(article .prac-head) ~ section:has(article .prac-head)::after { background-image: url("/images/brand/sprig-teal-yellow.svg"); width: 240px; height: 270px; }
+  section:has(article .prac-head) ~ section:has(article .prac-head) ~ section:has(article .prac-head)::after { background-image: url("/images/brand/abstract-shapes.svg"); width: 300px; height: 250px; bottom: 5rem; }
+  /* Online / Telehealth has two empty slots: add the red-leaf botanical in the middle one. */
+  section:has(article .prac-head) ~ section:has(article .prac-head) ~ section:has(article .prac-head)::before {
+    content: ""; position: absolute; z-index: -1; pointer-events: none;
+    left: calc(50% - 75px); bottom: 4.5rem; width: 150px; height: 200px; transform: rotate(-8deg);
+    background: no-repeat center / contain url("/images/brand/leaves-red.svg"); opacity: 0.75;
+  }
+}
+
+/* Contact page, "We Are Here to Help": the column beside the intro is empty (the form follows below),
+   so it carries a fern and abstract shapes on wide screens. */
+@media (width>=1024px) {
+  .lg\:col-span-3:empty {
+    min-height: 300px; pointer-events: none;
+    background:
+      no-repeat right 8% center / auto 300px url("/images/brand/fern-teal.svg"),
+      no-repeat left 22% bottom / auto 190px url("/images/brand/abstract-shapes.svg");
+    opacity: 0.9;
+  }
+}
+
+/* Practitioner profile sidebar: a small botanical under the "All Practitioners" link (wide screens). */
+.profile-deco { display: none; }
+@media (width>=1024px) {
+  .profile-deco { display: block; width: 200px; height: 230px; margin-top: 1rem; pointer-events: none; background: no-repeat left top / contain url("/images/brand/sprig-teal-yellow.svg"); opacity: 0.85; }
+}
+
+/* Brand text "Michelle Barratt Psychology & Administration Services – MBP": larger in the header and
+   footer, scaling down on smaller screens; the subtitle may wrap on phones rather than overflow. */
+.brand-name { font-size: 22px; }
+header .brand-subtitle { font-size: 11px; letter-spacing: 0.08em; white-space: normal; }
+@media (width>=640px) {
+  .brand-name { font-size: 26px; }
+  header .brand-subtitle { font-size: 13px; letter-spacing: 0.14em; white-space: nowrap; }
+}
+@media (width>=1024px) { .brand-name { font-size: 28px; } header .brand-subtitle { font-size: 13.5px; letter-spacing: 0.15em; } }
+@media (width>=1800px) { .brand-name { font-size: 31px; } header .brand-subtitle { font-size: 14.5px; letter-spacing: 0.17em; } }
+.footer-brand-name { font-size: 28px; }
+.footer-brand-sub { font-size: 12px; letter-spacing: 0.1em; white-space: normal; }
+@media (width>=640px) { .footer-brand-name { font-size: 33px; } .footer-brand-sub { font-size: 14px; letter-spacing: 0.15em; white-space: nowrap; } }
+/* Wide screens: keep the footer brand on two lines (name / subtitle) by letting the text block use
+   part of the empty gap before the next footer column (it stays 20px clear of that column). */
+@media (width>=1280px) {
+  footer .min-w-0:has(> .footer-brand-name) { margin-right: -1.75rem; }
+  .footer-brand-name { white-space: nowrap; }
+}
+
+.mega-list > li + li { margin-top: 0.125rem; }
+
+/* 1440-1799px: the larger brand text leaves less room, so the main menu items sit slightly closer and
+   letter-space a little less (same font, size and weight). */
+@media (width>=1440px) and (width<1800px) {
+  nav[aria-label="Primary"] { column-gap: 0.6rem; }
+  nav[aria-label="Primary"] .nav-anim { letter-spacing: 0.06em; }
+}
+
+/* ---------------------------------------------------------------------------------------------
+   Site-wide spacing refinement (all pages). The page content reuses a handful of spacing patterns;
+   each is tightened here in one place, inside the page content area (#main) only, so the header,
+   footer, typography and layouts are untouched. Values keep clear separation between sections.
+   --------------------------------------------------------------------------------------------- */
+/* Standard content section (used ~970 times): 56/80px top and bottom -> 40/60px. */
+#main .py-14.md\:py-20 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+@media (width>=768px) { #main .py-14.md\:py-20 { padding-top: 3.75rem; padding-bottom: 3.75rem; } }
+/* Closing call-to-action sections: 56/64px -> 40/52px. */
+#main .py-14.md\:py-16 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+@media (width>=768px) { #main .py-14.md\:py-16 { padding-top: 3.25rem; padding-bottom: 3.25rem; } }
+/* Photo heroes and Helpful Info / practitioner profile bodies: 48/64px -> 40/52px. */
+#main .py-12.md\:py-16 { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+@media (width>=768px) { #main .py-12.md\:py-16 { padding-top: 3.25rem; padding-bottom: 3.25rem; } }
+/* Section heading blocks (eyebrow, heading, yellow rule): 40px gap before the content -> 28px. */
+#main .mb-10.max-w-3xl, #main .mb-8.md\:mb-10 { margin-bottom: 1.75rem; }
+@media (width<768px) { #main .mb-10.max-w-3xl, #main .mb-8.md\:mb-10 { margin-bottom: 1.5rem; } }
+/* In-article figures on service pages: 36px above and below -> 28px. */
+#main figure.my-9 { margin-top: 1.75rem; margin-bottom: 1.75rem; }
+/* "More in …" strip on therapy pages had both outer and inner padding (about 100px each side);
+   keep only the inner padding. */
+#main section.\!py-14 { padding-top: 0 !important; padding-bottom: 0 !important; }
+/* Phones: large cards keep comfortable but smaller inner padding. */
+@media (width<640px) { #main .p-8 { padding: 1.5rem; } }

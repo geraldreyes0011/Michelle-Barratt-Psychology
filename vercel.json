@@ -1,3 +1,11 @@
 {
+  "redirects": [
+    { "source": "/anorexia", "destination": "/therapy-services/eating-disorders#common-eating-disorders", "permanent": true },
+    { "source": "/anorexia/", "destination": "/therapy-services/eating-disorders#common-eating-disorders", "permanent": true },
+    { "source": "/bulimia", "destination": "/therapy-services/eating-disorders#common-eating-disorders", "permanent": true },
+    { "source": "/bulimia/", "destination": "/therapy-services/eating-disorders#common-eating-disorders", "permanent": true },
+    { "source": "/binge-eating", "destination": "/therapy-services/eating-disorders#common-eating-disorders", "permanent": true },
+    { "source": "/binge-eating/", "destination": "/therapy-services/eating-disorders#common-eating-disorders", "permanent": true }
+  ],
   "rewrites": [{ "source": "/((?!images/|assets/).*)", "destination": "/index.html" }]
 }

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 340" fill="none">
+  <!-- MBP brand graphic: watercolour sage wash with red and burgundy fern-like leaves
+       (after the "Brand patterns & graphics" reference). Transparent background. -->
+  <defs>
+    <filter id="wc" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="3" seed="11" />
+      <feDisplacementMap in="SourceGraphic" scale="12" />
+    </filter>
+    <filter id="leaf" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.06" numOctaves="2" seed="5" />
+      <feDisplacementMap in="SourceGraphic" scale="3" />
+    </filter>
+  </defs>
+  <g filter="url(#wc)">
+    <path d="M60 60c50-30 130-20 160 40 30 62 10 150-50 190-58 38-130 20-150-46-18-60-12-150 40-184z" fill="#6E9F9A" fill-opacity=".28" />
+    <path d="M94 120c34-14 80-2 92 32 12 36-8 76-44 86-36 10-68-12-72-46-3-30 6-60 24-72z" fill="#A9C0C8" fill-opacity=".3" />
+  </g>
+  <g filter="url(#leaf)">
+    <path d="M128 332C134 260 140 170 156 40" stroke="#4A1458" stroke-opacity=".7" stroke-width="2.4" stroke-linecap="round" />
+    <g fill="#F10C45" fill-opacity=".82">
+      <path d="M150 74c14-18 34-24 50-20-10 18-30 26-50 20z" />
+      <path d="M148 98c-16-14-38-18-52-12 12 16 34 22 52 12z" />
+      <path d="M146 124c16-18 38-24 56-18-12 20-34 26-56 18z" />
+      <path d="M142 152c-18-14-42-18-58-10 14 18 38 22 58 10z" />
+      <path d="M140 182c18-18 42-22 60-14-14 20-38 24-60 14z" />
+      <path d="M136 212c-20-14-46-16-62-6 16 18 42 20 62 6z" />
+      <path d="M134 244c20-16 46-18 62-8-16 18-42 20-62 8z" />
+      <path d="M132 274c-18-12-42-12-56-2 16 14 40 16 56 2z" />
+    </g>
+    <g fill="#4A1458" fill-opacity=".55">
+      <path d="M156 48c6-14 18-22 30-22-4 14-16 22-30 22z" />
+      <path d="M130 300c14-10 32-10 44-2-12 12-30 12-44 2z" />
+    </g>
+  </g>
+</svg>

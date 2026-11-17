@@ -25,27 +25,29 @@ function BookingButton({ p, className = '' }) {
 function ProfileCard({ p }) {
   return (
     <div className="bg-white rounded border border-lilac flex flex-col overflow-hidden">
-      <div className="aspect-[4/5] overflow-hidden bg-lilac">
-        <img src={img(p.photo)} alt={`${p.name}, ${p.title}`} className="h-full w-full object-cover object-center" />
+      <div className="pt-6 flex justify-center">
+        <span className="prac-photo prac-photo-lg">
+          <img src={img(p.photo)} alt={`${p.name}, ${p.title}`} className="prac-photo-img" />
+        </span>
       </div>
-      <div className="p-5 flex flex-col gap-2.5">
+      <div className="p-5 flex flex-col items-center text-center gap-2.5">
         <div>
           <p className="font-heading text-2xl font-semibold leading-tight text-plum">{p.name}</p>
           <p className="text-[14px] text-ink/75 mt-0.5">{p.title}</p>
         </div>
         {p.badges.map((b) => (
-          <span key={b} className="self-start bg-blush text-plum text-[11px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full">{b}</span>
+          <span key={b} className="bg-blush text-plum text-[11px] font-semibold uppercase tracking-[0.1em] px-2.5 py-1 rounded-full">{b}</span>
         ))}
         <div className="space-y-1 pt-0.5">
           {p.details.map(([label, value]) => (
-            <div key={label} className="flex gap-1.5 text-[14px] leading-snug">
+            <div key={label} className="flex justify-center gap-1.5 text-[14px] leading-snug">
               <span className="font-semibold text-plum shrink-0">{label}:</span>
               <span className="text-ink/80">{value}</span>
             </div>
           ))}
         </div>
         {p.note && <p className="text-[14px] italic text-rose font-medium">{p.note}</p>}
-        <div className="pt-3 space-y-3">
+        <div className="pt-3 space-y-3 self-stretch">
           {p.booking ? (
             <>
               <BookingButton p={p} className="w-full text-center" />
@@ -135,6 +137,7 @@ export default function PractitionerPage() {
               All Practitioners
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" aria-hidden="true" />
             </Link>
+            <span className="profile-deco" aria-hidden="true" />
           </aside>
         </div>
       </section>

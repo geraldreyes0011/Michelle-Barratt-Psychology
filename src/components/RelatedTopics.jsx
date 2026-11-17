@@ -1,6 +1,6 @@
 import { Link, useParams } from 'react-router-dom';
 import { ChevronRight } from './Icons.jsx';
-import { allLinks, primaryCategory } from '../data/therapyMenu.js';
+import { pageLinks, primaryCategory } from '../data/therapyMenu.js';
 
 // "More in <category>" links at the foot of a therapy page, from the new menu structure.
 // Same markup as the reference block (after its compact-spacing transform).
@@ -9,7 +9,7 @@ export default function RelatedTopics() {
   const category = primaryCategory(slug);
   if (!category) return null;
   const seen = new Set([slug]);
-  const links = allLinks(category).filter((l) => !seen.has(l.slug) && seen.add(l.slug));
+  const links = pageLinks(category).filter((l) => !seen.has(l.slug) && seen.add(l.slug));
   if (!links.length) return null;
   return (
     <section className="bg-lilac !py-14">

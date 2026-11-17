@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 220" fill="none">
+  <!-- MBP brand graphic: flowing abstract teal and turquoise wave bands with a single yellow
+       leaf (after the "Brand patterns & graphics" reference). Transparent background. -->
+  <defs>
+    <filter id="wc" x="-5%" y="-10%" width="110%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.025" numOctaves="3" seed="4" />
+      <feDisplacementMap in="SourceGraphic" scale="6" />
+    </filter>
+  </defs>
+  <g filter="url(#wc)">
+    <path d="M0 120C70 70 130 150 210 110s140-80 210-40v44c-70-40-130 10-210 50S70 120 0 168z" fill="#2E6F7A" fill-opacity=".55" />
+    <path d="M0 160c70-46 130 26 210-10s140-70 210-34v28c-70-34-130 6-210 42S70 152 0 196z" fill="#6E9F9A" fill-opacity=".5" />
+    <path d="M0 92C80 40 140 120 214 84S352 18 420 46v14c-68-26-128 6-206 42S80 62 0 112z" fill="#A9C0C8" fill-opacity=".55" />
+    <path d="M318 36c10-18 28-26 44-24-8 18-26 28-44 24z" fill="#FFD200" fill-opacity=".85" />
+  </g>
+  <g stroke="#FFFFFF" stroke-opacity=".55" stroke-width="2" stroke-linecap="round">
+    <path d="M10 140c66-40 124 28 200-6s136-70 200-36" />
+  </g>
+</svg>

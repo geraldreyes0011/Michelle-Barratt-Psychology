@@ -2,7 +2,7 @@
 // The first group is a straight port of the reference site's PageView (Base44 bundle: qw, Hw, Lw, Rw, Vw)
 // so pages render exactly as they do there. The second group implements the requested updates.
 import { localiseImages } from '../data/site.js';
-import { primaryCategory, therapyMenu } from '../data/therapyMenu.js';
+import { pageLinks, primaryCategory, therapyMenu } from '../data/therapyMenu.js';
 
 // ------------------------------------------------------------------ reference behaviour
 
@@ -96,10 +96,8 @@ const topicLi = (l) => `<li><a class="group flex items-center justify-between ga
 
 function categoryDirectoryHtml() {
   return `<div class="space-y-8">${therapyMenu.map((c, i) => {
-    const count = c.links.length + (c.subgroup?.links.length ?? 0);
-    const sub = c.subgroup
-      ? `<li class="grid-row-full pt-6 pb-3 px-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-rose">${esc(c.subgroup.title)}</li>${c.subgroup.links.map(topicLi).join('')}`
-      : '';
+    const count = new Set(pageLinks(c).map((l) => l.slug)).size;
+    const sub = (c.subgroups ?? []).map((g) => `<li class="grid-row-full pt-6 pb-3 px-3 text-[11px] font-semibold uppercase tracking-[0.16em] text-rose">${esc(g.title)}</li>${g.links.map(topicLi).join('')}`).join('');
     return `<article id="${c.id}" class="grid lg:grid-cols-[minmax(260px,320px)_1fr] rounded overflow-hidden border border-lilac bg-white">`
       + `<div class="${i % 2 ? 'bg-lilac' : 'bg-blush'} p-8 flex flex-col justify-between gap-6"><div>`
       + `<p class="text-[11px] font-semibold uppercase tracking-[0.25em] text-ocean mb-4">${String(i + 1).padStart(2, '0')}</p>`
