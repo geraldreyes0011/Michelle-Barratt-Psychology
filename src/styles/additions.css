@@ -75,16 +75,25 @@ article[id], section[id] { scroll-margin-top: 8.5rem; }
 .mega-grid { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); column-gap: 1.25rem; align-items: start; }
 .mega-heading { cursor: default; }
 /* Every dropdown text item (category headings, secondary categories, Helpful Info group titles, service
-   and info links, the "All …" links): white text at rest; yellow #FFD200 text on hover and while open /
-   current, back to white when the pointer leaves. Only the text colour changes - never the background.
-   A soft dark text shadow keeps both colours legible on the sage panel. */
+   and info links, the "All …" links): white text at rest; yellow #FFD200 text while open / current.
+   Hover and keyboard focus fill the whole item with Ocean Teal #2E6F7A and white text. A soft dark text
+   shadow keeps the text legible on the sage panel. */
 .brand-dropdown :is(.mega-heading, .mega-sub-toggle, .dropdown-label, .dd-item) {
-  color: #fff; background-color: transparent; text-shadow: 0 1px 1px rgb(14 42 47 / 0.35);
-  transition: color 250ms ease;
+  color: #fff; background-color: transparent; border-radius: 3px; text-shadow: 0 1px 1px rgb(14 42 47 / 0.35);
+  transition: color 200ms ease, background-color 200ms ease;
 }
-.brand-dropdown :is(.mega-heading, .mega-sub-toggle, .dropdown-label, .dd-item):is(:hover, [aria-expanded="true"], .is-current) {
-  color: #FFD200; background-color: transparent;
+.brand-dropdown :is(.mega-heading, .mega-sub-toggle, .dropdown-label, .dd-item):is([aria-expanded="true"], .is-current) {
+  color: #FFD200;
 }
+.brand-dropdown :is(.mega-heading, .mega-sub-toggle, .dropdown-label, .dd-item):is(:hover, :focus-visible) {
+  color: #fff; background-color: #2E6F7A; text-shadow: none;
+}
+.brand-dropdown :is(.mega-heading, .mega-sub-toggle, .dropdown-label, .dd-item):focus-visible { outline: 2px solid #fff; outline-offset: 1px; }
+/* Therapy Services menu: no yellow at all. An open category / secondary category keeps the teal hover
+   fill; the current page's service link stays white and is marked with an underline instead. */
+.brand-dropdown .mega-grid :is(.mega-heading, .mega-sub-toggle)[aria-expanded="true"] { color: #fff; background-color: #2E6F7A; text-shadow: none; }
+.brand-dropdown .mega-grid .dd-item.is-current { color: #fff; text-decoration: underline; text-underline-offset: 3px; }
+.brand-dropdown .mega-grid .dd-item.is-current:is(:hover, :focus-visible) { text-decoration: none; }
 .brand-dropdown .dd-item { display: block; padding-inline: 0.5rem; margin-inline: -0.5rem; }
 .brand-dropdown .mega-flyout .dd-item { padding-block: 0.25rem; }
 .brand-dropdown :is(.mega-heading, .mega-sub-toggle) { padding: 0.3rem 0.5rem; margin-inline: -0.5rem; width: calc(100% + 1rem); }
@@ -218,12 +227,12 @@ article:has(.prac-head) .prac-photo { width: 9rem; height: 9rem; }
 @media (prefers-reduced-motion: reduce) { .expand-more, .expand-card .expand-more, .expand-chevron { transition: none !important; } }
 
 /* Logo: larger in the header and footer, same square proportions. */
-.header-row { height: 6rem; }
-.brand-logo { width: 5rem; height: 5rem; }
-@media (width>=768px) { .header-row { height: 6.5rem; } .brand-logo { width: 5.75rem; height: 5.75rem; } }
-@media (width>=1024px) { .header-row { height: 7rem; } .brand-logo { width: 6.25rem; height: 6.25rem; } }
-.footer-logo { width: 104px; height: 104px; }
-@media (width>=768px) { .footer-logo { width: 128px; height: 128px; } }
+.header-row { height: 6.25rem; }
+.brand-logo { width: 5.5rem; height: 5.5rem; }
+@media (width>=768px) { .header-row { height: 7rem; } .brand-logo { width: 6.5rem; height: 6.5rem; } }
+@media (width>=1024px) { .header-row { height: 7.75rem; } .brand-logo { width: 7.25rem; height: 7.25rem; } }
+.footer-logo { width: 116px; height: 116px; }
+@media (width>=768px) { .footer-logo { width: 150px; height: 150px; } }
 
 /* Brand graphic in the header's top bar: a trailing botanical branch on the left, just after the
    location text (the bar's quiet side), away from the logo and navigation. */
@@ -301,32 +310,92 @@ section:has(article .prac-head) { position: relative; isolation: isolate; }
 
 /* Brand text "Michelle Barratt Psychology & Administration Services – MBP": larger in the header and
    footer, scaling down on smaller screens; the subtitle may wrap on phones rather than overflow. */
-.brand-name { font-size: 22px; }
-header .brand-subtitle { font-size: 11px; letter-spacing: 0.08em; white-space: normal; }
+.brand-name { font-size: 23px; }
+header .brand-subtitle { font-size: 11.5px; letter-spacing: 0.08em; white-space: normal; }
 @media (width>=640px) {
-  .brand-name { font-size: 26px; }
-  header .brand-subtitle { font-size: 13px; letter-spacing: 0.14em; white-space: nowrap; }
+  .brand-name { font-size: 29px; }
+  header .brand-subtitle { font-size: 14px; letter-spacing: 0.14em; white-space: nowrap; }
 }
-@media (width>=1024px) { .brand-name { font-size: 28px; } header .brand-subtitle { font-size: 13.5px; letter-spacing: 0.15em; } }
-@media (width>=1800px) { .brand-name { font-size: 31px; } header .brand-subtitle { font-size: 14.5px; letter-spacing: 0.17em; } }
-.footer-brand-name { font-size: 28px; }
-.footer-brand-sub { font-size: 12px; letter-spacing: 0.1em; white-space: normal; }
-@media (width>=640px) { .footer-brand-name { font-size: 33px; } .footer-brand-sub { font-size: 14px; letter-spacing: 0.15em; white-space: nowrap; } }
-/* Wide screens: keep the footer brand on two lines (name / subtitle) by letting the text block use
-   part of the empty gap before the next footer column (it stays 20px clear of that column). */
+@media (width>=1024px) { .brand-name { font-size: 32px; } header .brand-subtitle { font-size: 15px; letter-spacing: 0.15em; } }
+@media (width>=1800px) { .brand-name { font-size: 35px; } header .brand-subtitle { font-size: 16px; letter-spacing: 0.17em; } }
+.footer-brand-name { font-size: 30px; }
+.footer-brand-sub { font-size: 13px; letter-spacing: 0.1em; white-space: normal; }
+@media (width>=640px) { .footer-brand-name { font-size: 37px; } .footer-brand-sub { font-size: 15.5px; letter-spacing: 0.15em; white-space: nowrap; } }
+/* "MBP" at the end of the subtitle: bolder and a little larger, in brand pink (header and footer). */
+.brand-mbp { color: #D84B83; font-weight: 700; font-size: 1.2em; letter-spacing: 0.08em; }
+/* Wide screens: the footer brand text may use part of the empty gap before the next footer column
+   (it stays 20px clear of that column); the larger name wraps after "Barratt" there. */
 @media (width>=1280px) {
   footer .min-w-0:has(> .footer-brand-name) { margin-right: -1.75rem; }
-  .footer-brand-name { white-space: nowrap; }
+}
+/* Footer name always on one line: the text block fills the space beside the logo and the name (and,
+   from 640px, the subtitle) scale to that width, up to their full sizes. */
+footer .min-w-0:has(> .footer-brand-name) { flex: 1 1 0%; container-type: inline-size; }
+.footer-brand-name { white-space: nowrap; font-size: min(37px, 8.8cqi); }
+@media (width>=640px) { .footer-brand-sub { font-size: min(15.5px, 4.35cqi); } }
+/* Where the brand column is narrow (phones, and 1024-1279px), the name sits centred under the logo so
+   it can stay on one line at a readable size. */
+@media (width<640px), (width>=1024px) and (width<1280px) {
+  footer .flex:has(> .min-w-0 > .footer-brand-name) { flex-direction: column; }
+  footer .min-w-0:has(> .footer-brand-name) { flex: none; width: 100%; }
+  footer .footer-brand-sub { font-size: min(15.5px, 4.35cqi); white-space: nowrap; }
 }
 
 .mega-list > li + li { margin-top: 0.125rem; }
 
-/* 1440-1799px: the larger brand text leaves less room, so the main menu items sit slightly closer and
-   letter-space a little less (same font, size and weight). */
-@media (width>=1440px) and (width<1800px) {
-  nav[aria-label="Primary"] { column-gap: 0.6rem; }
-  nav[aria-label="Primary"] .nav-anim { letter-spacing: 0.06em; }
+/* Main menu labels: slightly larger (11/12px -> 13/14px). 1440-1799px: the larger brand leaves less
+   room, so items sit slightly closer and letter-space a little less. */
+nav[aria-label="Primary"] .nav-anim { font-size: 13px; }
+@media (width>=1440px) and (width<1600px) {
+  nav[aria-label="Primary"] { column-gap: 0.65rem; }
+  nav[aria-label="Primary"] .nav-anim { font-size: 12.5px; letter-spacing: 0.04em; }
+  nav[aria-label="Primary"] > a:last-child { padding-inline: 1.25rem; }
 }
+@media (width>=1600px) and (width<1800px) {
+  nav[aria-label="Primary"] { column-gap: 0.85rem; }
+  nav[aria-label="Primary"] .nav-anim { letter-spacing: 0.07em; }
+}
+@media (width>=1800px) {
+  nav[aria-label="Primary"] { column-gap: 1.25rem; }
+  nav[aria-label="Primary"] .nav-anim { font-size: 14px; letter-spacing: 0.1em; }
+}
+
+/* Helpful Info panel: four groups side by side. */
+.helpful-panel { width: min(1080px, calc(100vw - 3rem)); }
+.helpful-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 1.75rem; }
+
+/* Crisis Support page, "Crisis and support lines": heading and service names in brand pink. */
+.crisis-lines h2, .crisis-lines li, .crisis-lines svg { color: #D84B83; }
+.crisis-lines .crisis-label { font-weight: 600; }
+/* "If in crisis, please call 000." notices (page closing sections, contact form) and the Online
+   Therapy safety note: brand pink, semibold for legibility. */
+.crisis-note { color: #D84B83; font-weight: 600; }
+aside:has(a[href="tel:131114"]) > p:first-child { color: #D84B83; }
+aside a[href="tel:131114"] { color: #D84B83; border-color: #D84B83; }
+
+/* "On This Page" contents (long service pages): a bordered panel of numbered anchor links, two columns
+   on wide screens; on phones it collapses behind its heading. The current section is highlighted. */
+.toc { margin: 0.5rem 0 0.25rem; max-width: 64rem; border: 1px solid #DCE6E3; border-left: 3px solid #FFD200; border-radius: 0.375rem; background: #F7F9F8; padding: 1rem 1.25rem; }
+.toc-toggle { display: flex; width: 100%; align-items: center; justify-content: space-between; gap: 0.75rem; text-align: left; cursor: pointer; }
+.toc-title { font-size: 12px; font-weight: 600; letter-spacing: 0.2em; text-transform: uppercase; color: #2E6F7A; }
+.toc-chevron { width: 1.1rem; height: 1.1rem; color: #2E6F7A; transition: transform 250ms ease; }
+.toc.is-open .toc-chevron { transform: rotate(180deg); }
+.toc-list { display: none; margin-top: 0.75rem; list-style: none; padding: 0; }
+.toc.is-open .toc-list { display: grid; }
+.toc-link { display: flex; gap: 0.75rem; align-items: baseline; padding: 0.4rem 0.5rem; margin-inline: -0.5rem; border-radius: 3px; font-size: 15px; line-height: 1.4; color: #0E2A2F; transition: color 200ms ease, background-color 200ms ease; }
+.toc-num { flex: none; font-size: 12px; font-weight: 600; letter-spacing: 0.08em; color: #D84B83; font-variant-numeric: tabular-nums; }
+.toc-link:hover, .toc-link:focus-visible { background-color: #2E6F7A; color: #fff; }
+.toc-link:hover .toc-num, .toc-link:focus-visible .toc-num { color: #FFD200; }
+.toc-link.is-active { color: #2E6F7A; font-weight: 600; box-shadow: inset 3px 0 0 #D84B83; }
+.toc-link.is-active:hover { color: #fff; }
+@media (width>=768px) {
+  .toc { padding: 1.25rem 1.5rem; }
+  .toc-toggle { pointer-events: none; cursor: default; }
+  .toc-chevron { display: none; }
+  .toc-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 2rem; }
+}
+@media (width>=1280px) { .toc-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+@media (prefers-reduced-motion: reduce) { .toc-chevron, .toc-link { transition: none; } }
 
 /* ---------------------------------------------------------------------------------------------
    Site-wide spacing refinement (all pages). The page content reuses a handful of spacing patterns;

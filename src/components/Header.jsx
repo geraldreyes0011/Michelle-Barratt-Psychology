@@ -8,8 +8,19 @@ export const cn = (...c) => c.filter(Boolean).join(' ');
 
 // Dropdown links are listed A-Z by displayed name; group order is set explicitly below.
 const az = (a, b) => (a.toLowerCase() < b.toLowerCase() ? -1 : a.toLowerCase() > b.toLowerCase() ? 1 : 0);
-const helpfulInfoOrder = ['Policies', 'Client Resources', 'Mental Health Information'];
-const helpfulInfoMenu = [...helpfulInfoGroups]
+// Fees, Funding & Referrals lives under Helpful Info in the menus (its pages and URLs are unchanged).
+const FEES_GROUP = 'Fees, Funding & Referrals';
+const feesGroup = therapyMenu.flatMap((c) => c.subgroups ?? []).find((g) => g.title === FEES_GROUP);
+// Topics and Blogs sit in Client Resources instead of the top bar.
+const movedToClientResources = [['All Topics', '/topics'], ['Blogs', '/blog']];
+const movedTopLinks = new Set(movedToClientResources.map(([, to]) => to));
+const navTopLinks = topLinks.filter(([, to]) => !movedTopLinks.has(to));
+
+const helpfulInfoOrder = ['Policies', 'Client Resources', FEES_GROUP, 'Mental Health Information'];
+const helpfulInfoMenu = [
+  ...helpfulInfoGroups.map((g) => (g.title === 'Client Resources' ? { ...g, links: [...g.links, ...movedToClientResources] } : g)),
+  ...(feesGroup ? [{ title: FEES_GROUP, links: feesGroup.links.map((l) => [l.label, l.to]) }] : []),
+]
   .map((g) => ({ ...g, links: [...g.links].sort((x, y) => az(x[0], y[0])) }))
   .sort((x, y) => helpfulInfoOrder.indexOf(x.title) - helpfulInfoOrder.indexOf(y.title));
 
@@ -22,7 +33,9 @@ const therapyMenuOrder = [
   'complex-clinical-therapy',
   'types-of-therapy',
 ];
-const navTherapyMenu = [...therapyMenu].sort((a, b) => therapyMenuOrder.indexOf(a.id) - therapyMenuOrder.indexOf(b.id));
+const navTherapyMenu = [...therapyMenu]
+  .sort((a, b) => therapyMenuOrder.indexOf(a.id) - therapyMenuOrder.indexOf(b.id))
+  .map((c) => ({ ...c, subgroups: (c.subgroups ?? []).filter((g) => g.title !== FEES_GROUP) }));
 
 // Hover/click dropdown with fade + 4px rise (reference: opacity/translate-y, 200ms).
 function Dropdown({ label, children, panelClass = '', onDoubleClick }) {
@@ -223,7 +236,7 @@ function MobileNav({ onNavigate }) {
         ))}
         <Link to="/therapy-services" onClick={onNavigate} className="mt-2 inline-flex items-center gap-2 text-[13px] font-semibold uppercase tracking-[0.12em] text-rose">All Therapy Services</Link>
       </MobileSection>
-      {topLinks.map(([label, to]) => (
+      {navTopLinks.map(([label, to]) => (
         <Link key={to} to={to} onClick={onNavigate} className={cn(mobileTop, 'border-b border-lilac')}>{label}</Link>
       ))}
       <MobileSection label="Helpful Info">
@@ -266,7 +279,7 @@ export default function Header() {
               <span className="brand-pink">M</span>ichelle <span className="brand-pink">B</span>arratt<br className="sm:hidden" /> <span className="brand-pink">P</span>sychology
             </span>
             <span className="brand-dark brand-subtitle block font-heading uppercase">
-              &amp; Administration Services – <span className="brand-pink font-semibold">MBP</span>
+              &amp; Administration Services – <span className="brand-pink brand-mbp">MBP</span>
             </span>
           </span>
         </Link>
@@ -280,9 +293,9 @@ export default function Header() {
               </Link>
             </div>
           </Dropdown>
-          {topLinks.map(([label, to]) => <NavLink key={to} to={to} className={topLinkClass}>{label}</NavLink>)}
-          <Dropdown label="Helpful Info" panelClass="right-0 left-auto w-[min(900px,calc(100vw-3rem))]">
-            <div className="grid grid-cols-3 gap-7">
+          {navTopLinks.map(([label, to]) => <NavLink key={to} to={to} className={topLinkClass}>{label}</NavLink>)}
+          <Dropdown label="Helpful Info" panelClass="right-0 left-auto helpful-panel">
+            <div className="helpful-grid">
               {helpfulInfoMenu.map((g) => (
                 <div key={g.title}>
                   <p className={cn('dropdown-label text-[12px] font-semibold uppercase tracking-[0.14em] mb-2', g.links.some(([, to]) => to === pathname) && 'is-current')}>{g.title}</p>

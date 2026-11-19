@@ -1,14 +1,8 @@
 [
   {
     "slug": "adhd-therapy-children",
-    "status": "migrated",
-    "source": "https://michellebarrattpsychology.com.au/child-adolescent-therapy/#adhd-therapy",
-    "images": [
-      "https://michellebarrattpsychology.com.au/wp-content/uploads/2023/03/pexels-andrea-piacquadio-3807738-min.jpg"
-    ],
-    "links": [
-      "https://www.understood.org/en/learning-attention-issues/treatments-approaches/medications/types-of-adhd-medications"
-    ]
+    "status": "existing-page",
+    "note": "Reference page kept; content unchanged."
   },
   {
     "slug": "adolescent-anxiety-depression",

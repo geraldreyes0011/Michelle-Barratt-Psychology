@@ -1,3 +1,4 @@
+import { useEffect, useRef } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { img, localiseImages, pageHero, therapyHeroImages } from '../data/site.js';
 import {
@@ -50,6 +51,24 @@ export default function PageView({ html, className }) {
     return Widget ? <Widget key={i} /> : null;
   });
 
+  // Highlight the "On This Page" link for the section currently being read.
+  const rootRef = useRef(null);
+  useEffect(() => {
+    const links = [...(rootRef.current?.querySelectorAll('.toc-link') ?? [])];
+    if (!links.length) return undefined;
+    const targets = links.map((l) => document.getElementById(l.getAttribute('href').slice(1))).filter(Boolean);
+    const update = () => {
+      const line = window.innerHeight * 0.3;
+      let current = null;
+      for (const t of targets) if (t.getBoundingClientRect().top <= line) current = t.id;
+      for (const l of links) l.classList.toggle('is-active', l.getAttribute('href') === `#${current}`);
+    };
+    update();
+    window.addEventListener('scroll', update, { passive: true });
+    window.addEventListener('resize', update);
+    return () => { window.removeEventListener('scroll', update); window.removeEventListener('resize', update); };
+  }, [html, pathname]);
+
   const onClick = (e) => {
     // Expandable cards in page content (e.g. Online Therapy benefits): the button toggles its card.
     // Closing a card the pointer is still over also suppresses its hover preview until the pointer leaves.
@@ -62,8 +81,26 @@ export default function PageView({ html, className }) {
       toggle.setAttribute('aria-expanded', String(open));
       return;
     }
+    // "On This Page" contents: the heading button collapses/expands the list (phones only, via CSS).
+    const tocToggle = e.target.closest?.('[data-toc-toggle]');
+    if (tocToggle) {
+      const open = tocToggle.getAttribute('aria-expanded') !== 'true';
+      tocToggle.setAttribute('aria-expanded', String(open));
+      tocToggle.closest('.toc')?.classList.toggle('is-open', open);
+      return;
+    }
     const a = e.target.closest?.('a');
     const href = a?.getAttribute('href');
+    // In-page anchors scroll smoothly and keep the router's location in step.
+    if (href?.startsWith('#') && href.length > 1) {
+      const target = document.getElementById(decodeURIComponent(href.slice(1)));
+      if (!target) return;
+      e.preventDefault();
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      window.history.replaceState(window.history.state, '', href);
+      return;
+    }
     if (!a || !href || !href.startsWith('/') || href.startsWith('//') || a.target === '_blank' || e.metaKey || e.ctrlKey || e.shiftKey || e.button !== 0) return;
     if (/\.\w{2,4}$/.test(href)) return; // static files (PDFs, images)
     e.preventDefault();
@@ -72,6 +109,7 @@ export default function PageView({ html, className }) {
 
   return (
     <div
+      ref={rootRef}
       className={className}
       onClick={onClick}
       onPointerOut={(e) => {

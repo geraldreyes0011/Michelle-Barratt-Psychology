@@ -2,6 +2,7 @@ import { Link, useParams } from 'react-router-dom';
 import { ArrowRight, Check, ChevronRight, Phone } from '../components/Icons.jsx';
 import { PhotoHero } from './HelpfulInfoIndex.jsx';
 import NotFound from './NotFound.jsx';
+import { cn } from '../components/Header.jsx';
 import { PHONE, helpfulInfoGroups, helpfulInfoPages, pageHero } from '../data/site.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
 
@@ -60,22 +61,31 @@ export default function HelpfulInfoPage() {
       <section className="bg-white">
         <div className="mx-auto max-w-7xl px-5 py-12 md:py-16 grid gap-10 lg:grid-cols-[minmax(0,1fr)_320px] items-start">
           <article>
-            {page.sections.map((s) => (
-              <div key={s.heading} className="mb-8 last:mb-0">
-                <h2 className="text-[24px] md:text-[28px] font-semibold leading-tight mb-3">{s.heading}</h2>
-                {s.paragraphs?.map((p) => <p key={p.slice(0, 40)} className="text-[16px] leading-relaxed text-ink/85 mb-4">{p}</p>)}
-                {s.list && (
-                  <ul className="space-y-2.5 mt-4">
-                    {s.list.map((item) => (
-                      <li key={item.slice(0, 40)} className="flex gap-3 items-start text-[15px] leading-relaxed text-ink/85">
-                        <Check className="h-5 w-5 text-ocean shrink-0 mt-0.5" aria-hidden="true" />
-                        <span>{item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            ))}
+            {page.sections.map((s) => {
+              // Crisis and support lines: heading and service names in brand pink (numbers unchanged).
+              const crisis = /crisis and support lines/i.test(s.heading);
+              return (
+                <div key={s.heading} className={cn('mb-8 last:mb-0', crisis && 'crisis-lines')}>
+                  <h2 className="text-[24px] md:text-[28px] font-semibold leading-tight mb-3">{s.heading}</h2>
+                  {s.paragraphs?.map((p) => <p key={p.slice(0, 40)} className="text-[16px] leading-relaxed text-ink/85 mb-4">{p}</p>)}
+                  {s.list && (
+                    <ul className="space-y-2.5 mt-4">
+                      {s.list.map((item) => {
+                        const cut = crisis ? item.indexOf(' — ') : -1;
+                        return (
+                          <li key={item.slice(0, 40)} className="flex gap-3 items-start text-[15px] leading-relaxed text-ink/85">
+                            <Check className="h-5 w-5 text-ocean shrink-0 mt-0.5" aria-hidden="true" />
+                            {cut > 0
+                              ? <span><span className="crisis-label">{item.slice(0, cut)}</span>{item.slice(cut)}</span>
+                              : <span>{item}</span>}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  )}
+                </div>
+              );
+            })}
             <div className="mt-10 rounded-lg bg-blush p-6 md:p-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5">
               <div>
                 <p className="font-heading text-2xl font-semibold text-plum">Still have questions?</p>

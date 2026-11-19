@@ -56,8 +56,8 @@ export default function ContactForm() {
         <h3 className="text-3xl font-semibold">{status === 'sent' ? 'Thank you — your message has been sent' : 'Your email app has opened with your message'}</h3>
         <p className="mt-3">
           {status === 'sent'
-            ? 'We will be in touch within 24 to 48 hours. If in crisis, please call 000.'
-            : <>Please press send in your email app. If it did not open, email us at <a className="text-ocean underline underline-offset-4 font-medium" href={`mailto:${ADMIN_EMAIL}`}>{ADMIN_EMAIL}</a>. If in crisis, please call 000.</>}
+            ? <>We will be in touch within 24 to 48 hours. <span className="crisis-note">If in crisis, please call 000.</span></>
+            : <>Please press send in your email app. If it did not open, email us at <a className="text-ocean underline underline-offset-4 font-medium" href={`mailto:${ADMIN_EMAIL}`}>{ADMIN_EMAIL}</a>. <span className="crisis-note">If in crisis, please call 000.</span></>}
         </p>
       </div>
     );
@@ -121,7 +121,7 @@ export default function ContactForm() {
         {status === 'error' && (
           <p className="text-sm text-red-700" role="alert">Something went wrong sending your message. Please try again or call 07 3185 0040.</p>
         )}
-        <p className="text-sm text-ink/75">*Your personal information will be handled in the strictest confidence in accordance with the Privacy Act 1988 (Cth). You will receive a response in 24 to 48 hours. If in crisis, please call 000.</p>
+        <p className="text-sm text-ink/75">*Your personal information will be handled in the strictest confidence in accordance with the Privacy Act 1988 (Cth). You will receive a response in 24 to 48 hours. <span className="crisis-note">If in crisis, please call 000.</span></p>
       </div>
     </form>
   );

@@ -29,7 +29,7 @@ export const therapyMenu = [
     blurb: 'Support for younger clients, from childhood anxiety through to adolescent mental health.',
     links: [
       t('Child & Adolescent Therapy', 'child-adolescent-therapy'),
-      t('ADHD Therapy for Children', 'adhd-therapy-children'),
+      t('ADHD Therapy – Children & Adolescents', 'adhd-therapy-children'),
       t('Child Anxiety', 'child-anxiety'),
       t('Adolescent Anxiety & Depression', 'adolescent-anxiety-depression'),
       t("Building a Child's Self-Esteem", 'child-self-esteem'),

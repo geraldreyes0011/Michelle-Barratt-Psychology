@@ -18,6 +18,10 @@ export function recolour(html) {
   if (!html) return html;
   let out = html;
   for (const [from, to] of RECOLOUR) out = out.replace(new RegExp(from, 'gi'), to);
+  // Crisis notices in page content read in brand pink (.crisis-note).
+  out = out.replaceAll('If in crisis, please call 000.', '<span class="crisis-note">If in crisis, please call 000.</span>');
+  // Contact page "In Case of Emergency" notice.
+  out = out.replace('<h2 class="text-3xl font-semibold mb-3">In Case of Emergency</h2><p class="text-[15px] mb-4">', '<h2 class="text-3xl font-semibold mb-3 crisis-note">In Case of Emergency</h2><p class="text-[15px] mb-4 crisis-note">');
   return out.replaceAll('from-plum to-rose', 'from-plum to-ink');
 }
 

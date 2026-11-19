@@ -393,7 +393,12 @@ const heroImages = {};
 for (const slug of allTopicSlugs()) {
   const out = join(pagesDir, `therapy-services__${slug}.json`);
   const ref = existsSync(out) && !JSON.parse(readFileSync(out, 'utf8')).generated;
-  if (ref) { report.push({ slug, status: 'existing-page', note: 'Reference page kept; content unchanged.' }); continue; }
+  if (ref) {
+    // Hand-maintained pages keep their hero photo.
+    if (MIGRATED[slug]?.hero) heroImages[`/therapy-services/${slug}`] = MIGRATED[slug].hero;
+    report.push({ slug, status: 'existing-page', note: 'Reference page kept; content unchanged.' });
+    continue;
+  }
 
   const category = primaryCategory(slug);
   const label = labelFor(slug);
