@@ -399,6 +399,16 @@ footer p:has(> a[href="tel:131114"]), footer p > a[href="tel:131114"], footer p 
 @media (width>=1280px) { .toc-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (prefers-reduced-motion: reduce) { .toc-chevron, .toc-link { transition: none; } }
 
+/* Section photos beside text (ADHD service page): below the text at a consistent 16:9 on phones and
+   tablets; from 1024px a wider photo column whose image runs the full height of the heading and text
+   beside it (cropped to fill, never stretched), within sensible limits. */
+.photo-fill-img { aspect-ratio: 16 / 9; max-width: 768px; object-position: center; }
+.photo-fill-text > :last-child { margin-bottom: 0; }
+@media (width>=1280px) {
+  .photo-fill { grid-template-columns: minmax(0, 1fr) minmax(0, 0.72fr); align-items: stretch; column-gap: 3rem; }
+  .photo-fill-img { aspect-ratio: auto; max-width: none; height: 100%; min-height: 320px; max-height: 620px; align-self: center; }
+}
+
 /* ---------------------------------------------------------------------------------------------
    Site-wide spacing refinement (all pages). The page content reuses a handful of spacing patterns;
    each is tightened here in one place, inside the page content area (#main) only, so the header,
