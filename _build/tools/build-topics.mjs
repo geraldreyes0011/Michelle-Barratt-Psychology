@@ -23,7 +23,7 @@ const UP = `${WP}/wp-content/uploads`;
 const MIGRATED = {
   'adhd-therapy-children': {
     file: 'child-adolescent-therapy', from: '#adhd-therapy', to: '#teenage-anxiety',
-    hero: { src: `${UP}/2023/03/pexels-andrea-piacquadio-3807738-min.jpg`, alt: 'ADHD therapy for children' },
+    hero: { src: `${UP}/2025/11/getty-images-FT1rzr0K1R4-unsplash.jpg`, alt: 'A child psychologist working with a young boy in a therapy room' },
     source: `${WP}/child-adolescent-therapy/#adhd-therapy`,
   },
   'child-self-esteem': {
