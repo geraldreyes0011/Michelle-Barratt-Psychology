@@ -372,6 +372,8 @@ nav[aria-label="Primary"] .nav-anim { font-size: 13px; }
 .crisis-note { color: #D84B83; font-weight: 600; }
 aside:has(a[href="tel:131114"]) > p:first-child { color: #D84B83; }
 aside a[href="tel:131114"] { color: #D84B83; border-color: #D84B83; }
+/* Footer "In immediate danger?" box: the "Lifeline 13 11 14" line in brand pink. */
+footer p:has(> a[href="tel:131114"]), footer p > a[href="tel:131114"], footer p > a[href="tel:131114"]:hover { color: #D84B83; font-weight: 600; }
 
 /* "On This Page" contents (long service pages): a bordered panel of numbered anchor links, two columns
    on wide screens; on phones it collapses behind its heading. The current section is highlighted. */
