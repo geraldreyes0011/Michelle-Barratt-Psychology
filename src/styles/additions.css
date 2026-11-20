@@ -310,17 +310,17 @@ section:has(article .prac-head) { position: relative; isolation: isolate; }
 
 /* Brand text "Michelle Barratt Psychology & Administration Services – MBP": larger in the header and
    footer, scaling down on smaller screens; the subtitle may wrap on phones rather than overflow. */
-.brand-name { font-size: 23px; }
-header .brand-subtitle { font-size: 11.5px; letter-spacing: 0.08em; white-space: normal; }
+.brand-name { font-size: 22px; }
+header .brand-subtitle { font-size: 11px; letter-spacing: 0.08em; white-space: normal; }
 @media (width>=640px) {
-  .brand-name { font-size: 29px; }
-  header .brand-subtitle { font-size: 14px; letter-spacing: 0.14em; white-space: nowrap; }
+  .brand-name { font-size: 26px; }
+  header .brand-subtitle { font-size: 13px; letter-spacing: 0.14em; white-space: nowrap; }
 }
-@media (width>=1024px) { .brand-name { font-size: 32px; } header .brand-subtitle { font-size: 15px; letter-spacing: 0.15em; } }
-@media (width>=1800px) { .brand-name { font-size: 35px; } header .brand-subtitle { font-size: 16px; letter-spacing: 0.17em; } }
-.footer-brand-name { font-size: 30px; }
-.footer-brand-sub { font-size: 13px; letter-spacing: 0.1em; white-space: normal; }
-@media (width>=640px) { .footer-brand-name { font-size: 37px; } .footer-brand-sub { font-size: 15.5px; letter-spacing: 0.15em; white-space: nowrap; } }
+@media (width>=1024px) { .brand-name { font-size: 28px; } header .brand-subtitle { font-size: 13.5px; letter-spacing: 0.15em; } }
+@media (width>=1800px) { .brand-name { font-size: 31px; } header .brand-subtitle { font-size: 14.5px; letter-spacing: 0.17em; } }
+.footer-brand-name { font-size: 28px; }
+.footer-brand-sub { font-size: 12px; letter-spacing: 0.1em; white-space: normal; }
+@media (width>=640px) { .footer-brand-name { font-size: 33px; } .footer-brand-sub { font-size: 14px; letter-spacing: 0.15em; white-space: nowrap; } }
 /* "MBP" at the end of the subtitle: bolder and a little larger, in brand pink (header and footer). */
 .brand-mbp { color: #DD094C; font-weight: 700; font-size: 1.2em; letter-spacing: 0.08em; }
 /* Wide screens: the footer brand text may use part of the empty gap before the next footer column
@@ -331,14 +331,14 @@ header .brand-subtitle { font-size: 11.5px; letter-spacing: 0.08em; white-space:
 /* Footer name always on one line: the text block fills the space beside the logo and the name (and,
    from 640px, the subtitle) scale to that width, up to their full sizes. */
 footer .min-w-0:has(> .footer-brand-name) { flex: 1 1 0%; container-type: inline-size; }
-.footer-brand-name { white-space: nowrap; font-size: min(37px, 8.8cqi); }
-@media (width>=640px) { .footer-brand-sub { font-size: min(15.5px, 4.35cqi); } }
+.footer-brand-name { white-space: nowrap; font-size: min(28px, 8.8cqi); }
+@media (width>=640px) { .footer-brand-name { font-size: min(33px, 8.8cqi); } .footer-brand-sub { font-size: min(14px, 4.35cqi); } }
 /* Where the brand column is narrow (phones, and 1024-1279px), the name sits centred under the logo so
    it can stay on one line at a readable size. */
 @media (width<640px), (width>=1024px) and (width<1280px) {
   footer .flex:has(> .min-w-0 > .footer-brand-name) { flex-direction: column; }
   footer .min-w-0:has(> .footer-brand-name) { flex: none; width: 100%; }
-  footer .footer-brand-sub { font-size: min(15.5px, 4.35cqi); white-space: nowrap; }
+  footer .footer-brand-sub { white-space: nowrap; }
 }
 
 .mega-list > li + li { margin-top: 0.125rem; }
@@ -434,9 +434,20 @@ footer p:has(> a[href="tel:131114"]), footer p > a[href="tel:131114"], footer p 
 #contact-us .svc-page p.max-w-3xl, .svc-page #contact-us p.max-w-3xl { text-align: center; }
 #contact-us .flex { justify-content: center; }
 
-/* Header and footer brand text: bolder throughout (name 700, subtitle 600). */
-.brand-name, .footer-brand-name { font-weight: 700; }
-.brand-subtitle { font-weight: 600; }
+/* Header and footer brand text (both lines): the font's heaviest weight (700), thickened further with a
+   fine outline in each letter's own colour, so pink letters stay pink. The outline adds no width, so
+   wrapping and alignment are unchanged. */
+:is(.brand-name, .footer-brand-name, .brand-subtitle) { font-weight: 700; -webkit-text-stroke: 0.04em currentColor; paint-order: stroke fill; }
+.brand-subtitle { -webkit-text-stroke-width: 0.03em; }
+/* Narrow phones (under 470px): the bolder brand, logo and menu button share the row, so the gaps, side
+   padding and subtitle letter-spacing tighten and the brand text scales down slightly, so the menu
+   button is never cut off. The logo size is unchanged. */
+@media (width<470px) {
+  .header-row { column-gap: 0.5rem; padding-inline: 0.875rem; }
+  .header-row > a:first-child { column-gap: 0.5rem; }
+  header .brand-name { font-size: clamp(19px, 5.9vw, 22px); }
+  header .brand-subtitle { font-size: clamp(9px, 2.85vw, 11px); letter-spacing: 0.03em; }
+}
 
 /* No short decorative bars under headings or on cards. Where a bar also separated a heading from the
    text below it (heroes, home service panels, Helpful Info cards), a small gap is kept instead. */
