@@ -5,6 +5,7 @@ import NotFound from './NotFound.jsx';
 import { cn } from '../components/Header.jsx';
 import { PHONE, helpfulInfoGroups, helpfulInfoPages, pageHero } from '../data/site.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
+import { CONTACT_BTN_CLASS } from '../lib/serviceLayout.js';
 
 function Directory({ current }) {
   return (
@@ -92,7 +93,7 @@ export default function HelpfulInfoPage() {
                 <p className="text-[15px] text-ink/80 mt-1">Our administration team can talk through anything on this page.</p>
               </div>
               <div className="flex flex-wrap gap-3">
-                <Link to="/contact" className="inline-flex items-center justify-center min-h-12 px-6 rounded whitespace-nowrap text-[13px] font-semibold uppercase tracking-[0.12em] bg-plum text-white hover:bg-[#1C302D] transition-colors duration-300">Contact Us</Link>
+                <Link to="/contact" className={CONTACT_BTN_CLASS}>Contact Us</Link>
                 <a href={PHONE.href} className="inline-flex items-center gap-2 min-h-12 px-6 rounded border border-plum/30 text-[13px] font-semibold uppercase tracking-[0.12em] text-plum hover:bg-white transition-colors">
                   <Phone className="h-4 w-4" aria-hidden="true" /> {PHONE.label}
                 </a>

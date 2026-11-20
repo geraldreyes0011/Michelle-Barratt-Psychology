@@ -21,7 +21,8 @@ const helpfulInfoMenu = [
   ...helpfulInfoGroups.map((g) => (g.title === 'Client Resources' ? { ...g, links: [...g.links, ...movedToClientResources] } : g)),
   ...(feesGroup ? [{ title: FEES_GROUP, links: feesGroup.links.map((l) => [l.label, l.to]) }] : []),
 ]
-  .map((g) => ({ ...g, links: [...g.links].sort((x, y) => az(x[0], y[0])) }))
+  // Fees, Funding & Referrals keeps the checklist order from therapyMenu.js; other groups are A-Z.
+  .map((g) => (g.title === FEES_GROUP ? g : { ...g, links: [...g.links].sort((x, y) => az(x[0], y[0])) }))
   .sort((x, y) => helpfulInfoOrder.indexOf(x.title) - helpfulInfoOrder.indexOf(y.title));
 
 // Navigation order set by the client (menus only; the Therapy Services page keeps its own order).
@@ -33,9 +34,16 @@ const therapyMenuOrder = [
   'complex-clinical-therapy',
   'types-of-therapy',
 ];
+// Overview pages left out of the dropdowns (client request); the pages, their category and "More in"
+// links, and the Therapy Services index listing are unchanged.
+const hiddenInMenus = new Set(['child-adolescent-therapy']);
 const navTherapyMenu = [...therapyMenu]
   .sort((a, b) => therapyMenuOrder.indexOf(a.id) - therapyMenuOrder.indexOf(b.id))
-  .map((c) => ({ ...c, subgroups: (c.subgroups ?? []).filter((g) => g.title !== FEES_GROUP) }));
+  .map((c) => ({
+    ...c,
+    links: c.links.filter((l) => !hiddenInMenus.has(l.slug)),
+    subgroups: (c.subgroups ?? []).filter((g) => g.title !== FEES_GROUP),
+  }));
 
 // Hover/click dropdown with fade + 4px rise (reference: opacity/translate-y, 200ms).
 function Dropdown({ label, children, panelClass = '', onDoubleClick }) {

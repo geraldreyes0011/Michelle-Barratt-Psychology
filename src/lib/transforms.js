@@ -3,6 +3,7 @@
 // so pages render exactly as they do there. The second group implements the requested updates.
 import { localiseImages } from '../data/site.js';
 import { pageLinks, primaryCategory, therapyMenu } from '../data/therapyMenu.js';
+import { standardContactButtons } from './serviceLayout.js';
 
 // ------------------------------------------------------------------ reference behaviour
 
@@ -22,6 +23,7 @@ export function recolour(html) {
   out = out.replaceAll('If in crisis, please call 000.', '<span class="crisis-note">If in crisis, please call 000.</span>');
   // Contact page "In Case of Emergency" notice.
   out = out.replace('<h2 class="text-3xl font-semibold mb-3">In Case of Emergency</h2><p class="text-[15px] mb-4">', '<h2 class="text-3xl font-semibold mb-3 crisis-note">In Case of Emergency</h2><p class="text-[15px] mb-4 crisis-note">');
+  out = standardContactButtons(out);
   return out.replaceAll('from-plum to-rose', 'from-plum to-ink');
 }
 

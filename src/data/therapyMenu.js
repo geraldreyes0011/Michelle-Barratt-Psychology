@@ -6,8 +6,11 @@
 // - `subgroups` are secondary categories, each with its own expandable list.
 // - Links with a `hash` point at a section of another page (e.g. Anorexia -> Eating Disorders);
 //   they are menu entries only, not pages of their own.
-// - Categories, links and subgroups are sorted A-Z by displayed name (client requirement);
-//   direct links come first, then subgroups, so the two are never interleaved.
+// - Links and subgroups keep the order written here, which follows the client's master checklist
+//   (Pasted markdown(3).md); an overview page not on the checklist (e.g. Child & Adolescent Therapy)
+//   leads its list. Direct links come first, then subgroups, so the two are never interleaved.
+// - Categories are kept A-Z here (that order decides a shared page's primary category); the header
+//   shows them in the checklist order (Header.jsx).
 
 const t = (label, slug, hash) => ({ label, slug, hash, to: `/therapy-services/${slug}${hash ? `#${hash}` : ''}` });
 
@@ -16,12 +19,6 @@ const byName = (a, b) => {
   const y = (b.label ?? b.title).toLowerCase();
   return x < y ? -1 : x > y ? 1 : 0;
 };
-const sortCategory = (c) => ({
-  ...c,
-  links: [...c.links].sort(byName),
-  subgroups: (c.subgroups ?? []).map((g) => ({ ...g, links: [...g.links].sort(byName) })).sort(byName),
-});
-
 export const therapyMenu = [
   {
     id: 'children-and-adolescent-therapy',
@@ -29,16 +26,18 @@ export const therapyMenu = [
     blurb: 'Support for younger clients, from childhood anxiety through to adolescent mental health.',
     links: [
       t('Child & Adolescent Therapy', 'child-adolescent-therapy'),
-      t('ADHD Therapy – Children & Adolescents', 'adhd-therapy-children'),
+      t('ADHD Therapy - Children & Adolescents', 'adhd-therapy-children'),
       t('Child Anxiety', 'child-anxiety'),
       t('Adolescent Anxiety & Depression', 'adolescent-anxiety-depression'),
       t("Building a Child's Self-Esteem", 'child-self-esteem'),
       t('Bullying', 'bullying'),
       t('Emotional Dysregulation', 'emotional-dysregulation'),
-      t('Grief & Loss', 'grief-loss'),
+      // Children's version of Grief & Loss (its own reviewed article); the adult article is under Trauma & PTSD.
+      t('Grief & Loss', 'grief-loss-children'),
       t('Child & Adolescent Trauma', 'child-adolescent-trauma'),
       t('Oppositional Defiant Disorder (ODD)', 'oppositional-defiant-disorder'),
-      t('PTSD – Children and Teenagers', 'ptsd-children-teenagers'),
+      // Same reviewed article as PTSD – Teenage (Teenage Trauma & PTSD Therapy); one page, two menu entries.
+      t('PTSD – Children and Teenagers', 'ptsd-teenage'),
     ],
   },
   {
@@ -99,10 +98,14 @@ export const therapyMenu = [
     id: 'trauma-and-ptsd-therapy',
     title: 'Trauma & PTSD Therapy',
     links: [
-      t('Trauma Therapy', 'trauma'),
       t('PTSD', 'ptsd'),
+      t('Pregnancy & Birth Trauma', 'pregnancy-birth-trauma'),
       t('Grief & Loss', 'grief-loss'),
       t('PTSD – Teenage', 'ptsd-teenage'),
+      // Not in this column of the checklist; kept after its topics. Also listed under Children &
+      // Adolescent Therapy (its primary category); same page.
+      t('Child & Adolescent Trauma', 'child-adolescent-trauma'),
+      t('Trauma Therapy', 'trauma'),
     ],
   },
   {
@@ -151,13 +154,12 @@ export const therapyMenu = [
       },
     ],
   },
-].map(sortCategory).sort(byName);
+].sort(byName);
 
 // Pages that are not listed in the menu keep their route; this is the category they sit under
 // for their eyebrow and "More in" links.
 const unlistedPages = {
   'personality-disorders': 'complex-clinical-therapy',
-  'pregnancy-birth-trauma': 'trauma-and-ptsd-therapy',
 };
 
 export const categoryHref = (category) => `/therapy-services#${category.id}`;

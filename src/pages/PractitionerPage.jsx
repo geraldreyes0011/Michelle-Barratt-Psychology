@@ -5,6 +5,7 @@ import NotFound from './NotFound.jsx';
 import { PHONE, img } from '../data/site.js';
 import { HALAXY_LOGO, practitioners } from '../data/practitioners.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
+import { CONTACT_BTN_CLASS } from '../lib/serviceLayout.js';
 
 // Individual practitioner profile (/practitioners/:slug). Layout and classes follow the Helpful Info
 // detail page (photo hero, article + sticky sidebar); the sidebar card mirrors the practitioner cards.
@@ -58,7 +59,7 @@ function ProfileCard({ p }) {
               </p>
             </>
           ) : (
-            <Link to="/contact" className={`${bookBtn} w-full text-center`}>Contact Us</Link>
+            <Link to="/contact" className={`${CONTACT_BTN_CLASS} w-full text-center`}>Contact Us</Link>
           )}
         </div>
       </div>
@@ -110,7 +111,7 @@ export default function PractitionerPage() {
         <div className="mt-6 flex flex-wrap gap-3">
           {p.booking
             ? <BookingButton p={p} />
-            : <Link to="/contact" className={`${btn} bg-white text-plum hover:bg-blush`}>Contact Us</Link>}
+            : <Link to="/contact" className={CONTACT_BTN_CLASS}>Contact Us</Link>}
           <Link to="/practitioners" className={`${btn} border border-white/70 text-white hover:bg-white/10`}>All Practitioners</Link>
         </div>
       </PhotoHero>
@@ -124,7 +125,7 @@ export default function PractitionerPage() {
                 <p className="text-[15px] text-ink/80 mt-1">Our administration team can help with appointments, fees and choosing a practitioner.</p>
               </div>
               <div className="flex flex-wrap gap-3">
-                <Link to="/contact" className="inline-flex items-center justify-center min-h-12 px-6 rounded whitespace-nowrap text-[13px] font-semibold uppercase tracking-[0.12em] bg-plum text-white hover:bg-[#1C302D] transition-colors duration-300">Contact Us</Link>
+                <Link to="/contact" className={CONTACT_BTN_CLASS}>Contact Us</Link>
                 <a href={PHONE.href} className="inline-flex items-center gap-2 min-h-12 px-6 rounded border border-plum/30 text-[13px] font-semibold uppercase tracking-[0.12em] text-plum hover:bg-white transition-colors">
                   <Phone className="h-4 w-4" aria-hidden="true" /> {PHONE.label}
                 </a>

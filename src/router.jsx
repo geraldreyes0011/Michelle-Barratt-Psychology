@@ -13,6 +13,8 @@ import PractitionerPage from './pages/PractitionerPage.jsx';
 // result inside the app and in local preview.
 const EATING_DISORDERS = '/therapy-services/eating-disorders#common-eating-disorders';
 const legacyRedirects = ['/anorexia', '/bulimia', '/binge-eating'].map((path) => ({ path, element: <Navigate to={EATING_DISORDERS} replace /> }));
+// PTSD – Children and Teenagers and PTSD – Teenage share one reviewed article (Teenage Trauma & PTSD).
+const sharedArticleRedirects = [{ path: '/therapy-services/ptsd-children-teenagers', element: <Navigate to="/therapy-services/ptsd-teenage" replace /> }];
 
 export const router = createBrowserRouter([
   {
@@ -33,6 +35,7 @@ export const router = createBrowserRouter([
       { path: '/therapy-services', element: <DataPage pageKey={() => 'therapy-services'} /> },
       { path: '/therapy-services/:slug', element: <DataPage pageKey={({ slug }) => `therapy-services__${slug}`} /> },
       ...legacyRedirects,
+      ...sharedArticleRedirects,
       { path: '*', element: <NotFound /> },
     ],
   },

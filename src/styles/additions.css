@@ -12,7 +12,7 @@
 .page-loading { min-height: 60vh; }
 
 /* Category anchors on /therapy-services and section anchors (e.g. Fees, Funding & Referrals) clear the sticky header. */
-article[id], section[id] { scroll-margin-top: 8.5rem; }
+article[id], section[id], .svc-page h3[id] { scroll-margin-top: 8.5rem; }
 
 /* Supplied practice photos beside section text (home lilac, therapy-services blush): stacked
    below the text on mobile, fixed right column from lg. Portrait images keep their ratio. */
@@ -388,7 +388,9 @@ footer p:has(> a[href="tel:131114"]), footer p > a[href="tel:131114"], footer p 
 .toc-dot { margin-top: 0.45rem; transition: background-color 200ms ease; }
 .toc-link:hover, .toc-link:focus-visible { background-color: #2E6F7A; color: #fff; }
 .toc-link:hover .toc-dot, .toc-link:focus-visible .toc-dot { background-color: #fff; }
-.toc-link.is-active { color: #2E6F7A; font-weight: 600; }
+/* Active entry: emphasised with a hairline outline rather than a heavier weight, so its text never
+   rewraps (a wrap would change the list's height and shift the page while scrolling). */
+.toc-link.is-active { color: #2E6F7A; -webkit-text-stroke: 0.035em currentColor; }
 .toc-link.is-active:hover { color: #fff; }
 @media (width>=768px) {
   .toc { padding: 1.25rem 1.5rem; }
@@ -403,6 +405,8 @@ footer p:has(> a[href="tel:131114"]), footer p > a[href="tel:131114"], footer p 
    beside it (cropped to fill, never stretched), within sensible limits. */
 .photo-fill-img { aspect-ratio: 16 / 9; max-width: 768px; object-position: center; }
 .photo-fill-text > :last-child { margin-bottom: 0; }
+/* Text that continues below a photo keeps the normal paragraph gap. */
+.photo-fill + :is(p, ul) { margin-top: 1.25rem; }
 @media (width>=1280px) {
   .photo-fill { grid-template-columns: minmax(0, 1fr) minmax(0, 0.72fr); align-items: stretch; column-gap: 3rem; }
   .photo-fill-img { aspect-ratio: auto; max-width: none; height: 100%; min-height: 320px; max-height: 620px; align-self: center; }
@@ -423,16 +427,16 @@ footer p:has(> a[href="tel:131114"]), footer p > a[href="tel:131114"], footer p 
 .support-cards > div p { font-weight: 500; }
 .support-cards > div > span { background-color: #fff; }
 
-/* ADHD page: every text section (as in "Understanding ADHD in Children and Teenagers") uses the full
-   content width: headings, paragraphs, lists and the "On This Page" contents. In sections with a photo
-   the text fills its column beside the photo. The centred "Contact Us" keeps its narrower measure. */
-.svc-page:has(#understanding-adhd) section[id]:not(#contact-us) :is(p.max-w-3xl, ul.max-w-3xl, .mb-10.max-w-3xl, .mb-6.max-w-3xl),
-#understanding-adhd .toc { max-width: none; }
-@media (width>=1024px) { #understanding-adhd .toc-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
-/* ADHD page closing "Contact Us": heading, text and button centred. */
-#contact-us :is(.max-w-3xl) { margin-inline: auto; text-align: center; }
-#contact-us .svc-page p.max-w-3xl, .svc-page #contact-us p.max-w-3xl { text-align: center; }
-#contact-us .flex { justify-content: center; }
+/* Therapy Services pages (layout of the ADHD page): every text section uses the full content width:
+   headings, paragraphs, lists and the "On This Page" contents. In sections with a photo the text fills
+   its column beside the photo. The centred "Contact Us" sections keep their narrower measure. */
+.svc-page section[id]:not(#contact-us, .svc-contact) :is(p.max-w-3xl, ul.max-w-3xl, .mb-10.max-w-3xl, .mb-6.max-w-3xl),
+.svc-page .toc { max-width: none; }
+@media (width>=1024px) { .svc-page .toc-list { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
+/* "Contact Us" sections: heading, text and button centred. */
+:is(#contact-us, .svc-contact) .max-w-3xl { margin-inline: auto; text-align: center; }
+.svc-page :is(#contact-us, .svc-contact) p.max-w-3xl { text-align: center; }
+:is(#contact-us, .svc-contact) .flex { justify-content: center; }
 
 /* Header and footer brand text (both lines): the font's heaviest weight (700), thickened further with a
    fine outline in each letter's own colour, so pink letters stay pink. The outline adds no width, so
@@ -478,3 +482,11 @@ footer p:has(> a[href="tel:131114"]), footer p > a[href="tel:131114"], footer p 
 #main section.\!py-14 { padding-top: 0 !important; padding-bottom: 0 !important; }
 /* Phones: large cards keep comfortable but smaller inner padding. */
 @media (width<640px) { #main .p-8 { padding: 1.5rem; } }
+
+/* ADHD Therapy - Children & Adolescents: the reviewed PDF's heading levels. Section headings (the PDF's
+   large capitals) use the page h2; its second level (e.g. "Supporting Children and Teenagers with ADHD")
+   and third level (e.g. "What Support Does MBP Provide?") step down clearly from it and stay larger than
+   the box titles. */
+.svc-sub { font-size: 24px; line-height: 1.2; }
+.svc-minor { font-size: 22px; line-height: 1.25; }
+@media (width>=768px) { .svc-sub { font-size: 28px; } }

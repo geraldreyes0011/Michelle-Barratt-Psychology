@@ -4,6 +4,7 @@ import { img, localiseImages, pageHero, therapyHeroImages } from '../data/site.j
 import {
   backgroundHero, compactSpacing, isCompactPath, recolour, servicesIndex, splitHero, therapyTopic,
 } from '../lib/transforms.js';
+import { serviceLayout } from '../lib/serviceLayout.js';
 import Faq from './Faq.jsx';
 import ContactForm from './ContactForm.jsx';
 import HomeServices from './HomeServices.jsx';
@@ -36,7 +37,7 @@ export default function PageView({ html, className }) {
 
   let source = html;
   const slug = path.match(/^\/therapy-services\/([^/]+)$/)?.[1];
-  if (slug) source = therapyTopic(source, slug);
+  if (slug) source = serviceLayout(therapyTopic(source, slug), slug);
   if (path === '/therapy-services') source = servicesIndex(source);
 
   const heroImage = therapyHeroImages[path];
@@ -97,7 +98,12 @@ export default function PageView({ html, className }) {
       if (!target) return;
       e.preventDefault();
       const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-      target.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
+      // Land just below the sticky header (its height varies with screen width); sections bring their
+      // own top padding, sub-headings get a little breathing room.
+      const header = document.querySelector('header')?.getBoundingClientRect().bottom ?? 0;
+      const gap = target.tagName === 'SECTION' || target.tagName === 'ARTICLE' ? 0 : 16;
+      const top = target.getBoundingClientRect().top + window.scrollY - Math.max(0, header) - gap;
+      window.scrollTo({ top, behavior: reduce ? 'auto' : 'smooth' });
       window.history.replaceState(window.history.state, '', href);
       return;
     }

@@ -54,5 +54,37 @@
   "/therapy-services/workcover": {
     "src": "https://michellebarrattpsychology.com.au/wp-content/uploads/2025/12/care-learning-9954699_1280.jpg",
     "alt": "WorkCover psychology support"
+  },
+  "/therapy-services/ptsd": {
+    "src": "/images/stock/pexels-8560691.webp",
+    "alt": "A man talking with a psychologist about a difficult experience"
+  },
+  "/therapy-services/adhd-therapy-assessment": {
+    "src": "/images/stock/pexels-7693194.webp",
+    "alt": "A woman at her laptop surrounded by notes, feeling overloaded"
+  },
+  "/therapy-services/pregnancy-birth-trauma": {
+    "src": "/images/stock/pexels-7282773.webp",
+    "alt": "A mother holding her newborn baby close"
+  },
+  "/therapy-services/grief-loss": {
+    "src": "/images/stock/pexels-8871437.webp",
+    "alt": "An older woman looking at a framed photograph"
+  },
+  "/therapy-services/ptsd-teenage": {
+    "src": "/images/stock/pexels-4100421.webp",
+    "alt": "A teenage boy talking with a counsellor"
+  },
+  "/therapy-services/emotional-dysregulation": {
+    "src": "/images/stock/pexels-6624327.webp",
+    "alt": "A young boy overwhelmed by frustration"
+  },
+  "/therapy-services/grief-loss-children": {
+    "src": "/images/stock/pexels-7302870.webp",
+    "alt": "A young child hugging his mother for comfort"
+  },
+  "/therapy-services/parkinsons": {
+    "src": "/images/stock/pexels-5790835.webp",
+    "alt": "An older couple sharing an affectionate moment"
   }
 }

@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { ArrowRight, Phone } from '../components/Icons.jsx';
 import { PHONE, helpfulInfoGroups, img, pageHero } from '../data/site.js';
 import { usePageMeta } from '../lib/usePageMeta.js';
+import { CONTACT_BTN_CLASS } from '../lib/serviceLayout.js';
 
 export function PhotoHero({ image, children }) {
   return (
@@ -55,7 +56,7 @@ export default function HelpfulInfoIndex() {
               <p className="text-[15px] md:text-[16px] text-white/90 mt-2">Our administration team can answer questions about appointments, referrals, fees or which practitioner might suit you.</p>
             </div>
             <div className="flex flex-wrap gap-3">
-              <Link to="/contact" className="inline-flex items-center justify-center min-h-12 px-7 rounded whitespace-nowrap text-[13px] font-semibold uppercase tracking-[0.12em] bg-white text-plum hover:bg-blush transition-colors duration-300">Contact Us</Link>
+              <Link to="/contact" className={CONTACT_BTN_CLASS}>Contact Us</Link>
               <a href={PHONE.href} className="inline-flex items-center gap-2 min-h-12 px-6 rounded border border-white/70 text-[13px] font-semibold uppercase tracking-[0.12em] text-white hover:bg-white/10 transition-colors">
                 <Phone className="h-4 w-4" aria-hidden="true" /> {PHONE.label}
               </a>

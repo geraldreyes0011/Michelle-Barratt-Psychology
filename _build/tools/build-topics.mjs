@@ -14,6 +14,8 @@ const root = process.argv[2];
 const wpDir = join(root, '_build/source-data/wordpress-originals');
 const pagesDir = join(root, 'src/data/pages');
 const { therapyMenu, primaryCategory, allTopicSlugs, pageLinks } = await import(pathToFileURL(join(root, 'src/data/therapyMenu.js')).href);
+// Pages built from the reviewed documents (build-service-pages.mjs) may define their own hero photo.
+const { PAGES: REVIEWED } = await import(pathToFileURL(join(root, '_build/source-data/reviewed-docs/pages.mjs')).href);
 
 const WP = 'https://michellebarrattpsychology.com.au';
 const UP = `${WP}/wp-content/uploads`;
@@ -397,7 +399,8 @@ for (const slug of allTopicSlugs()) {
   const ref = existsSync(out) && !JSON.parse(readFileSync(out, 'utf8')).generated;
   if (ref) {
     // Hand-maintained pages keep their hero photo.
-    if (MIGRATED[slug]?.hero) heroImages[`/therapy-services/${slug}`] = MIGRATED[slug].hero;
+    const hero = REVIEWED[slug]?.hero ?? MIGRATED[slug]?.hero;
+    if (hero) heroImages[`/therapy-services/${slug}`] = hero;
     report.push({ slug, status: 'existing-page', note: 'Reference page kept; content unchanged.' });
     continue;
   }
