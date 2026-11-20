@@ -53,7 +53,7 @@ export default function ContactForm() {
   if (status === 'sent' || status === 'mailto') {
     return (
       <div className="bg-lilac rounded p-6 md:p-10 text-center" role="status">
-        <h3 className="text-3xl font-semibold">{status === 'sent' ? 'Thank you — your message has been sent' : 'Your email app has opened with your message'}</h3>
+        <h3 className="text-3xl font-semibold">{status === 'sent' ? 'Thank you, your message has been sent' : 'Your email app has opened with your message'}</h3>
         <p className="mt-3">
           {status === 'sent'
             ? <>We will be in touch within 24 to 48 hours. <span className="crisis-note">If in crisis, please call 000.</span></>

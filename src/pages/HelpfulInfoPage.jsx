@@ -71,7 +71,7 @@ export default function HelpfulInfoPage() {
                   {s.list && (
                     <ul className="space-y-2.5 mt-4">
                       {s.list.map((item) => {
-                        const cut = crisis ? item.indexOf(' — ') : -1;
+                        const cut = crisis ? item.indexOf(': ') : -1;
                         return (
                           <li key={item.slice(0, 40)} className="flex gap-3 items-start text-[15px] leading-relaxed text-ink/85">
                             <Check className="h-5 w-5 text-ocean shrink-0 mt-0.5" aria-hidden="true" />

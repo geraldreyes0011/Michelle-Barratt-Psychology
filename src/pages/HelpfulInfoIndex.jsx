@@ -16,7 +16,7 @@ export function PhotoHero({ image, children }) {
 export default function HelpfulInfoIndex() {
   usePageMeta(
     'Helpful Info | Michelle Barratt Psychology',
-    'Policies, client resources and mental health information from Michelle Barratt Psychology — cancellation, privacy, referrals, crisis support and wellbeing resources.',
+    'Policies, client resources and mental health information from Michelle Barratt Psychology: cancellation, privacy, referrals, crisis support and wellbeing resources.',
   );
   return (
     <div>

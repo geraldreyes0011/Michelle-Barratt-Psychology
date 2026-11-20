@@ -110,7 +110,7 @@ export default function PageView({ html, className }) {
   return (
     <div
       ref={rootRef}
-      className={className}
+      className={[className, slug && 'svc-page'].filter(Boolean).join(' ') || undefined}
       onClick={onClick}
       onPointerOut={(e) => {
         const card = e.target.closest?.('.expand-card.is-dismissed');

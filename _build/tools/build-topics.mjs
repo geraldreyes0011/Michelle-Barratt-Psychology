@@ -82,6 +82,8 @@ const MIGRATED = {
     file: 'child-adolescent-therapy', from: 'Surviving Your Teenager', to: '#toddler-tantrums',
     hero: { src: `${UP}/2022/11/adolescent-dpression-and-anxiety.jpg`, alt: 'Parenting a teenager' },
     source: `${WP}/child-adolescent-therapy/`,
+    // Site style: no em dashes in visible text.
+    replace: [['changed drastically—once', 'changed drastically. Once'], ['analogy—sometimes', 'analogy: sometimes']],
   },
   'setting-boundaries-for-your-teenager': {
     file: 'child-adolescent-therapy', from: 'Setting Boundaries for Your Teenager', to: 'Surviving Your Parents',
